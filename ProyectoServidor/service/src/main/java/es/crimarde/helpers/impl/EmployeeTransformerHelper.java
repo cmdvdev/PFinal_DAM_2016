@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import es.crimarde.helpers.EmployeeTransformerHelp;
+import es.crimarde.model.Employee;
 import es.crimarde.negocio.EmployeeDTO;
 
 

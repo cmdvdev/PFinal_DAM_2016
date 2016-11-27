@@ -2,6 +2,7 @@ package es.crimarde.helpers;
 
 import java.util.List;
 
+import es.crimarde.model.Employee;
 import es.crimarde.negocio.EmployeeDTO;
 
 
