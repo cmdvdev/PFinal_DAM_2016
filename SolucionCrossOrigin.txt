@@ -6,5 +6,6 @@ Solucion. Modificar el archivo de host de la siguiente manera:
 
 Bajar una extension de chrome que añade la cabecera -> Allow-Control-Allow-Origin: *
 (Allows to you request any site with ajax from any source. Adds to response 'Allow-Control-Allow-Origin: *' header)
+url de la extension : https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
 
 Este plugin permite configurar las uurl's que se rastrean, por lo que se le introduce el patron : http://cmdvdev.com:8080/*
