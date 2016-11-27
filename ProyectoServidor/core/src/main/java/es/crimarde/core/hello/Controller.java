@@ -8,12 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.crimarde.service.Servicio;
+import es.crimarde.service.TestService;
 
 @RestController
 public class Controller {
 	
-	@Autowired Servicio servicio;
+	@Autowired TestService servicio;
+	
+    private static final String template = "Hello, %s!";
     
     @RequestMapping("/lista")
     public List<TestResponse> retrieveList() {
