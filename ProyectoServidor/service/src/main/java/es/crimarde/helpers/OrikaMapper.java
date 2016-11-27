@@ -23,6 +23,16 @@ public class OrikaMapper {
 			.field("precio", "precio")
 			.byDefault()
 			.register();
+		
+		mapperFactory.classMap(BookDTO.class, Book.class)
+		.exclude("id")
+		.field("titulo", "titulo")
+		.field("sinopsis", "sinopsis")
+		.field("autor", "autor")
+		.field("imagen", "imagen")
+		.field("precio", "precio")
+		.byDefault()
+		.register();
 	}
 
 	private OrikaMapper() {
