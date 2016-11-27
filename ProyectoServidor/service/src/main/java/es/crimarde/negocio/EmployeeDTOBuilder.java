@@ -37,8 +37,8 @@ public class EmployeeDTOBuilder {
 		return this;
 	}
 	
-    public EmployeeDTO build() {
-        return new EmployeeDTO(this);
+    public BookDTO build() {
+        return new BookDTO(this);
     }
 
 	public long getId() {
