@@ -2,13 +2,12 @@ package es.crimarde.helpers;
 
 import java.util.List;
 
-import es.crimarde.model.Employee;
-import es.crimarde.negocio.EmployeeDTO;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
 
-
-public interface EmployeeTransformerHelp {
-	public EmployeeDTO entityToDto(Employee employee);
-	public Employee dtoToEntity(EmployeeDTO employeeDTO);	
-	public List<EmployeeDTO> EntityToDtoList(List<Employee> list);
-	public List<Employee> dtoToEntityList(List<EmployeeDTO> dtoList);
+public interface BookTransformerHelp {
+	public BookDTO entityToDto(Book employee);
+	public Book dtoToEntity(BookDTO bookDTO);	
+	public List<BookDTO> EntityToDtoList(List<Book> bookList);
+	public List<Book> dtoToEntityList(List<BookDTO> bookDtoList);
 }

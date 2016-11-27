@@ -1,6 +1,6 @@
 package es.crimarde.negocio;
 
-public class EmployeeDTO {
+public class BookDTO {
 	
 	private long id;
 	private String firstName;
@@ -8,11 +8,11 @@ public class EmployeeDTO {
 	private String email;
 	private String phone;
 	
-	public EmployeeDTO() {
+	public BookDTO() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public EmployeeDTO(EmployeeDTOBuilder builder) {
+	public BookDTO(EmployeeDTOBuilder builder) {
 		this.id = builder.getId();
 		this.firstName = builder.getFirstName();
 		this.lastName = builder.getLastName();
@@ -21,7 +21,7 @@ public class EmployeeDTO {
 	}
 
 	
-	public EmployeeDTO(String firstName, String lastName, String email,
+	public BookDTO(String firstName, String lastName, String email,
 			String phone) {
 		super();
 		this.firstName = firstName;
@@ -30,7 +30,7 @@ public class EmployeeDTO {
 		this.phone = phone;
 	}
 
-	public EmployeeDTO(long id, String firstName, String lastName, String email,
+	public BookDTO(long id, String firstName, String lastName, String email,
 			String phone) {
 		super();
 		this.id = id;

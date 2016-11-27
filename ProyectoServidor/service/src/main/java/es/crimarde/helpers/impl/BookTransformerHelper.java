@@ -5,81 +5,99 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import es.crimarde.helpers.EmployeeTransformerHelp;
-import es.crimarde.model.Employee;
-import es.crimarde.negocio.EmployeeDTO;
+import es.crimarde.helpers.BookTransformerHelp;
+import es.crimarde.helpers.OrikaMapper;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+import ma.glasnost.orika.MapperFacade;
 
 
 
 @Component
-public class EmployeeTransformerHelper implements EmployeeTransformerHelp {
+public class BookTransformerHelper implements BookTransformerHelp {
 
+	
+	public BookDTO toDTO(Book book){
+		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		BookDTO dto = mapper.map(book, BookDTO.class);
+		
+		return dto;
+	}
+	
+	
+	public Book toEntity (BookDTO bookDTO){	//Por hacer
+		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		BookDTO dto = mapper.map(book, BookDTO.class);
+		
+		return dto;
+	}
+	
 	/**
 	 * comentario
 	 */
-	public List<Employee> dtoToEntityList(List<EmployeeDTO> dtoList){
-		List<Employee> employeeList = new ArrayList<>();
+	public List<Book> dtoToEntityList(List<BookDTO> bookDtoList){
+		List<Book> bookList = new ArrayList<>();
 		
-		for (EmployeeDTO employeeDto : dtoList) {
-			employeeList.add(dtoToEntity(employeeDto));
+		for (BookDTO bookDTO : bookDtoList) {
+			bookList.add(dtoToEntity(bookDTO));
 		}
 		
-		return employeeList;
+		return bookList;
 	}
 	
-	public List<EmployeeDTO> EntityToDtoList(List<Employee> list){
-		List<EmployeeDTO> employeeDtoList = new ArrayList<>();
+	public List<BookDTO> EntityToDtoList(List<Book> bookList){
+		List<BookDTO> bookDTOList = new ArrayList<>();
 		
-		for (Employee employee : list) {
-			employeeDtoList.add(entityToDto(employee));
+		for (Book Book : bookList) {
+			bookDTOList.add(entityToDto(Book));
 		}
 		
-		return employeeDtoList;
+		return bookDTOList;
 	}
 	
-	public Employee dtoToEntity(EmployeeDTO employeeDTO){
-		Employee employee = null;
-		if(employeeDTO != null){
-			employee = new Employee();
-			if(employeeDTO.getEmail() != null){
-				employee.setEmail(employeeDTO.getEmail());
+	public Book dtoToEntity(BookDTO bookDTO){
+		Book Book = null;
+		if(bookDTO != null){
+			Book = new Book();
+			if(bookDTO.getEmail() != null){
+				Book.setEmail(bookDTO.getEmail());
 			}
-			if(employeeDTO.getFirstName() != null){
-				employee.setFirstName(employeeDTO.getFirstName());
+			if(bookDTO.getFirstName() != null){
+				Book.setFirstName(bookDTO.getFirstName());
 			}
-			employee.setId(new Long(employeeDTO.getId()));
-			if(employeeDTO.getLastName() != null){
-				employee.setLastName(employeeDTO.getLastName());
+			Book.setId(new Long(bookDTO.getId()));
+			if(bookDTO.getLastName() != null){
+				Book.setLastName(bookDTO.getLastName());
 			}
-			if(employeeDTO.getPhone() != null){
-				employee.setPhone(employeeDTO.getPhone());
+			if(bookDTO.getPhone() != null){
+				Book.setPhone(bookDTO.getPhone());
 			}
-			if(employeeDTO.getEmail() != null){
-				employee.setEmail(employeeDTO.getEmail());
+			if(bookDTO.getEmail() != null){
+				Book.setEmail(bookDTO.getEmail());
 			}
 		}
-		return employee;
+		return Book;
 	}
 	
-	public EmployeeDTO entityToDto(Employee employee){
-		EmployeeDTO employeeDTO = null;
-		if(employee != null){
-			employeeDTO = new EmployeeDTO();
-			if(employee.getEmail() != null){
-				employeeDTO.setEmail(employee.getEmail());
+	public BookDTO entityToDto(Book Book){
+		BookDTO employeeDTO = null;
+		if(Book != null){
+			employeeDTO = new BookDTO();
+			if(Book.getEmail() != null){
+				employeeDTO.setEmail(Book.getEmail());
 			}
-			if(employee.getFirstName() != null){
-				employeeDTO.setFirstName(employee.getFirstName());
+			if(Book.getFirstName() != null){
+				employeeDTO.setFirstName(Book.getFirstName());
 			}
-			employeeDTO.setId(new Long(employee.getId()));
-			if(employee.getLastName() != null){
-				employeeDTO.setLastName(employee.getLastName());
+			employeeDTO.setId(new Long(Book.getId()));
+			if(Book.getLastName() != null){
+				employeeDTO.setLastName(Book.getLastName());
 			}
-			if(employee.getPhone() != null){
-				employeeDTO.setPhone(employee.getPhone());
+			if(Book.getPhone() != null){
+				employeeDTO.setPhone(Book.getPhone());
 			}
-			if(employee.getEmail() != null){
-				employeeDTO.setEmail(employee.getEmail());
+			if(Book.getEmail() != null){
+				employeeDTO.setEmail(Book.getEmail());
 			}
 		}
 		return employeeDTO;
