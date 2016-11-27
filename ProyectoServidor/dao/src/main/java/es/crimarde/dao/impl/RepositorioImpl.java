@@ -2,10 +2,10 @@ package es.crimarde.dao.impl;
 
 import org.springframework.stereotype.Repository;
 
-import es.crimarde.dao.Repositorio;
+import es.crimarde.dao.RepositorioTest;
 
 @Repository
-public class RepositorioImpl implements Repositorio{
+public class RepositorioImpl implements RepositorioTest{
 
 	@Override
 	public void save() {
