@@ -19,6 +19,6 @@ public class Controller {
     
     @RequestMapping("/lectura")
     public PruebaRespuesta lectura(@RequestParam(value="name", defaultValue="World") String name) {
-        return new PruebaRespuesta(String.format(template,servicio.metodoPrueba()), "valor por defecto");
+        return new PruebaRespuesta("valor por defecto", Status.SUCCESS.getDesc());
     }
 }

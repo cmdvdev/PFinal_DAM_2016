@@ -1,0 +1,26 @@
+package es.crimarde.core.hello;
+
+public class PruebaRespuesta {
+
+    private final String result;
+    private final String data;
+    private final SubObjectoPrueba sub;
+
+	public PruebaRespuesta(String result, String data) {
+        this.result = result;
+        this.data = data;
+        this.sub = new SubObjectoPrueba("Chris", "Martínez");
+    }
+
+    public SubObjectoPrueba getSub() {
+		return sub;
+	}
+
+    public String getResult() {
+        return result;
+    }
+    
+    public String getData() {
+		return data;
+	}
+}

@@ -2,13 +2,13 @@ package es.crimarde.core.hello;
 
 public class PruebaRespuesta {
 
-    private final String content;
-    private final String variable;
+    private final String result;
+    private final String status;
     private final SubObjectoPrueba sub;
 
-	public PruebaRespuesta(String content, String variable) {
-        this.content = content;
-        this.variable = variable;
+	public PruebaRespuesta(String result, String status) {
+        this.result = result;
+        this.status = status;
         this.sub = new SubObjectoPrueba("Chris", "Martínez");
     }
 
@@ -16,11 +16,11 @@ public class PruebaRespuesta {
 		return sub;
 	}
 
-    public String getContent() {
-        return content;
+    public String getResult() {
+        return result;
     }
     
-    public String getVariable() {
-		return variable;
+    public String getStatus() {
+		return status;
 	}
 }
