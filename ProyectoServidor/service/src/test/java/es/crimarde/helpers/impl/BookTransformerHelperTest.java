@@ -1,4 +1,4 @@
-package BookTransformerHelperTest;
+package es.crimarde.helpers.impl;
 
 import org.hamcrest.Matchers;
 import org.junit.Assert;
@@ -16,7 +16,7 @@ public class BookTransformerHelperTest {
 		BookTransformerHelper transformer = new BookTransformerHelper();
 		Book book = new Book(1, "titulo", "autor", "sinopsis", null, 19.99);
 		
-		BookDTO dto = transformer.toDTO(book);
+		BookDTO dto = transformer.entityToDto(book);
 		
 		Assert.assertThat(dto.getId(), Matchers.is(Matchers.equalTo(book.getId())));
 		Assert.assertThat(dto.getTitulo(), Matchers.is(Matchers.equalTo(book.getTitulo())));
@@ -31,7 +31,7 @@ public class BookTransformerHelperTest {
 		BookTransformerHelper transformer = new BookTransformerHelper();
 		BookDTO bookDTO = new BookDTO(1, "titulo", "autor", "sinopsis", null, 19.99);
 		
-		Book entity = transformer.toEntity(bookDTO);
+		Book entity = transformer.dtoToEntity(bookDTO);
 		
 		Assert.assertThat(entity.getId(), Matchers.is(Matchers.equalTo(bookDTO.getId())));
 		Assert.assertThat(entity.getTitulo(), Matchers.is(Matchers.equalTo(bookDTO.getTitulo())));
