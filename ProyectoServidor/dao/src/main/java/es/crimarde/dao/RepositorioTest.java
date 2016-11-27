@@ -1,6 +1,6 @@
 package es.crimarde.dao;
 
-public interface Repositorio {
+public interface RepositorioTest {
 
 	public void save();
 	
