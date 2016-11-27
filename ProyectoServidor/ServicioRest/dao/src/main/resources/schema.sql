@@ -1,1 +1,1 @@
-create table book_character (id integer primary key, name varchar(30), pages varchar(30));
+create table Book (id integer primary key, name varchar(30), pages varchar(30));

@@ -8,12 +8,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import es.crimarde.service.TestService;
+import es.crimarde.service.Service;
 
 @RestController
 public class Controller {
 	
-	@Autowired TestService servicio;
+	@Autowired Service servicio;
 	
     private static final String template = "Hello, %s!";
     
@@ -39,6 +39,6 @@ public class Controller {
     
     @RequestMapping("/retrieve")
     public String retrieve(@RequestParam(value="name", defaultValue="Usuario") String name) {
-    	return ("retrieve");
+    	return servicio.retrieve();
     }
 }
