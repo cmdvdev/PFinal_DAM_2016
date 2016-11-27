@@ -1,0 +1,18 @@
+package es.crimarde.config;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean;
+
+@Configuration
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+public class Config {
+
+	@Bean
+	public HibernateJpaSessionFactoryBean sessionFactory() {
+	    return new HibernateJpaSessionFactoryBean();
+	}
+	
+}

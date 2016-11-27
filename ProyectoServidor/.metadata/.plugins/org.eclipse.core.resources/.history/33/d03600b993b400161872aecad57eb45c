@@ -1,0 +1,8 @@
+package es.crimarde.dao;
+
+import es.crimarde.model.Employee;
+
+public interface DataDAO {
+
+	public long insertRow(Employee employee);
+}

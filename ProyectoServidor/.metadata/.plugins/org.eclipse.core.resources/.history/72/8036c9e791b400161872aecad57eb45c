@@ -1,0 +1,32 @@
+package es.crimarde.dao.impl;
+
+import java.util.List;
+
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
+
+import es.crimarde.dao.DataDAO;
+import es.crimarde.model.Employee;
+
+@Repository("dataDAOImpl")
+public class DataDAOImpl extends BaseDAOImpl<Employee, Long> implements DataDAO {
+
+	public DataDAOImpl() {
+		super();
+		setMyClass(Employee.class);
+	}
+	
+	@Override
+	public long insertRow(Employee employee) {
+		save(employee);
+		return employee.getId();
+	}
+
+	@Override
+	public Employee findById(Long key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

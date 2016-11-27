@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="es.crimarde.core.hello.Status"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="es.crimarde.core.hello.TestResponse"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="es.crimarde.helpers.EmployeeTransformerHelp"/>
+<fullyQualifiedTypeName name="es.crimarde.negocio.EmployeeDTO"/>
+<fullyQualifiedTypeName name="org.springframework.boot.orm.jpa.EntityScan"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="es.crimarde.dao.DataDAO"/>
+<fullyQualifiedTypeName name="es.crimarde.model.Employee"/>
+<fullyQualifiedTypeName name="es.crimarde.dao.RepositorioTest"/>
+<fullyQualifiedTypeName name="es.crimarde.service.TestService"/>
+</qualifiedTypeNameHistroy>

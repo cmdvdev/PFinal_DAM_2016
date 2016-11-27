@@ -1,0 +1,23 @@
+package es.crimarde.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Prueba {
+
+	private Integer id;
+
+	public Prueba() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	
+	
+}

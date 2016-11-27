@@ -1,0 +1,5 @@
+insert into BOOK  values (1, 'Saruman',20);
+insert into BOOK  values (2, 'Gandalf',21);
+insert into BOOK  values (3, 'Aragorn',22);
+insert into BOOK  values (4, 'Samwise',23);
+insert into BOOK  values (5, 'Frodo',24);

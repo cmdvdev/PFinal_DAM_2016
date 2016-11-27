@@ -1,0 +1,17 @@
+package es.crimarde.service.impl;
+
+import java.lang.annotation.Annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import es.crimarde.dao.RepositorioTest;
+import es.crimarde.service.TestService;
+
+@Service
+public class ServiceImpl implements Service {
+
+	@Autowired RepositorioTest repositorio;
+
+
+}

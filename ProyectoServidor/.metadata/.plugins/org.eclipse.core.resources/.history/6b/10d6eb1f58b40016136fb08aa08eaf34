@@ -1,0 +1,24 @@
+package es.crimarde.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+<<<<<<< HEAD:ProyectoServidor/service/src/main/java/es/crimarde/service/impl/TestServiceImpl.java
+import es.crimarde.dao.Repositorio;
+import es.crimarde.service.TestService;
+=======
+import es.crimarde.dao.RepositorioTest;
+import es.crimarde.service.Servicio;
+>>>>>>> Repositorio:ProyectoServidor/service/src/main/java/es/crimarde/service/impl/ServicioImpl.java
+
+@Service
+public class TestServiceImpl implements TestService {
+
+	@Autowired RepositorioTest repositorio;
+	
+	@Override
+	public String metodoPrueba() {
+		return repositorio.find();
+	}
+
+}

@@ -1,0 +1,8 @@
+create table Book (id integer primary key, name varchar(30), pages varchar(30));
+create table Prueba ( id integer);
+
+insert into Book values (16, 'Saruman', '20');
+insert into Book values (17, 'Gandalf', '21');
+insert into Book values (18, 'Aragorn', '22');
+insert into Book values (19, 'Samwise', '23');
+insert into Book values (20, 'Frodo', '24');

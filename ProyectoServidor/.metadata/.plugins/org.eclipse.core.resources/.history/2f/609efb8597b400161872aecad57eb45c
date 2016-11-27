@@ -1,0 +1,24 @@
+package es.crimarde.service.impl;
+
+import java.lang.annotation.Annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import es.crimarde.dao.EmployeeRepository;
+import es.crimarde.dao.RepositorioTest;
+
+
+@Service
+public class ServiceImpl implements es.crimarde.service.Service {
+
+	@Autowired EmployeeRepository repository;
+
+	@Override
+	public String retrieve() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

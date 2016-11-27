@@ -1,0 +1,10 @@
+package es.crimarde.dao;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import es.crimarde.model.BOOK_CHARACTER;
+
+@Repository
+public interface EmployeeRepository extends CrudRepository<BOOK_CHARACTER, Integer> {
+}

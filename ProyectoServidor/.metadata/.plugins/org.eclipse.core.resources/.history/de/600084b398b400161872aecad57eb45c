@@ -1,0 +1,13 @@
+package es.crimarde.dao;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import es.crimarde.model.Book;
+import es.crimarde.model.Employee;
+
+public interface EmployeeRepository extends CrudRepository<Book, Long> {
+
+    List<Employee> findByLastName(String lastName);
+}

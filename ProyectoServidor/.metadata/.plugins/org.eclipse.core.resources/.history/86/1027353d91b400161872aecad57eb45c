@@ -1,0 +1,6 @@
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate4.SpringSessionContext
+
+spring.h2.console.enabled=false
+logging.level.org.hibernate.SQL=debug
+spring.jpa.database=H2
+spring.jpa.show-sql=true
