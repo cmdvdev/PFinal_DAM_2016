@@ -1,7 +1,7 @@
 package es.crimarde.service;
 
 
-public interface Servicio {
+public interface TestService {
 
 	public String metodoPrueba();
 }
