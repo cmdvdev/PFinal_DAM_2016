@@ -17,8 +17,8 @@ public class Controller {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
     
-    @RequestMapping("/lectura")
-    public PruebaRespuesta lectura(@RequestParam(value="name", defaultValue="World") String name) {
-        return new PruebaRespuesta("valor por defecto", Status.SUCCESS.getDesc());
+    @RequestMapping("/test")
+    public TestResponse lectura(@RequestParam(value="name", defaultValue="Usuario") String name) {
+        return new TestResponse(String.format(template, name), Status.SUCCESS.getDesc());
     }
 }

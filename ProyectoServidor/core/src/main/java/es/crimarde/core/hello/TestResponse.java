@@ -1,12 +1,12 @@
 package es.crimarde.core.hello;
 
-public class PruebaRespuesta {
+public class TestResponse {
 
     private final String result;
     private final String status;
     private final SubObjectoPrueba sub;
 
-	public PruebaRespuesta(String result, String status) {
+	public TestResponse(String result, String status) {
         this.result = result;
         this.status = status;
         this.sub = new SubObjectoPrueba("Chris", "Martínez");
