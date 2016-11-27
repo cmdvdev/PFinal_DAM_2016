@@ -1,4 +1,4 @@
-package es.crimarde.core.hello;
+package es.crimarde.core;
 
 public enum Status {
 

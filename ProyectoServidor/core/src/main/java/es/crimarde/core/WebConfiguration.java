@@ -1,4 +1,4 @@
-package es.crimarde.core.hello;
+package es.crimarde.core;
 
 import org.springframework.context.annotation.Configuration;
 

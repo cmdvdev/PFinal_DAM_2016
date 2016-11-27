@@ -10,8 +10,7 @@ public class OrikaMapper {
 
 	private static final MapperFactory mapperFactory;
 
-	static {
-		
+	static {		
 		mapperFactory = new DefaultMapperFactory.Builder().build();
 		
 		mapperFactory.classMap(Book.class, BookDTO.class)
