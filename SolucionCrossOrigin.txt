@@ -1,0 +1,10 @@
+Al hacer peticiones desde dos servidores de localhost se produce un error en chrome.
+
+Solucion. Modificar el archivo de host de la siguiente manera: 
+
+127.0.0.1 cmdvdev.com localhost
+
+Bajar una extension de chrome que añade la cabecera -> Allow-Control-Allow-Origin: *
+(Allows to you request any site with ajax from any source. Adds to response 'Allow-Control-Allow-Origin: *' header)
+
+Este plugin permite configurar las uurl's que se rastrean, por lo que se le introduce el patron : http://cmdvdev.com:8080/*
