@@ -6,8 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.mysql.jdbc.Blob;
-
 @Entity
 @Table(name = "Book")
 
@@ -19,13 +17,13 @@ public class Book {
 	@Column(name="titulo") 		private String titulo;
 	@Column(name="autor")  		private String autor;
 	@Column(name="sinopsis")	private String sinopsis;
-	@Column(name="imagen")		private Blob imagen;
+	@Column(name="imagen")		private Byte[] imagen;
 	@Column(name="precio")		private double precio;
 
 	public Book() {
 	}
 		
-	public Book(int id, String titulo, String autor, String sinopsis, Blob imagen, double precio) {
+	public Book(int id, String titulo, String autor, String sinopsis, Byte[] imagen, double precio) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -77,11 +75,11 @@ public class Book {
 		this.sinopsis = sinopsis;
 	}
 
-	public Blob getImagen() {
+	public Byte[] getImagen() {
 		return imagen;
 	}
 
-	public void setImagen(Blob imagen) {
+	public void setImagen(Byte[] imagen) {
 		this.imagen = imagen;
 	}
 
@@ -100,7 +98,7 @@ class Builder {
 	private String titulo;
 	private String sinopsis;
 	private String autor;
-	private Blob imagen;
+	private Byte[] imagen;
 	private double precio;
 
 	public Builder() {
@@ -122,7 +120,7 @@ class Builder {
 		this.autor = autor;
 	}
 
-	public void whithImagen(Blob imagen) {
+	public void whithImagen(Byte[] imagen) {
 		this.imagen = imagen;
 	}
 
@@ -150,7 +148,7 @@ class Builder {
 		return autor;
 	}
 
-	public Blob getImagen() {
+	public Byte[] getImagen() {
 		return imagen;
 	}
 
