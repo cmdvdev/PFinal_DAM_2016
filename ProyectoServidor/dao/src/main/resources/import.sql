@@ -1,8 +1,8 @@
-insert into Book values (1, 'Saruman', '20');
-insert into Book values (2, 'Gandalf', '21');
-insert into Book values (3, 'Aragorn', '22');
-insert into Book values (4, 'Samwise', '23');
-insert into Book values (5, 'Frodo', '24');
+insert into Book values (1, 'Saruman', null, 19.99,'resumen del libro', 'titulo');
+insert into Book values (2, 'Saruman', null, 19.99,'resumen del libro', 'titulo');
+insert into Book values (3, 'Saruman', null, 19.99,'resumen del libro', 'titulo');
+insert into Book values (4, 'Saruman', null, 19.99,'resumen del libro', 'titulo');
+insert into Book values (5, 'Saruman', null, 19.99,'resumen del libro', 'titulo');
 
 insert into Prueba values (1);
 insert into Prueba values (2);
