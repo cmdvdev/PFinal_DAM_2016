@@ -6,7 +6,8 @@
 	<parent>
 		<groupId>es.crimarde</groupId>
 		<artifactId>ServicioRest</artifactId>
-		<version>0.1.0</version>
+		<version>0.2.0.RELEASE</version>
+		<relativePath>../ServicioRest</relativePath>
 	</parent>
 	<artifactId>service</artifactId>
 	<packaging>jar</packaging>
@@ -38,7 +39,7 @@
 		<dependency>
 			<groupId>es.crimarde</groupId>
 			<artifactId>dao</artifactId>
-			<version>0.1.0</version>
+			<version>0.2.0.RELEASE</version>
 		</dependency>
 	</dependencies>
 

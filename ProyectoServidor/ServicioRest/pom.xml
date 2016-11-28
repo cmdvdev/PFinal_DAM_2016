@@ -8,7 +8,7 @@
 
 	<groupId>es.crimarde</groupId>
 	<artifactId>ServicioRest</artifactId>
-	<version>0.1.0</version>
+	<version>0.2.0.RELEASE</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -22,11 +22,6 @@
 		<project-encoding>UTF-8</project-encoding>
 	</properties>
 
-	<modules>
-		<module>core</module>
-		<module>service</module>
-		<module>dao</module>
-	</modules>
 
 	<!-- Inherit defaults from Spring Boot -->
 	<parent>
@@ -57,4 +52,9 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<modules>
+		<module>../core</module>
+		<module>../dao</module>
+		<module>../service</module>
+	</modules>
 </project>
