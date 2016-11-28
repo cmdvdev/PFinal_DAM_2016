@@ -1,0 +1,9 @@
+package es.crimarde.helpers;
+
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+import ma.glasnost.orika.CustomConverter;
+
+public class BookToBookDTOConverter extends CustomConverter<Book, BookDTO> {
+
+}

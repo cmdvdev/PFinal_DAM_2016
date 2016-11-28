@@ -1,0 +1,87 @@
+package es.crimarde.helpers.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import es.crimarde.helpers.BookTransformerHelper;
+import es.crimarde.model.Employee;
+import es.crimarde.negocio.BookDTO;
+
+
+
+@Component
+public class BookTransformerHelper implements BookTransformerHelp {
+
+	/**
+	 * comentario
+	 */
+	public List<Employee> dtoToEntityList(List<BookDTO> dtoList){
+		List<Employee> employeeList = new ArrayList<>();
+		
+		for (BookDTO employeeDto : dtoList) {
+			employeeList.add(dtoToEntity(employeeDto));
+		}
+		
+		return employeeList;
+	}
+	
+	public List<BookDTO> EntityToDtoList(List<Employee> list){
+		List<BookDTO> employeeDtoList = new ArrayList<>();
+		
+		for (Employee employee : list) {
+			employeeDtoList.add(entityToDto(employee));
+		}
+		
+		return employeeDtoList;
+	}
+	
+	public Employee dtoToEntity(BookDTO employeeDTO){
+		Employee employee = null;
+		if(employeeDTO != null){
+			employee = new Employee();
+			if(employeeDTO.getEmail() != null){
+				employee.setEmail(employeeDTO.getEmail());
+			}
+			if(employeeDTO.getFirstName() != null){
+				employee.setFirstName(employeeDTO.getFirstName());
+			}
+			employee.setId(new Long(employeeDTO.getId()));
+			if(employeeDTO.getLastName() != null){
+				employee.setLastName(employeeDTO.getLastName());
+			}
+			if(employeeDTO.getPhone() != null){
+				employee.setPhone(employeeDTO.getPhone());
+			}
+			if(employeeDTO.getEmail() != null){
+				employee.setEmail(employeeDTO.getEmail());
+			}
+		}
+		return employee;
+	}
+	
+	public BookDTO entityToDto(Employee employee){
+		BookDTO employeeDTO = null;
+		if(employee != null){
+			employeeDTO = new BookDTO();
+			if(employee.getEmail() != null){
+				employeeDTO.setEmail(employee.getEmail());
+			}
+			if(employee.getFirstName() != null){
+				employeeDTO.setFirstName(employee.getFirstName());
+			}
+			employeeDTO.setId(new Long(employee.getId()));
+			if(employee.getLastName() != null){
+				employeeDTO.setLastName(employee.getLastName());
+			}
+			if(employee.getPhone() != null){
+				employeeDTO.setPhone(employee.getPhone());
+			}
+			if(employee.getEmail() != null){
+				employeeDTO.setEmail(employee.getEmail());
+			}
+		}
+		return employeeDTO;
+	}
+}

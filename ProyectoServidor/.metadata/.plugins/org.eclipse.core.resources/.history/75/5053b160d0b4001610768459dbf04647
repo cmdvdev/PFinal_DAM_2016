@@ -1,0 +1,9 @@
+package es.crimarde.helpers;
+
+import ma.glasnost.orika.MapperFactory;
+import ma.glasnost.orika.impl.DefaultMapperFactory;
+
+public class OrikaMapper {
+
+	MapperFactory mapperFactory = new DefaultMapperFactory.Builder().build();
+}

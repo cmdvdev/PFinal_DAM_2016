@@ -1,0 +1,16 @@
+package es.crimarde.helpers;
+
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+import ma.glasnost.orika.CustomConverter;
+import ma.glasnost.orika.metadata.Type;
+
+public class BookToBookDTOConverter extends CustomConverter<Book, BookDTO> {
+
+	@Override
+	public BookDTO convert(Book book, Type<? extends BookDTO> bookDTO) {
+		// TODO Auto-generated method stub
+		return bookDTO;
+	}
+
+}

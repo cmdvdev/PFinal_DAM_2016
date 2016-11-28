@@ -1,0 +1,18 @@
+package BookTransformerHelperTest;
+
+import org.junit.Test;
+
+import es.crimarde.helpers.impl.BookTransformerHelper;
+import es.crimarde.model.Book;
+
+public class BookTransformerHelperTest {
+
+	@Test
+	public void toDTOTest(){
+		
+		BookTransformerHelper transformer = new BookTransformerHelper();
+		
+		Book book = new Book(1, "titulo", "autor", "sinopsis", null, 19.99);
+		
+	}
+}

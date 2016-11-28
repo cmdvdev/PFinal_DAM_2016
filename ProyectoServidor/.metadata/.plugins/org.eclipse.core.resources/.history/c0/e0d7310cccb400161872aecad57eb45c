@@ -1,0 +1,53 @@
+package es.crimarde.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.mysql.jdbc.Blob;
+
+@Entity
+@Table(name = "Book")
+
+public class Book {
+
+	
+	@GeneratedValue
+	@Id private int id;
+	@Column(name="titulo") 		private String titulo;
+	@Column(name="autor")  		private String autor;
+	@Column(name="sinopsis")	private String sinopsis;
+	@Column(name="imagen")		private Blob imagen;
+	@Column(name="precio")		private double precio;
+
+	public Book() {
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPages() {
+		return pages;
+	}
+
+	public void setPages(String pages) {
+		this.pages = pages;
+	}
+
+
+}

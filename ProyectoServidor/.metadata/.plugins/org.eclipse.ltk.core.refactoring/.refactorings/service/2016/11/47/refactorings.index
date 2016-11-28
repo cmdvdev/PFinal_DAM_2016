@@ -5,3 +5,17 @@
 1480218252591	Move compilation unit
 1480247126325	Copy compilation unit
 1480247142694	Copy compilation unit
+1480270753811	Delete element
+1480271027952	Rename type 'EmployeeTransformerHelp'
+1480271058471	Rename type 'EmployeeDTO'
+1480271305659	Rename type 'BookTransformerHelper'
+1480271418611	Rename local variable 'list'
+1480271437551	Rename local variable 'employeeDtoList'
+1480271457639	Rename local variable 'employeeDTO'
+1480272197577	Delete element
+1480278091164	Rename package 'es.crimarde.helpers.impl.BookTransformerHelperTest.java'
+1480278179563	Rename type 'java'
+1480278781325	Delete element
+1480286100257	Move compilation unit
+1480286107841	Delete element
+1480286475096	Delete element

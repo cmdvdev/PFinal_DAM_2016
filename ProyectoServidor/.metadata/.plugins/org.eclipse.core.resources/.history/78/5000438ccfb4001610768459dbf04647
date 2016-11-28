@@ -1,0 +1,87 @@
+package es.crimarde.helpers.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import es.crimarde.helpers.BookTransformerHelp;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+
+
+@Component
+public class BookTransformerHelper implements BookTransformerHelp {
+
+	/**
+	 * comentario
+	 */
+	public List<Book> dtoToEntityList(List<BookDTO> bookDtoList){
+		List<Book> bookList = new ArrayList<>();
+		
+		for (BookDTO bookDTO : bookDtoList) {
+			bookList.add(dtoToEntity(bookDTO));
+		}
+		
+		return bookList;
+	}
+	
+	public List<BookDTO> EntityToDtoList(List<Book> list){
+		List<BookDTO> employeeDtoList = new ArrayList<>();
+		
+		for (Book Book : list) {
+			employeeDtoList.add(entityToDto(Book));
+		}
+		
+		return employeeDtoList;
+	}
+	
+	public Book dtoToEntity(BookDTO employeeDTO){
+		Book Book = null;
+		if(employeeDTO != null){
+			Book = new Book();
+			if(employeeDTO.getEmail() != null){
+				Book.setEmail(employeeDTO.getEmail());
+			}
+			if(employeeDTO.getFirstName() != null){
+				Book.setFirstName(employeeDTO.getFirstName());
+			}
+			Book.setId(new Long(employeeDTO.getId()));
+			if(employeeDTO.getLastName() != null){
+				Book.setLastName(employeeDTO.getLastName());
+			}
+			if(employeeDTO.getPhone() != null){
+				Book.setPhone(employeeDTO.getPhone());
+			}
+			if(employeeDTO.getEmail() != null){
+				Book.setEmail(employeeDTO.getEmail());
+			}
+		}
+		return Book;
+	}
+	
+	public BookDTO entityToDto(Book Book){
+		BookDTO employeeDTO = null;
+		if(Book != null){
+			employeeDTO = new BookDTO();
+			if(Book.getEmail() != null){
+				employeeDTO.setEmail(Book.getEmail());
+			}
+			if(Book.getFirstName() != null){
+				employeeDTO.setFirstName(Book.getFirstName());
+			}
+			employeeDTO.setId(new Long(Book.getId()));
+			if(Book.getLastName() != null){
+				employeeDTO.setLastName(Book.getLastName());
+			}
+			if(Book.getPhone() != null){
+				employeeDTO.setPhone(Book.getPhone());
+			}
+			if(Book.getEmail() != null){
+				employeeDTO.setEmail(Book.getEmail());
+			}
+		}
+		return employeeDTO;
+	}
+}
