@@ -1,0 +1,37 @@
+<h1>{{tituloPag}}</h1>
+<form #formLibro="ngForm" (ngSubmit)="onSubmit()">
+
+	<label>Nombre:</label>
+	<p>
+		<input type="text" #titulo="ngModel" name="titulo" [(ngModel)]="libro.titulo" required/>
+		<span *ngIf="!titulo.valid">El nombre es obligatorio</span>
+	</p>
+
+	<label>Dirección:</label>
+	<p>
+		<input type="text" #autor="ngModel" name="autor" [(ngModel)]="libro.autor" required/>
+		<span *ngIf="!autor.valid">El autor es obligatorio</span>
+	</p>
+
+	<label>Descripción:</label>
+	<p>
+		<textarea #sinopsis="ngModel" name="sinopsis" [(ngModel)]="libro.sinopsis" required></textarea>
+		<span *ngIf="!sinopsis.valid">La sinopsis es obligatoria</span>
+	</p>
+
+	<label>Precio:</label>
+	<p>
+		<select (change)="callPrecio(precio.value)" #precio name="precio">
+			<option value="bajo" [attr.selected]="libro.precio === 'bajo' ? 'selected' : null">Bajo</option>
+			<option value="normal" [attr.selected]="libro.precio === 'normal' ? 'selected' : null">Normal</option>
+			<option value="alto" [attr.selected]="libro.precio === 'alto' ? 'selected' : null">Alto</option>
+		</select>
+	</p>
+
+	<label>Imagen:</label>
+	<p>
+		<input type="file" placeholder="Subir imagen..." (change)="fileChangeEvent($event)"/>
+	</p>
+
+	<input type="submit" value="{{tituloPag}}" [disabled]="!formLibro.form.valid" />
+</form>
