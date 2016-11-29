@@ -1,6 +1,7 @@
 package es.crimarde.service;
 
+import es.crimarde.model.Book;
 
 public interface Service {
-	public String retrieve();
+	public Book retrieve(Integer id);
 }
