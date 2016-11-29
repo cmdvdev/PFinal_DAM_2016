@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="es.crimarde.core.hello.Status"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="es.crimarde.helpers.EmployeeTransformerHelp"/>
 <fullyQualifiedTypeName name="es.crimarde.negocio.EmployeeDTO"/>
@@ -46,6 +45,12 @@
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="org.hamcrest.Matchers"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.xml.ws.Response"/>
+<fullyQualifiedTypeName name="es.crimarde.core.Status"/>
 <fullyQualifiedTypeName name="es.crimarde.negocio.BookDTO"/>
 <fullyQualifiedTypeName name="es.crimarde.model.Book"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="es.crimarde.core.model.Response"/>
 </qualifiedTypeNameHistroy>

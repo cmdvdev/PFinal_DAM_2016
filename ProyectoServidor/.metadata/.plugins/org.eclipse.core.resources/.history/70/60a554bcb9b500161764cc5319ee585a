@@ -1,4 +1,0 @@
-# niveles de error -> TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
-logging.level.org.springframework.web = INFO
-logging.level.root = INFO
-debug = false

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="AbstractFieldDialog">
+		<item value="false" key="UseGetters"/>
+		<item value="First method" key="InsertPosition"/>
+		<item value="false" key="GenerateComment"/>
+	</section>
+	<section name="HashCodeDialog">
+		<item value="37" key="MultiplierNumber"/>
+		<item value="0" key="InitMultType"/>
+		<item value="17" key="InitialNumber"/>
+	</section>
+	<section name="EqualsDialog">
+		<item value="false" key="ClassCast"/>
+		<item value="false" key="ClassComparison"/>
+		<item value="false" key="CompareReferences"/>
+	</section>
+</section>
