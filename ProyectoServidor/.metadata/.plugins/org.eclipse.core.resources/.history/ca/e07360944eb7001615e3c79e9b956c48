@@ -1,0 +1,41 @@
+package es.crimarde.dao;
+
+import javax.persistence.Column;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import es.crimarde.model.Book;
+
+@Repository
+public interface EmployeeRepository extends CrudRepository<Book, Integer> {
+	
+	@Modifying
+	@Query("delete from Book where entity_id = ?1")
+    void delete(Integer entityId);
+
+    @Modifying
+    @Query("delete from Book")
+    void deleteAll();
+    
+    @Modifying
+    @Query("UPDATE Book b SET b.titulo =: name, b.autor = :autor, sinopsis = :sinopsis, precio = :precio WHERE b.id = :id")
+    Integer setNameForId(@Param("name") String name, @Param("id")
+}
+id;
+@Column(name="titulo") 		private String titulo;
+@Column(name="autor")  		private String autor;
+@Column(name="sinopsis")	private String sinopsis;
+@Column(name="imagen")		private Byte[] imagen;
+@Column(name="precio")		private double precio;
+
+/*
+ * http://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+ * you can achieve the execution of modifying queries that actually only need parameter binding by annotating the query method with @Modifying
+ * 
+ * Using named queries to declare queries for entities is a valid approach and works fine for a small number of queries. 
+ * As the queries themselves are tied to the Java method that executes them you actually can bind them directly using the Spring Data JPA @Query annotation rather than annotating them to the domain class. 
+ * This will free the domain class from persistence specific information and co-locate the query to the repository interface.
+*/

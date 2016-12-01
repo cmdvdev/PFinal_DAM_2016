@@ -1,0 +1,62 @@
+package es.crimarde.service.impl;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import es.crimarde.dao.EmployeeRepository;
+import es.crimarde.helpers.impl.BookTransformerHelper;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+@Service
+@Transactional
+public class ServiceImpl implements es.crimarde.service.Service {
+
+	@Autowired
+	private EmployeeRepository repository;
+	
+	@Autowired
+	private BookTransformerHelper transformer;
+
+	@Override
+	public Book retrieve(Integer id) {
+		Book emp = repository.findOne(id);
+		return emp;
+	}
+	
+	public void add(BookDTO bookDTO){
+		if(null != bookDTO){
+			repository.save(transformer.dtoToEntity(bookDTO));
+		}
+	}
+
+	public void updateByProperties(BookDTO bookDTO){
+		if(null != null){
+			repository.updateBook(bookDTO.getTitulo(), bookDTO.getAutor(), bookDTO.getSinopsis(), bookDTO.getPrecio());
+		}
+	}
+	
+	public void update(BookDTO bookDTO){
+		if(null != null){
+			Book book = retrieve(bookDTO.getId());
+			String[] ignoreProperties = {"id"};
+			BeanUtils.copyProperties(bookDTO, book, ignoreProperties);
+			repository.updateBook(book);
+		}
+	}
+	
+	public void delete(Integer id){
+		if(null != id){
+			repository.delete(id);
+		}
+	}
+	
+	public void delete(BookDTO bookDTO){
+		if(null != bookDTO){
+			repository.delete(transformer.dtoToEntity(bookDTO));
+		}		
+	}
+
+}

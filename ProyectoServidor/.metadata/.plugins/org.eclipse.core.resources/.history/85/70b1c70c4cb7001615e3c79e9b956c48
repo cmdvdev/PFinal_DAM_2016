@@ -1,0 +1,25 @@
+package es.crimarde.dao;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import es.crimarde.model.Book;
+
+@Repository
+public interface EmployeeRepository extends CrudRepository<Book, Integer> {
+	
+	@Modifying
+	@Query("delete from Book where entity_id = ?1")
+    void delete(Integer entityId);
+
+    @Modifying
+    @Query("delete from Book")
+    void deleteAll();
+}
+
+/*
+ * http://docs.spring.io/spring-data/jpa/docs/current/reference/html/
+ * you can achieve the execution of modifying queries that actually only need parameter binding by annotating the query method with @Modifying:
+*/

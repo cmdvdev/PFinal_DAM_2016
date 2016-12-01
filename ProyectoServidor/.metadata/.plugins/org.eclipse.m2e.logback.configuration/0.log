@@ -3760,3 +3760,1040 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2016-11-29 01:59:27,538 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-11-29 01:59:27,547 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-11-29 01:59:27,547 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 22:39:11,918 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 22:39:11,931 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 22:39:11,950 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 22:39:11,955 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 22:39:11,955 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:06:52,365 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:06:52,476 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:06:52,491 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:06:52,505 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:06:52,506 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:06:55,945 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:06:55,946 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:06:55,964 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:06:55,967 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:06:55,967 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:07:02,337 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:07:02,378 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:07:02,385 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:07:02,388 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:07:02,388 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:07:11,982 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:07:11,983 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:07:12,004 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:07:12,007 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:07:12,029 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:08:50,783 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: es.crimarde:ServicioRest:0.2.0.RELEASE @ C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\ServicioRest\pom.xml.
+2016-11-30 23:08:55,358 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: es.crimarde:dao:0.2.0.RELEASE @ C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\pom.xml.
+2016-11-30 23:08:56,899 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: es.crimarde:core:0.2.0.RELEASE @ C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\pom.xml.
+2016-11-30 23:08:58,971 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: es.crimarde:service:0.2.0.RELEASE @ C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\pom.xml.
+2016-11-30 23:09:09,780 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:09,799 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:09,837 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:09:09,887 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:09,887 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:09:11,966 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:11,966 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:09:12,022 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:09:12,030 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:12,034 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:09:13,130 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:13,136 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:13,142 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:13,156 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:13,156 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:09:24,896 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:24,897 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:24,900 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:24,903 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:24,910 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:09:27,078 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:27,084 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:27,094 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:09:27,101 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:09:27,102 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:11:54,538 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:11:54,540 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:11:54,561 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:11:54,568 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:11:54,572 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:12:01,721 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:12:01,725 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:12:01,731 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:12:01,737 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:12:01,737 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:13:38,783 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:13:38,785 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:13:38,788 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:13:38,792 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:13:38,792 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:14:58,471 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:14:58,471 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:14:58,471 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:14:58,482 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:14:58,482 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:17:09,819 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:17:09,819 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:17:09,865 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:17:09,875 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:17:09,880 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:24:00,937 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:00,949 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:24:00,971 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:24:00,980 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:00,980 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:24:01,061 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:01,061 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:24:01,061 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:24:01,064 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:01,068 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:24:14,426 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:14,427 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:24:14,431 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:24:14,435 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:24:14,435 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:25:31,565 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:25:31,566 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:25:31,576 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:25:31,579 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:25:31,579 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:26:34,377 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:26:34,383 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:26:34,391 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:26:34,400 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:26:34,400 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:27:51,107 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:27:51,108 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:27:51,111 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:27:51,158 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:27:51,158 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:27:51,229 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:27:51,229 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:27:51,229 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:27:51,237 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:27:51,237 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:28:04,028 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:28:04,028 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:28:04,033 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:28:04,040 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:28:04,044 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:29:12,569 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:29:12,574 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:29:12,584 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:29:12,592 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:29:12,593 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-11-30 23:30:39,113 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:30:39,113 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:30:39,113 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:30:39,117 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:30:39,121 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:31:56,112 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:31:56,116 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:31:56,119 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:31:56,126 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:31:56,126 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:32:09,643 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:09,643 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:09,647 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:09,654 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:09,658 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:32:24,185 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:24,242 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:24,246 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:24,258 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:24,258 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:32:50,739 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:50,739 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:50,739 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:32:50,741 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:32:50,742 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:33:33,048 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:33,050 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:33:33,059 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:33:33,068 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:33,068 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:33:33,219 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:33,219 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:33:33,223 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:33:33,227 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:33,227 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:33:58,992 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:58,996 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:33:58,999 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:33:59,007 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:33:59,007 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:34:39,122 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:34:39,122 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:34:39,122 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:34:39,125 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:34:39,137 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:34:54,265 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:34:54,269 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:34:54,273 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:34:54,280 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:34:54,280 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:35:13,944 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:13,944 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:14,041 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:14,048 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:14,052 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:35:20,565 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:20,570 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:20,573 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:20,579 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:20,579 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:35:37,363 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:37,363 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:37,363 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:35:37,366 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:35:37,366 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:43:19,589 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:43:19,591 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:43:19,602 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:43:19,613 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:43:19,614 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:44:40,852 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:44:40,853 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:44:40,869 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:44:40,876 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:44:40,881 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:45:13,417 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:45:13,422 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:45:13,428 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:45:13,436 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:45:13,437 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:45:35,117 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:45:35,118 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:45:35,122 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:45:35,126 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:45:35,132 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:47:14,896 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:14,901 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:47:14,910 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:47:14,917 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:14,918 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:47:20,057 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:20,058 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:47:20,128 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:47:20,158 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:20,166 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:47:31,930 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:31,936 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:47:31,943 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:47:31,951 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:47:31,951 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:48:43,881 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:48:43,882 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:48:43,882 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:48:43,886 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:48:43,886 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:48:49,507 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:48:49,507 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:48:49,507 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:48:49,514 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:48:49,514 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:49:03,422 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:49:03,423 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:49:03,439 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-11-30 23:49:03,447 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:49:03,451 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-11-30 23:49:03,581 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:49:03,585 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:49:03,585 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:49:03,589 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:49:03,590 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:50:12,052 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:50:12,053 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:50:12,054 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:50:12,058 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:50:12,142 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:53:40,661 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:53:40,665 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:53:40,670 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:53:40,677 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:53:40,677 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:53:58,450 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:53:58,450 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:53:58,534 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:53:58,544 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:53:58,549 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:54:45,558 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:54:45,563 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:54:45,566 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:54:45,572 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:54:45,573 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:54:55,406 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:54:55,406 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:54:55,406 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:54:55,409 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:54:55,409 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:55:41,431 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:55:41,431 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:55:41,431 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:55:41,439 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:55:41,439 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:55:49,714 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:55:49,715 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:55:49,723 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:55:49,731 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:55:49,735 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:56:18,683 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:56:18,689 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:56:18,693 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:56:18,701 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:56:18,701 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:57:35,134 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:57:35,134 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:57:35,134 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:57:35,138 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:57:35,144 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:57:49,721 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:57:49,725 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:57:49,729 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:57:49,734 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:57:49,735 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:58:45,712 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:58:45,713 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:58:45,717 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:58:45,725 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:58:45,729 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:58:51,430 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:58:51,434 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:58:51,438 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-11-30 23:58:51,444 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:58:51,444 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-11-30 23:59:12,489 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:59:12,491 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:59:12,586 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-30 23:59:12,591 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-30 23:59:12,591 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:00:20,456 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:20,456 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:20,456 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:20,622 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:20,622 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:00:41,483 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:41,483 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:41,555 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:41,562 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:41,566 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:00:47,266 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:47,270 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:47,273 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:00:47,279 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:00:47,279 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:01:16,802 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:01:16,802 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:01:16,802 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:01:16,807 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:01:16,884 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:02:35,218 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:02:35,234 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:02:35,322 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:02:35,341 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:02:35,341 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:02:53,507 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:02:53,508 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:02:53,616 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:02:53,624 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:02:53,628 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:03:22,531 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:03:22,537 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:03:22,547 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:03:22,554 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:03:22,555 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:03:49,999 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:03:50,000 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:03:50,005 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:03:50,009 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:03:50,009 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:04:45,271 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:04:45,273 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:04:45,277 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:04:45,287 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:04:45,288 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:04:50,209 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:04:50,210 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:04:50,226 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:04:50,233 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:04:50,237 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:05:07,062 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:05:07,080 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:05:07,091 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:05:07,099 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:05:07,100 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:06:27,228 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:06:27,230 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:06:27,240 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:06:27,243 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:06:27,257 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:08:35,050 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:08:35,069 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:08:35,084 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:08:35,094 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:08:35,094 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:10:03,485 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:10:03,486 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:10:03,497 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:10:03,506 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:10:03,510 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:10:18,394 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:10:18,399 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:10:18,409 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:10:18,417 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:10:18,417 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:11:16,697 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:11:16,698 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:11:16,712 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:11:16,716 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:11:16,717 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:11:33,498 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:11:33,499 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:11:33,502 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:11:33,509 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:11:33,509 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:13:41,720 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:13:41,722 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:13:41,901 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:13:41,920 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:13:41,966 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:14:28,122 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:14:28,140 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:14:28,147 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:14:28,154 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:14:28,154 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:15:37,014 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:15:37,016 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:15:37,021 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:15:37,026 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:15:37,038 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:15:54,973 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:15:54,989 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:15:54,996 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:15:55,004 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:15:55,004 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:16:15,982 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:16:15,983 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:16:16,053 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:16:16,061 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:16:16,068 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:16:18,344 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:16:18,350 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:16:18,381 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:16:18,388 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:16:18,388 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:18:26,780 [Worker-53] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.spring.io/libs-release/org/springframework/spring-web/4.2.7.RELEASE/spring-web-4.2.7.RELEASE-sources.jar
+2016-12-01 00:18:28,154 [Worker-53] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.spring.io/libs-release/org/springframework/spring-web/4.2.7.RELEASE/spring-web-4.2.7.RELEASE-sources.jar
+2016-12-01 00:18:28,462 [Worker-53] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.springframework:spring-web:4.2.7.RELEASE
+2016-12-01 00:18:28,971 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:18:28,971 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-01 00:18:28,971 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-01 00:18:28,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:18:28,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:19:05,107 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:19:05,108 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:19:05,125 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:19:05,133 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:19:05,140 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:20:22,601 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:20:22,603 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:20:22,629 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:20:22,655 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:20:22,705 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:20:39,894 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:20:39,895 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:20:40,098 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:20:40,137 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:20:40,168 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:21:21,156 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:21:21,172 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:21:21,178 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:21:21,186 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:21:21,186 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:21:30,808 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:21:30,809 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:21:30,819 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:21:30,823 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:21:30,828 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:22:48,858 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:22:48,888 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:22:49,037 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:22:49,049 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:22:49,049 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:23:00,680 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:00,681 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:00,690 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:00,699 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:00,703 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:23:19,742 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:19,775 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:19,782 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:19,800 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:19,800 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:23:44,823 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:44,825 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:44,827 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:44,830 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:44,830 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:23:54,113 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:54,114 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:54,251 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:23:54,281 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:23:54,281 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:24:24,253 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:24:24,254 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:24:24,273 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:24:24,279 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:24:24,283 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:25:28,355 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:25:28,386 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:25:28,395 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:25:28,402 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:25:28,402 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:25:50,066 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:25:50,067 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:25:50,086 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:25:50,089 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:25:50,107 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:26:03,645 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:26:03,652 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:26:03,664 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:26:03,675 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:26:03,675 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:27:51,630 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:27:51,631 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:27:51,642 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:27:51,653 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:27:51,658 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:28:56,760 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:28:56,767 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:28:56,963 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 00:28:56,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:28:56,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 00:29:19,358 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:29:19,359 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:29:19,365 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 00:29:19,369 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:29:19,375 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 00:29:57,075 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:29:57,082 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:29:57,092 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 00:29:57,101 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:29:57,101 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 00:30:10,700 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:30:10,701 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:30:10,710 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 00:30:10,717 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:30:10,722 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 00:32:16,607 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:16,632 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:16,637 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:16,644 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:16,645 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:32:32,967 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:32,967 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:32,967 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:32,971 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:33,150 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:32:40,204 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:40,234 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:40,238 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:32:40,248 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:32:40,249 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:33:52,539 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:33:52,539 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:33:52,559 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:33:52,566 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:33:52,571 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:34:05,337 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:05,342 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:34:05,345 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:34:05,351 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:05,351 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:34:08,581 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:08,581 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:34:08,581 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:34:08,583 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:08,584 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:34:19,461 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:19,462 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:34:19,468 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:34:19,489 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:19,489 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:34:27,174 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:27,176 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:34:27,198 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:34:27,207 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:34:27,211 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:35:25,033 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:25,062 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:25,069 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:25,078 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:25,078 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:35:33,876 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:33,878 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:33,881 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:33,889 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:33,918 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:35:52,599 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:52,610 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:52,631 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:35:52,766 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:35:52,766 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:36:08,601 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:36:08,602 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:36:08,617 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:36:08,624 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:36:08,631 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:36:54,009 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:36:54,044 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:36:54,088 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:36:54,231 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:36:54,231 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:37:41,981 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:37:41,983 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:37:41,987 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:37:41,991 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:37:42,008 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:37:49,698 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:37:49,705 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:37:49,716 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:37:49,725 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:37:49,725 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:38:23,461 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:38:23,462 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:38:23,482 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:38:23,491 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:38:23,496 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:39:11,393 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:39:11,437 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:39:11,450 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:39:11,459 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:39:11,460 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:39:40,728 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:39:40,730 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:39:40,732 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:39:40,737 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:39:40,742 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:40:11,870 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:40:11,877 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:40:11,884 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:40:11,893 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:40:11,893 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:41:05,228 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:41:05,229 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:41:05,284 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:41:05,294 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:41:05,300 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:41:46,017 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:41:46,036 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:41:46,047 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:41:46,056 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:41:46,056 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:43:16,643 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:16,643 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:16,643 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:16,646 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:16,647 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:43:53,594 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:53,594 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:53,594 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:53,624 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:53,625 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:43:59,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:59,241 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:59,249 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:43:59,259 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:43:59,263 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:44:08,249 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:08,366 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:08,373 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:08,380 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:08,380 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:44:31,805 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:31,805 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:31,805 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:31,808 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:31,833 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:44:49,953 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:49,960 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:49,964 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:44:49,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:44:49,974 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:45:09,470 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:45:09,470 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:45:09,475 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:45:09,484 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:45:09,489 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:45:09,637 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:45:09,646 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:45:09,652 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:45:09,655 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:45:09,655 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:46:20,648 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:46:20,649 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:46:20,649 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:46:20,651 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:46:20,651 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:46:56,155 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:46:56,157 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:46:56,167 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:46:56,193 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:46:56,193 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:47:15,012 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:15,014 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:15,020 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:15,027 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:15,030 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:47:21,545 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:21,551 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:21,560 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:21,568 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:21,568 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:47:34,681 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:34,683 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:34,798 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:47:34,801 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:47:34,809 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:48:42,462 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:48:42,467 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:48:42,470 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:48:42,476 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:48:42,476 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:48:50,010 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:48:50,010 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:48:50,015 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:48:50,021 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:48:50,025 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:51:03,409 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:03,419 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:51:03,423 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:51:03,431 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:03,432 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:51:26,060 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:26,061 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:51:26,412 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:51:26,417 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:26,417 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:51:58,361 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:58,363 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:51:58,448 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:51:58,514 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:51:58,514 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:52:49,181 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:52:49,182 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:52:49,337 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:52:49,348 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:52:49,355 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:53:11,516 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:53:11,521 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:53:11,529 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:53:11,537 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:53:11,537 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:54:33,455 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:54:33,456 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:54:33,596 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 00:54:33,599 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:54:33,604 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 00:57:50,740 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:57:50,751 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:57:50,759 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:57:50,774 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:57:50,774 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:59:16,330 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:59:16,330 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:59:16,334 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:59:16,341 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:59:16,345 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 00:59:33,104 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:59:33,114 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:59:33,118 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 00:59:33,125 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 00:59:33,125 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:02:17,843 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:02:17,846 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:02:17,846 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:02:17,850 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:02:17,850 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:02:38,866 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:02:38,866 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:02:38,866 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:02:38,888 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:02:38,888 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:03:08,978 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:03:08,979 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:03:08,987 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:03:08,994 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:03:08,998 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:04:18,481 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:18,604 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:18,608 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:18,616 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:18,616 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:04:18,711 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:18,712 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:04:18,750 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:04:18,753 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:18,758 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:04:20,945 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:20,945 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:20,945 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:20,954 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:20,958 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:04:27,378 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:27,378 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:27,415 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:04:27,425 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:27,432 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:04:53,024 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:53,031 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:04:53,043 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:04:53,058 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:04:53,058 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:05:27,455 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:05:27,457 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:05:27,584 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:05:27,588 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:05:27,588 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:05:55,802 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:05:55,803 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:05:55,817 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:05:55,845 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:05:55,845 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:06:09,625 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:06:09,627 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:06:09,738 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:06:09,746 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:06:09,750 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:06:11,937 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:06:11,965 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:06:11,971 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:06:11,978 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:06:11,978 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:07:05,151 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:05,152 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:05,506 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:05,510 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:05,756 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:07:10,768 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:10,777 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:10,783 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:10,791 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:10,792 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:07:49,513 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:49,514 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:49,674 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:07:49,683 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:07:49,688 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:12:22,085 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:12:22,109 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:12:22,136 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:12:22,146 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:12:22,146 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:13:58,716 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:13:58,717 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:13:58,723 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:13:58,727 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:13:58,727 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:16:20,983 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:16:20,985 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:16:20,990 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:16:21,013 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:16:21,013 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:18:40,266 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:18:40,267 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:18:40,277 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:18:40,286 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:18:40,293 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:19:19,821 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:19:19,827 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:19:19,840 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:19:19,848 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:19:19,849 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:21:40,817 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:21:40,818 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:21:40,821 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:21:40,825 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:21:40,830 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:21:41,037 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:21:41,042 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:21:41,042 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:21:41,052 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:21:41,052 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:22:13,801 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:13,801 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:22:13,814 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:22:13,822 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:13,827 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:22:31,767 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:31,773 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:22:31,784 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:22:31,795 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:31,795 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:22:31,971 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:31,972 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:22:31,972 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 01:22:31,975 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:22:31,975 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 01:23:08,769 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:23:08,770 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:23:08,774 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:23:08,783 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:23:08,783 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:23:40,518 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:23:40,520 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:23:40,595 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:23:40,604 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:23:40,609 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:24:28,506 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:24:28,514 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:24:28,616 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:24:28,629 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:24:28,629 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:25:50,912 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:25:50,913 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:25:50,930 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:25:50,933 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:25:50,938 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:30:35,474 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:30:35,497 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:30:35,511 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:30:35,551 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:30:35,552 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:30:43,882 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:30:43,884 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:30:43,893 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:30:43,903 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:30:43,908 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:35:33,304 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:35:33,386 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:35:33,396 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:35:33,405 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:35:33,405 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 01:46:17,893 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:46:17,895 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:46:17,898 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:46:17,902 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:46:17,902 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 01:55:37,933 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:55:37,935 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 01:55:37,940 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 01:55:37,951 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 01:55:37,951 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 02:00:24,640 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:24,642 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:24,690 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:24,701 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:24,705 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:00:29,572 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:29,614 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:29,657 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:29,702 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:29,702 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:00:35,814 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:35,815 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:35,877 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:35,881 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:36,160 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:00:42,510 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:42,516 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:42,522 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:42,530 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:42,530 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:00:56,734 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:56,735 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:56,743 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:00:56,750 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:00:56,755 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:01:57,517 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:01:57,534 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:01:57,545 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:01:57,558 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:01:57,559 [Worker-112] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:07:15,344 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:07:15,346 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:07:15,374 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:07:15,377 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:07:15,377 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:10:03,502 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:03,504 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:03,513 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:03,621 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:03,621 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:10:08,297 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:08,299 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:08,311 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:08,319 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:08,323 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:10:49,597 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:49,721 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:49,774 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:10:49,784 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:10:49,785 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:12:44,648 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:12:44,651 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:12:44,731 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:12:44,734 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:12:44,739 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:13:10,849 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:13:10,855 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:13:10,864 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:13:10,871 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:13:10,871 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:14:14,881 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:14:14,882 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:14:14,906 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:14:14,916 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:14:14,920 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:14:33,960 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:14:33,981 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:14:33,989 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:14:34,000 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:14:34,001 [Worker-110] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:15:09,587 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:15:09,589 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:15:09,592 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:15:09,595 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:15:09,595 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:16:03,074 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:16:03,075 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:16:03,082 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:16:03,184 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:16:03,184 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:25:49,955 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:25:49,957 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:25:49,965 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:25:49,972 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:25:49,976 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:28:24,348 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:28:24,365 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:28:24,377 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:28:24,388 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:28:24,388 [Worker-115] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\core\src\test\resources
+2016-12-01 02:33:03,307 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:03,309 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:33:03,342 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 02:33:03,346 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:03,378 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 02:33:03,471 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:03,480 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 02:33:03,480 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 02:33:03,490 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:03,490 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources
+2016-12-01 02:33:20,119 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:20,121 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:33:20,127 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 02:33:20,135 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:20,140 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 02:33:30,878 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:30,880 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-12-01 02:33:30,964 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2016-12-01 02:33:30,974 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:30,975 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\dao\src\test\resources
+2016-12-01 02:33:31,095 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:31,095 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 02:33:31,096 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\main\resources
+2016-12-01 02:33:31,149 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-12-01 02:33:31,149 [Worker-122] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\crima\Desktop\Final_DAM_2016\ProyectoServidor\service\src\test\resources

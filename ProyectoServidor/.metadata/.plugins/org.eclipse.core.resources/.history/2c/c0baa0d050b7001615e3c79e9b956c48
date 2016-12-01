@@ -1,0 +1,22 @@
+package es.crimarde.service.impl;
+
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+public interface adf {
+
+	Book retrieve(Integer id);
+
+	Iterable<Book> retrieveAll();
+
+	void add(BookDTO bookDTO);
+
+	void updateByProperties(BookDTO bookDTO);
+
+	void update(BookDTO bookDTO);
+
+	void delete(Integer id);
+
+	void delete(BookDTO bookDTO);
+
+}

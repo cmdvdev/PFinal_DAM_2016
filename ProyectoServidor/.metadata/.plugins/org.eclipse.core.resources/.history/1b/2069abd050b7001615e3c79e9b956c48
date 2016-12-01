@@ -1,0 +1,10 @@
+package es.crimarde.service.impl;
+
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+public interface adf {
+
+	
+
+}

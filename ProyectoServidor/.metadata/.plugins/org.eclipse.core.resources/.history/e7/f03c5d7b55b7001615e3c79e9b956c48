@@ -1,0 +1,20 @@
+package es.crimarde.service;
+
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+public interface Service {
+	Book retrieve(Integer id);
+
+	Iterable<Book> retrieveAll();
+
+	void add(BookDTO bookDTO);
+
+	void updateByProperties(BookDTO bookDTO);
+
+	void update(BookDTO bookDTO);
+
+	void delete(Integer id);
+
+	void delete(BookDTO bookDTO);
+}
