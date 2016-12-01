@@ -5,7 +5,7 @@ import com.mysql.jdbc.Blob;
 
 public class BookDTO {
 	
-	private int id;
+	private Integer id;
 	private String titulo;
 	private String autor;
 	private String sinopsis;
@@ -15,7 +15,7 @@ public class BookDTO {
 	public BookDTO() {
 	}
 		
-	public BookDTO(int id, String titulo, String autor, String sinopsis, Blob imagen, double precio) {
+	public BookDTO(Integer id, String titulo, String autor, String sinopsis, Blob imagen, double precio) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
@@ -35,11 +35,11 @@ public class BookDTO {
 		this.precio = builder.getPrecio();
 	}
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -86,7 +86,7 @@ public class BookDTO {
 
 class Builder {
 	
-	private int id;
+	private Integer id;
 	private String titulo;
 	private String sinopsis;
 	private String autor;
@@ -96,7 +96,7 @@ class Builder {
 	public Builder() {
 	}
 
-	public void whithId(int id) {
+	public void whithId(Integer id) {
 		this.id = id;
 	}
 

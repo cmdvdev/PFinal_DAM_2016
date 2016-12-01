@@ -16,12 +16,20 @@ public class BookTransformerHelper implements BookTransformerHelp {
 
 	public BookDTO entityToDto(Book book){
 		MapperFacade mapper = OrikaMapper.getMapperFacade();
-		return mapper.map(book, BookDTO.class);		
+		if(null != book){
+			return mapper.map(book, BookDTO.class);
+		} else {
+			return null;
+		}		
 	}
 	
 	public Book dtoToEntity (BookDTO bookDTO){	//Por hacer
 		MapperFacade mapper = OrikaMapper.getMapperFacade();
-		return mapper.map(bookDTO, Book.class);
+		if(null != bookDTO){
+			return mapper.map(bookDTO, Book.class);
+		} else {
+			return null;
+		}
 	}
 	
 	public List<Book> dtoToEntityList(List<BookDTO> bookDtoList){
@@ -35,6 +43,16 @@ public class BookTransformerHelper implements BookTransformerHelp {
 	}
 	
 	public List<BookDTO> entityToDtoList(List<Book> bookList){
+		List<BookDTO> bookDTOList = new ArrayList<>();
+		
+		for (Book Book : bookList) {
+			bookDTOList.add(entityToDto(Book));
+		}
+		
+		return bookDTOList;
+	}
+	
+	public List<BookDTO> entityToDtoIterable(Iterable<Book> bookList){
 		List<BookDTO> bookDTOList = new ArrayList<>();
 		
 		for (Book Book : bookList) {
