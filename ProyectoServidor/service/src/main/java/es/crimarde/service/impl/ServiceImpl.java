@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import es.crimarde.dao.EmployeeRepository;
+import es.crimarde.dao.BookRepository;
 import es.crimarde.helpers.impl.BookTransformerHelper;
 import es.crimarde.model.Book;
 import es.crimarde.negocio.BookDTO;
@@ -17,7 +17,7 @@ import es.crimarde.negocio.BookDTO;
 public class ServiceImpl implements es.crimarde.service.Service {
 
 	@Autowired
-	private EmployeeRepository repository;
+	private BookRepository repository;
 	
 	@Autowired
 	private BookTransformerHelper transformer;
