@@ -29,7 +29,7 @@ public interface BookRepository extends CrudRepository<Book, Integer> {
     		@Param("precio") Double precio);  // Alternativa <Book extends Integer> S save(Book book)
 
 	@Query("SELECT b FROM Book b where b.titulo = ?1")
-    Book existsByTitulo(String titulo);
+    Integer existsByTitulo(String titulo);
 
 }
 

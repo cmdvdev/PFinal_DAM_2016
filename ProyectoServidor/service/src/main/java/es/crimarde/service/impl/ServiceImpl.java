@@ -93,11 +93,7 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	}
 	
 	public boolean existsBook(BookDTO bookDTO) {
-		boolean existe = Boolean.FALSE;
-		if(null != repository.existsByTitulo(bookDTO.getTitulo())){
-			existe = Boolean.TRUE;
-		}
-		return existe;
+		return (repository.existsByTitulo(bookDTO.getTitulo()) >= 1)? Boolean.TRUE : Boolean.FALSE;
 	}
 	
 	public Long countBooks(){
