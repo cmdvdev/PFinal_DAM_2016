@@ -1,14 +1,19 @@
 package es.crimarde.core.model;
 
-import es.crimarde.model.Book;
+import org.springframework.http.HttpStatus;
+
+import es.crimarde.negocio.BookDTO;
 
 public class Response {
 	
 	private String status;
-	private Book data;
+	private BookDTO data;
 	
 	public Response() {
-		// TODO Auto-generated constructor stub
+	}
+	
+	public Response(HttpStatus status) {
+		this.status = status.getReasonPhrase();
 	}
 
 	public String getStatus() {
@@ -19,11 +24,11 @@ public class Response {
 		this.status = status;
 	}
 
-	public Book getData() {
+	public BookDTO getData() {
 		return data;
 	}
 
-	public void setData(Book data) {
+	public void setData(BookDTO data) {
 		this.data = data;
 	}
 	

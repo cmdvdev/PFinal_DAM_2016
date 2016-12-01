@@ -2,15 +2,14 @@ package es.crimarde.core.model;
 
 import java.util.List;
 
-import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
 
 public class ResponseList {
 	
 	private String status;
-	private List<Book> data;
+	private List<BookDTO> data;
 	
 	public ResponseList() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getStatus() {
@@ -21,11 +20,11 @@ public class ResponseList {
 		this.status = status;
 	}
 
-	public List<Book> getData() {
+	public List<BookDTO> getData() {
 		return data;
 	}
 
-	public void setData(List<Book> data) {
+	public void setData(List<BookDTO> data) {
 		this.data = data;
 	}
 	
