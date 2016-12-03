@@ -82,69 +82,80 @@ public class BookDTO {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-}
-
-class Builder {
 	
-	private Integer id;
-	private String titulo;
-	private String sinopsis;
-	private String autor;
-	private Blob imagen;
-	private double precio;
-
-	public Builder() {
-	}
-
-	public void whithId(Integer id) {
-		this.id = id;
-	}
-
-	public void whithTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
-	public void whithSinopsis(String sinopsis) {
-		this.sinopsis = sinopsis;
-	}
-
-	public void whithAutor(String autor) {
-		this.autor = autor;
-	}
-
-	public void whithImagen(Blob imagen) {
-		this.imagen = imagen;
-	}
-
-	public void whithPrecio(double precio) {
-		this.precio = precio;
+	public Builder builder() {
+		return new Builder();
 	}
 	
-	public BookDTO build(){
-		return new BookDTO(this);
-	}
+	public class Builder {
+		
+		private Integer id;
+		private String titulo;
+		private String sinopsis;
+		private String autor;
+		private Blob imagen;
+		private double precio;
 
-	public int getId() {
-		return id;
-	}
+		public Builder() {
+		}
 
-	public String getTitulo() {
-		return titulo;
-	}
+		public Builder whithId(Integer id) {
+			this.id = id;
+			return this;
+		}
 
-	public String getSinopsis() {
-		return sinopsis;
-	}
+		public Builder whithTitulo(String titulo) {
+			this.titulo = titulo;
+			return this;
+		}
 
-	public String getAutor() {
-		return autor;
-	}
+		public Builder whithSinopsis(String sinopsis) {
+			this.sinopsis = sinopsis;
+			return this;
+		}
 
-	public Blob getImagen() {
-		return imagen;
-	}
+		public Builder whithAutor(String autor) {
+			this.autor = autor;
+			return this;
+		}
 
-	public double getPrecio() {
-		return precio;
+		public Builder whithImagen(Blob imagen) {
+			this.imagen = imagen;
+			return this;
+		}
+
+		public Builder whithPrecio(double precio) {
+			this.precio = precio;
+			return this;
+		}
+		
+		public BookDTO build(){
+			return new BookDTO(this);
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		public String getTitulo() {
+			return titulo;
+		}
+
+		public String getSinopsis() {
+			return sinopsis;
+		}
+
+		public String getAutor() {
+			return autor;
+		}
+
+		public Blob getImagen() {
+			return imagen;
+		}
+
+		public double getPrecio() {
+			return precio;
+		}
 	}
 }
+
