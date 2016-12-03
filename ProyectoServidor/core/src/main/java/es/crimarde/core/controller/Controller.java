@@ -18,12 +18,13 @@ import es.crimarde.core.model.ResponseList;
 import es.crimarde.negocio.BookDTO;
 import es.crimarde.service.Service;
 
+@CrossOrigin()
 @RestController
 public class Controller {
 	
 	@Autowired Service servicio;
     
-	@CrossOrigin(origins = "http://localhost:3000")
+	//@CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/lista", method = RequestMethod.GET)
     public ResponseList retrieveList() {
         ResponseList response = new ResponseList();
