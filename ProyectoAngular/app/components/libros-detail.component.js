@@ -29,8 +29,7 @@ var LibrosDetailComponent = (function () {
                 .subscribe(function (response) {
                 _this.libro = response.data;
                 _this.status = response.status;
-                if (_this.status !== "success") {
-                    console.log('Entro por el if de success');
+                if (_this.status !== "OK") {
                     // alert("Error en el servidor");
                     _this._router.navigate(["Home"]);
                 }
@@ -38,7 +37,7 @@ var LibrosDetailComponent = (function () {
                 _this.errorMessage = error;
                 if (_this.errorMessage !== null) {
                     console.log(_this.errorMessage);
-                    alert("Error en la petición");
+                    alert("Error en la petición. Directamente error. ", error.errorMessage);
                 }
             });
         });

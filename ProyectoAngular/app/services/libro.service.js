@@ -19,15 +19,26 @@ var LibroService = (function () {
         return this._http.get("http://cmdvdev.com:8090/lista")
             .map(function (res) { return res.json(); });
     };
+    LibroService.prototype.createAuthorizationHeader = function () {
+        var headers = new http_1.Headers();
+        headers.append('X-Requested-With', 'XMLHttpRequest');
+        headers.append('Authorization', 'Basic ' + btoa('user:pass'));
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        console.log(headers);
+        return headers;
+    };
     LibroService.prototype.getLibro = function (id, random) {
         if (random === void 0) { random = null; }
         if (random == null) {
             console.log('Peticon de libro por getLibro');
-            return this._http.get("http://cmdvdev.com:8090/retrieve/" + id)
-                .map(function (res) { return res.json(); });
+            //	return this._http.get("http://cmdvdev.com:8090/book/retrieve/"+id, {headers: headers})
+            //					.map(res => res.json());
+            return this._http.get("http://cmdvdev.com:8090/book/retrieve/1", { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
+            console.log('Peticon de libro por getLibro');
         }
         else {
-            return this._http.get("http://cmdvdev.com:8090/random")
+            return this._http.get("http://cmdvdev.com:8090/book/random")
                 .map(function (res) { return res.json(); });
         }
     };
@@ -35,7 +46,7 @@ var LibroService = (function () {
         var json = JSON.stringify(libro);
         var params = "json=" + json;
         var headers = new http_1.Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        return this._http.post("http://cmdvdev.com:8090/add", params, { headers: headers }).map(function (res) { return res.json(); });
+        return this._http.post("http://cmdvdev.com:8090/book/add", params, { headers: headers }).map(function (res) { return res.json(); });
     };
     LibroService.prototype.editLibro = function (id, libro) {
         var json = JSON.stringify(libro);

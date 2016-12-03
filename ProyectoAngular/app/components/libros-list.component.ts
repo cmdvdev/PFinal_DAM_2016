@@ -39,7 +39,9 @@ export class LibrosListComponent implements OnInit {
 												this.libros = result.data;
 												this.status = result.status;
 
-												if(this.status !== "success"){
+												aletr(result.status);
+
+												if(this.status !== "OK"){
 													alert("Error en el servidor");
 												}
 

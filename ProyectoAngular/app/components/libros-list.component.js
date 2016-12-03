@@ -31,7 +31,8 @@ var LibrosListComponent = (function () {
             alert("El resultado es " + result.status);
             _this.libros = result.data;
             _this.status = result.status;
-            if (_this.status !== "success") {
+            aletr(result.status);
+            if (_this.status !== "OK") {
                 alert("Error en el servidor");
             }
             box_libros.style.display = "none";

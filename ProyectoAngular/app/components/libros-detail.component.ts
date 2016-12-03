@@ -37,8 +37,7 @@ export class LibrosDetailComponent implements OnInit {
 						this.libro = response.data;
 						this.status = response.status;
 
-						if(this.status !== "success"){
-						console.log('Entro por el if de success')
+						if(this.status !== "OK"){
 							// alert("Error en el servidor");
 							this._router.navigate(["Home"]);
 						}
@@ -49,7 +48,7 @@ export class LibrosDetailComponent implements OnInit {
 
 					if(this.errorMessage !== null){
 						console.log(this.errorMessage);
-						alert("Error en la petición");
+						alert("Error en la petición. Directamente error. "error.errorMessage);
 					}
 			});
 		});
