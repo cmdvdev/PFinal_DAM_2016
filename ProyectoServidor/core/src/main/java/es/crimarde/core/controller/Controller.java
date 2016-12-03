@@ -6,6 +6,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,7 @@ public class Controller {
 	
 	@Autowired Service servicio;
     
+	@CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/lista", method = RequestMethod.GET)
     public ResponseList retrieveList() {
         ResponseList response = new ResponseList();
@@ -81,6 +83,7 @@ public class Controller {
     	
     }
     
+    @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/book/retrieve/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response retrieve(@PathVariable("id") Integer id) {
     	Response response = new Response();
@@ -92,6 +95,9 @@ public class Controller {
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
     	}
         response.setData(book);
+        
+        //header("Access-Control-Allow-Origin: *");
+        //header("Access-Control-Request-Headers: Content-Type, Authorization");
         
         return response;
     }
