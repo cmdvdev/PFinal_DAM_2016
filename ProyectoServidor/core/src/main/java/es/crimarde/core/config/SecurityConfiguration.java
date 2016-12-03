@@ -19,24 +19,30 @@ import es.crimarde.core.aplication.CustomBasicAuthenticationEntryPoint;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
- 
+
 	@Value("${crimarde.dam.security.realm.name}")
     private String REALM;
-     
+	
     @Autowired
     public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication().withUser("cmdv").password("admin").roles("ADMIN");
-        auth.inMemoryAuthentication().withUser("user").password("pass").roles("USER");
+    	auth.inMemoryAuthentication().withUser("user").password("pass").roles("USER");
+        auth.inMemoryAuthentication().withUser("admin").password("pass").roles("ADMIN","USER");
     }
-     
+    
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-  
-      http.csrf().disable()
+    	
+    	http.csrf().disable()
         .authorizeRequests()
-        .antMatchers("/user/**").hasRole("ADMIN")
+        	.antMatchers(HttpMethod.GET,"/lista").permitAll()
+        	//.antMatchers("/book/**")..hasAnyRole("USER","ADMIN")
+        	.antMatchers(HttpMethod.POST,"/book/add").hasAnyRole("USER","ADMIN")
+        	.antMatchers(HttpMethod.GET,"/book/retrieve/**").hasAnyRole("USER","ADMIN")
+        	.antMatchers(HttpMethod.GET,"/book/random").hasAnyRole("USER","ADMIN")
+        	.antMatchers(HttpMethod.DELETE,"/delete/**").hasRole("ADMIN")
+        	.antMatchers(HttpMethod.PUT,"/update/**").hasAnyRole("USER","ADMIN")
         .and().httpBasic().realmName(REALM).authenticationEntryPoint(getBasicAuthEntryPoint())
-        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);//No hace falta crear una sesion
+        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER);//No hace falta crear una sesion      
     }
      
     @Bean
@@ -47,6 +53,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     /* To allow Pre-flight [OPTIONS] request from browser */
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers(HttpMethod.OPTIONS, "/**");
+        web
+        	.ignoring()
+        		.antMatchers(HttpMethod.OPTIONS, "/**");
     }
 }
+
+
+//https://spring.io/blog/2013/07/03/spring-security-java-config-preview-web-security/

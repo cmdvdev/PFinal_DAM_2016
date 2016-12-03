@@ -38,7 +38,7 @@ public class Controller {
         return response;
     }
     
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/book/add", method = RequestMethod.POST)
     public Response add(@RequestBody BookDTO bookDTO) {
     	Response response = new Response();
     	String status;
@@ -81,7 +81,7 @@ public class Controller {
     	
     }
     
-    @RequestMapping(value = "/retrieve/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/book/retrieve/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response retrieve(@PathVariable("id") Integer id) {
     	Response response = new Response();
     	BookDTO book = servicio.retrieve(id);
@@ -96,7 +96,7 @@ public class Controller {
         return response;
     }
     
-    @RequestMapping(value = "/random", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/book/random", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response random() {
     	Response response = new Response();
     	
