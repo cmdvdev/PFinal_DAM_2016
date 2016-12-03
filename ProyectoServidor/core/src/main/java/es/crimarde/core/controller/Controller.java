@@ -1,4 +1,4 @@
-package es.crimarde.core;
+package es.crimarde.core.controller;
 
 import java.util.List;
 
@@ -31,7 +31,7 @@ public class Controller {
         if(books.isEmpty()) {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
         } else {
-    		response.setStatus(Status.SUCCESS.getDesc());
+    		response.setStatus(HttpStatus.OK.getReasonPhrase());
     	}
         response.setData(books);
         
@@ -89,7 +89,7 @@ public class Controller {
     	if(null == book){
     		response.setStatus(HttpStatus.NOT_FOUND.getReasonPhrase());
     	} else {
-    		response.setStatus(Status.SUCCESS.getDesc());
+    		response.setStatus(HttpStatus.OK.getReasonPhrase());
     	}
         response.setData(book);
         
