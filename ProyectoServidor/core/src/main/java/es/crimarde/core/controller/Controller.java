@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import es.crimarde.core.model.Response;
 import es.crimarde.core.model.ResponseList;
 import es.crimarde.negocio.BookDTO;
@@ -32,30 +35,40 @@ public class Controller {
 	//@CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/lista", method = RequestMethod.GET)
     public ResponseList retrieveList() {
-    	logger.info("Se recibe peticion en el controlador");
-        ResponseList response = new ResponseList();
+    	
+    	logger.info("-- Listado de todos los libros --");
+        
+    	ResponseList response = new ResponseList();
         List<BookDTO> books = servicio.retrieveAll(); 
         //servicio.retrieveAll().forEach(books::add);
         
         if(books.isEmpty()) {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
+        	logger.debug("Se devuelve un mensaje de error. No hay libros en la base de datos");
         } else {
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
+    		response.setData(books);
+    		logger.info("Se devuelve lista de libros\n".concat(objectToJson(response)));
     	}
-        response.setData(books);
         
         return response;
     }
     
     @RequestMapping(value = "/book/add", method = RequestMethod.POST)
     public Response add(@RequestBody BookDTO bookDTO) {
+    	
+    	logger.info("-- Añadir libro --");
+    	logger.info(String.format("-- Se intenta añadir el titulo: '%s' --", bookDTO.getTitulo()));
+    	
     	Response response = new Response();
     	String status;
     	if(servicio.existsBook(bookDTO)){
     		status = HttpStatus.CONFLICT.getReasonPhrase();
+    		logger.info("El libro ya existe");
     	} else {
     		servicio.add(bookDTO);
     		status = HttpStatus.CREATED.getReasonPhrase();
+    		logger.info("Libro añadido correctamente");
     	}
     	
     	response.setStatus(status);
@@ -64,42 +77,56 @@ public class Controller {
     
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
     public Response delete(@PathVariable("id") Integer id) {
+    	
+    	logger.info(String.format("-- Eliminacion del libro con id %d --",id.intValue()));
+    	
     	BookDTO bookDTO = servicio.retrieve(id);
         
     	if(null != bookDTO){
     		servicio.delete(bookDTO.getId());
+    		logger.info("Libro eliminado correctamente");
     		return new Response(HttpStatus.OK);
     	}
+    	logger.info("El libro no existe");
     	return new Response(HttpStatus.NOT_FOUND);
     }
     
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
     public String edit(@PathVariable("id") Integer id, @RequestBody BookDTO bookDTO) {
+    	
+    	logger.info(String.format("-- Edicion de libro con id %d --",id.intValue()));
+    	
     	Response response = new Response();
     	BookDTO bookDtoFromDB = servicio.retrieve(id);
     	
     	if(null != bookDtoFromDB) {
     		BeanUtils.copyProperties(bookDTO, bookDtoFromDB, "id");
     		servicio.update(bookDtoFromDB);
+    		logger.info("Libro modificado correctamente");
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
         } else {
+        	logger.info("El libro no se ha podido modificar");
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
     	}
     	
     	return response.getStatus();
-    	
     }
     
     @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/book/retrieve/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response retrieve(@PathVariable("id") Integer id) {
+    	
+    	logger.info(String.format("-- Recuperacion de libro con %d --",id.intValue()));
+    	
     	Response response = new Response();
     	BookDTO book = servicio.retrieve(id);
     	
     	if(null == book){
     		response.setStatus(HttpStatus.NOT_FOUND.getReasonPhrase());
+    		logger.info("El Libro no existe y no se hapodido eliminar");
     	} else {
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
+    		logger.info("Libro recuperado correctamente");
     	}
         response.setData(book);
         
@@ -111,14 +138,31 @@ public class Controller {
     
     @RequestMapping(value = "/book/random", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response random() {
+    	
+    	logger.info("Solicitado libro aleatorio");
+    	
     	Response response = new Response();
     	
     	BookDTO book = servicio.retrieve( (int) (Math.random() * servicio.countBooks() + 1));		//TODO hacerlo random de verdad
     	response.setStatus(HttpStatus.OK.getReasonPhrase());
         response.setData(book);
         
+        logger.info("Devuelto libro aleatorio");
         return response;
 
+    }
+    
+    private String objectToJson(Object object){
+    	String stringResponse = null;
+    	ObjectMapper objectMapper = new ObjectMapper();
+		
+    	try {
+			stringResponse = objectMapper.writeValueAsString(object);
+		} catch (JsonProcessingException e) {
+			logger.error("Error al transformar el objeto de salida a json");
+		}
+    	
+    	return stringResponse;
     }
 }
 
