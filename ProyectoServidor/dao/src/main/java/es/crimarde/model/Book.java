@@ -90,70 +90,82 @@ public class Book {
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
-}
-
-class Builder {
 	
-	private int id;
-	private String titulo;
-	private String sinopsis;
-	private String autor;
-	private Byte[] imagen;
-	private double precio;
-
-	public Builder() {
-	}
-
-	public void whithId(int id) {
-		this.id = id;
-	}
-
-	public void whithTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-
-	public void whithSinopsis(String sinopsis) {
-		this.sinopsis = sinopsis;
-	}
-
-	public void whithAutor(String autor) {
-		this.autor = autor;
-	}
-
-	public void whithImagen(Byte[] imagen) {
-		this.imagen = imagen;
-	}
-
-	public void whithPrecio(double precio) {
-		this.precio = precio;
+	public Builder builder(){
+		return new Builder();
 	}
 	
-	public Book build(){
-		return new Book(this);
+	public class Builder {
+		
+		private int id;
+		private String titulo;
+		private String sinopsis;
+		private String autor;
+		private Byte[] imagen;
+		private double precio;
+
+		public Builder() {
+		}
+
+		public Builder whithId(int id) {
+			this.id = id;
+			return this;
+		}
+
+		public Builder whithTitulo(String titulo) {
+			this.titulo = titulo;
+			return this;
+		}
+
+		public Builder whithSinopsis(String sinopsis) {
+			this.sinopsis = sinopsis;
+			return this;
+		}
+
+		public Builder whithAutor(String autor) {
+			this.autor = autor;
+			return this;
+		}
+
+		public Builder whithImagen(Byte[] imagen) {
+			this.imagen = imagen;
+			return this;
+		}
+
+		public Builder whithPrecio(double precio) {
+			this.precio = precio;
+			return this;
+		}
+		
+		public Book build(){
+			return new Book(this);
+		}
+
+		public int getId() {
+			return id;
+		}
+
+		public String getTitulo() {
+			return titulo;
+		}
+
+		public String getSinopsis() {
+			return sinopsis;
+		}
+
+		public String getAutor() {
+			return autor;
+		}
+
+		public Byte[] getImagen() {
+			return imagen;
+		}
+
+		public double getPrecio() {
+			return precio;
+		}
 	}
 
-	public int getId() {
-		return id;
-	}
 
-	public String getTitulo() {
-		return titulo;
-	}
-
-	public String getSinopsis() {
-		return sinopsis;
-	}
-
-	public String getAutor() {
-		return autor;
-	}
-
-	public Byte[] getImagen() {
-		return imagen;
-	}
-
-	public double getPrecio() {
-		return precio;
-	}
 	
 }
