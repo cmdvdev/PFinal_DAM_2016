@@ -2,6 +2,8 @@ package es.crimarde.core.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,12 +23,16 @@ import es.crimarde.service.Service;
 @CrossOrigin()
 @RestController
 public class Controller {
+
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired Service servicio;
+
     
 	//@CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/lista", method = RequestMethod.GET)
     public ResponseList retrieveList() {
+    	logger.info("Se recibe peticion en el controlador");
         ResponseList response = new ResponseList();
         List<BookDTO> books = servicio.retrieveAll(); 
         //servicio.retrieveAll().forEach(books::add);
