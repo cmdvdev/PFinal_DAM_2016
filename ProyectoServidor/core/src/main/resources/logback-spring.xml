@@ -48,8 +48,8 @@
 	<!-- Loggers -->
 	<springProfile name="dev">
 		<logger name="es.crimarde.core.controller.Controller" level="INFO" additivity="false">
-			<appender-ref ref="CONSOLE" /> 						<!-- Configurado por spring -->
-			<!--  
+			<!-- 
+				<appender-ref ref="CONSOLE" /> 						Configurado por spring
 				<appender-ref ref="FILE" />							Configurado por spring (ruta definida en application-context.xml)
 				<appender-ref ref="MINUTEROLLINGFILEAPPENDER" />	Apender minuto
 			-->
