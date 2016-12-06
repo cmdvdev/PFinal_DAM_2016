@@ -3,10 +3,10 @@ package es.crimarde.core.config;
 import org.springframework.context.annotation.Configuration;
 
 // Imports sin Spring Security
-import org.h2.server.web.WebServlet;
-import org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration;
-import org.springframework.boot.context.embedded.ServletRegistrationBean;
-import org.springframework.context.annotation.Bean;
+//import org.h2.server.web.WebServlet;
+//import org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration;
+//import org.springframework.boot.context.embedded.ServletRegistrationBean;
+//import org.springframework.context.annotation.Bean;
 
 //Imports para Spring Security
 //import org.springframework.context.annotation.Configuration;
@@ -19,13 +19,15 @@ public class WebConfiguration {
 	/**
 	 * Bean para dar de alta la consola de H2 sn Spring Security
 	 * la url para acceder a la consola es http://localhost:8080/console
+	 * 
+	 * Cambio la base de datos empotrada por una base de datos mysql
 	 */
-	@Bean
-	ServletRegistrationBean h2servletRegistration() {
-		ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
-		registrationBean.addUrlMappings("/console/*");
-		return registrationBean;
-	}
+//	@Bean
+//	ServletRegistrationBean h2servletRegistration() {
+//		ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
+//		registrationBean.addUrlMappings("/console/*");
+//		return registrationBean;
+//	}
 	
 	/**
 	 * Bean para acceder a la consola de H2 con Spring Security
