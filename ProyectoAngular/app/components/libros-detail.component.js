@@ -37,7 +37,7 @@ var LibrosDetailComponent = (function () {
                 _this.errorMessage = error;
                 if (_this.errorMessage !== null) {
                     console.log(_this.errorMessage);
-                    alert("Error en la petición. Directamente error. ", error.errorMessage);
+                    alert("Error en la petición. Directamente error. " + error.errorMessage);
                 }
             });
         });
