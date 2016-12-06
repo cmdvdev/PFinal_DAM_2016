@@ -23,19 +23,25 @@ var LibroEditComponent = (function () {
         var _this = this;
         this._route.params.forEach(function (params) {
             var id = params["id"];
-            _this._libroService.editLibro(id, _this.libro).subscribe(function (response) {
+            _this._libroService.editLibro(id, _this.libro)
+                .subscribe(function (response) {
                 _this.status = response.status;
-                if (_this.status !== "success") {
+                if (_this.status !== "OK") {
                     alert("Error en el servidor");
                 }
+                _this.goToHome();
             }, function (error) {
                 _this.errorMessage = error;
                 if (_this.errorMessage !== null) {
                     console.log(_this.errorMessage);
-                    alert("Error en la petición");
+                    alert("Error en la petición (Edicion)");
                 }
+                _this.goToHome();
             });
         });
+    };
+    LibroEditComponent.prototype.goToHome = function () {
+        // redirecciona a la pagina principal
         this._router.navigate(["/"]);
     };
     LibroEditComponent.prototype.ngOnInit = function () {
@@ -50,7 +56,7 @@ var LibroEditComponent = (function () {
                 .subscribe(function (response) {
                 _this.libro = response.data;
                 _this.status = response.status;
-                if (_this.status !== "success") {
+                if (_this.status !== "OK") {
                     _this._router.navigate(["/"]);
                 }
             }, function (error) {

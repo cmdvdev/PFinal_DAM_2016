@@ -29,25 +29,32 @@ export class LibroEditComponent implements OnInit {
 
 			 let id = params["id"];
 
-			 this._libroService.editLibro(id, this.libro).subscribe(
+			 this._libroService.editLibro(id, this.libro)
+			 .subscribe(
 					response => {
 						this.status = response.status;
-						if(this.status !== "success"){
+						if(this.status !== "OK"){
 							alert("Error en el servidor");
 						}
+						this.goToHome();
 					},
 					error => {
 						this.errorMessage = <any>error;
-
 						if(this.errorMessage !== null){
 							console.log(this.errorMessage);
-							alert("Error en la petición");
+							alert("Error en la petición (Edicion)");
 						}
+						this.goToHome();
 					}
 				);
+
 		 });
 
-		this._router.navigate(["/"]);
+	}
+
+	private goToHome(){
+			// redirecciona a la pagina principal
+		 	this._router.navigate(["/"]);
 	}
 
 	ngOnInit(){
@@ -65,10 +72,9 @@ export class LibroEditComponent implements OnInit {
 						this.libro = response.data;
 						this.status = response.status;
 
-						if(this.status !== "success"){
+						if(this.status !== "OK"){
 							this._router.navigate(["/"]);
 						}
-
 				},
 				error => {
 					this.errorMessage = <any>error;
@@ -99,8 +105,6 @@ export class LibroEditComponent implements OnInit {
 
 
 	}
-
-
 
 	makeFileRequest(url: string, params: Array<string>, files: Array<File>){
 		return new Promise((resolve, reject) => {
