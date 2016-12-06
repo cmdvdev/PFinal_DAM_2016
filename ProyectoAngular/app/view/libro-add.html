@@ -1,19 +1,19 @@
 <h1>{{tituloPag}}</h1>
 <form #formLibro="ngForm" (ngSubmit)="onSubmit()">
 
-	<label>Nombre:</label>
+	<label>Titulo:</label>
 	<p>
 		<input type="text" #titulo="ngModel" name="titulo" [(ngModel)]="libro.titulo" required/>
 		<span *ngIf="!titulo.valid">El nombre es obligatorio</span>
 	</p>
 
-	<label>Dirección:</label>
+	<label>Autor:</label>
 	<p>
 		<input type="text" #autor="ngModel" name="autor" [(ngModel)]="libro.autor" required/>
 		<span *ngIf="!autor.valid">El autor es obligatorio</span>
 	</p>
 
-	<label>Descripción:</label>
+	<label>Sinopsis:</label>
 	<p>
 		<textarea #sinopsis="ngModel" name="sinopsis" [(ngModel)]="libro.sinopsis" required></textarea>
 		<span *ngIf="!sinopsis.valid">La sinopsis es obligatoria</span>
