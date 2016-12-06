@@ -15,48 +15,62 @@ var LibroService = (function () {
     function LibroService(_http) {
         this._http = _http;
     }
+    LibroService.prototype.createAuthorizationHeader = function () {
+        var headers = new http_1.Headers();
+        headers.append('X-Requested-With', 'XMLHttpRequest');
+        headers.append('Authorization', 'Basic ' + btoa('admin:pass'));
+        headers.append('Content-Type', 'application/json');
+        headers.append('Accept', 'application/json');
+        //headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        console.log(headers);
+        return headers;
+    };
+    /**
+     * Metodo que obtiene un listado completo de libros
+     */
     LibroService.prototype.getLibros = function () {
         return this._http.get("http://cmdvdev.com:8090/lista")
             .map(function (res) { return res.json(); });
     };
-    LibroService.prototype.createAuthorizationHeader = function () {
-        var headers = new http_1.Headers();
-        headers.append('X-Requested-With', 'XMLHttpRequest');
-        headers.append('Authorization', 'Basic ' + btoa('user:pass'));
-        headers.append('Content-Type', 'application/json');
-        headers.append('Accept', 'application/json');
-        console.log(headers);
-        return headers;
-    };
+    /**
+     * Metodo que obtiene un libro por su id
+     * o un libro aleatorio si se le pasa el parametro random
+     */
     LibroService.prototype.getLibro = function (id, random) {
         if (random === void 0) { random = null; }
         if (random == null) {
-            console.log('Peticon de libro por getLibro');
-            //	return this._http.get("http://cmdvdev.com:8090/book/retrieve/"+id, {headers: headers})
-            //					.map(res => res.json());
-            return this._http.get("http://cmdvdev.com:8090/book/retrieve/1", { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
-            console.log('Peticon de libro por getLibro');
+            console.log('Peticion de libro por getLibro con id: ' + id);
+            return this._http.get("http://cmdvdev.com:8090/book/retrieve/" + id, { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
         }
         else {
-            return this._http.get("http://cmdvdev.com:8090/book/random")
-                .map(function (res) { return res.json(); });
+            console.log('Peticion de libro aleatorio');
+            return this._http.get("http://cmdvdev.com:8090/book/random", { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
         }
     };
+    /**
+     * Añade un nuevo libro a la base de datos
+     */
     LibroService.prototype.addLibro = function (libro) {
-        var json = JSON.stringify(libro);
-        var params = "json=" + json;
-        var headers = new http_1.Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        return this._http.post("http://cmdvdev.com:8090/book/add", params, { headers: headers }).map(function (res) { return res.json(); });
+        return this._http.post("http://cmdvdev.com:8090/book/add", this.construyeJson(libro), { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
     };
+    /**
+     * Edita un libro de la base de datos
+     */
     LibroService.prototype.editLibro = function (id, libro) {
-        var json = JSON.stringify(libro);
-        var params = "json=" + json;
-        var headers = new http_1.Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-        return this._http.post("http://cmdvdev.com:8090/update/" + id, params, { headers: headers }).map(function (res) { return res.json(); });
+        return this._http.put("http://cmdvdev.com:8090/update/" + id, this.construyeJson(libro), { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
     };
+    /**
+    * Elimina un libro de la base de datos
+    */
     LibroService.prototype.deleteLibro = function (id) {
-        return this._http.get("http://cmdvdev.com:8090/delete/" + id)
-            .map(function (res) { return res.json(); });
+        return this._http.delete("http://cmdvdev.com:8090/delete/" + id, { headers: this.createAuthorizationHeader() }).map(function (res) { return res.json(); });
+    };
+    LibroService.prototype.construyeJson = function (libro) {
+        console.log('Servicio : AddLibro');
+        var json = JSON.stringify(libro);
+        var params = json;
+        console.log('JSON: \n :', json);
+        return params;
     };
     LibroService = __decorate([
         core_1.Injectable(), 
