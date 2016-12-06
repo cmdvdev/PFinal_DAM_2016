@@ -8,9 +8,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var libro_service_1 = require("../services/libro.service");
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var libro_service_1 = require("../../services/libro.service");
 var LibrosListComponent = (function () {
     function LibrosListComponent(_route, _router, _libroService) {
         this._route = _route;
@@ -65,15 +65,17 @@ var LibrosListComponent = (function () {
             }
         });
     };
-    LibrosListComponent = __decorate([
-        core_1.Component({
-            selector: "libros-list",
-            templateUrl: "app/view/libros-list.html",
-            providers: [libro_service_1.LibroService]
-        }), 
-        __metadata('design:paramtypes', [router_1.ActivatedRoute, router_1.Router, libro_service_1.LibroService])
-    ], LibrosListComponent);
     return LibrosListComponent;
 }());
+LibrosListComponent = __decorate([
+    core_1.Component({
+        selector: "libros-list",
+        templateUrl: "app/view/libros-list.html",
+        providers: [libro_service_1.LibroService]
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute,
+        router_1.Router,
+        libro_service_1.LibroService])
+], LibrosListComponent);
 exports.LibrosListComponent = LibrosListComponent;
 //# sourceMappingURL=libros-list.component.js.map

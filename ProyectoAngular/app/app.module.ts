@@ -6,10 +6,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent }  from './app.component';
 import { routing, appRoutingProviders } from './app.routing';
 
-import {LibrosListComponent} from "./components/libros-list.component";
-import {LibrosDetailComponent} from "./components/libros-detail.component";
-import {LibroAddComponent} from "./components/libro-add.component";
-import {LibroEditComponent} from "./components/libro-edit.component";
+import {LibrosListComponent} from "./main/app/components/list/libros-list.component";
+import {LibrosDetailComponent} from "./main/app/components/detail/libros-detail.component";
+import {LibroAddComponent} from "./main/app/components/add/libro-add.component";
+import {LibroEditComponent} from "./main/app/components/edit/libro-edit.component";
 
 @NgModule({
   imports:      [ BrowserModule, HttpModule, FormsModule, routing ],

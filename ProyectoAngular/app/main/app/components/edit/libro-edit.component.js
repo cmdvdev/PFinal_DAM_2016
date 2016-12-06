@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var libro_service_1 = require("../services/libro.service");
-var libro_1 = require("../model/libro");
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var libro_service_1 = require("../../services/libro.service");
+var libro_1 = require("../../model/libro");
 var LibroEditComponent = (function () {
     function LibroEditComponent(_libroService, _route, _router) {
         this._libroService = _libroService;
@@ -45,7 +45,7 @@ var LibroEditComponent = (function () {
         this._router.navigate(["/"]);
     };
     LibroEditComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", "null", "");
+        this.libro = new libro_1.Libro(0, "", "", "", 0);
         this.getLibro();
     };
     LibroEditComponent.prototype.getLibro = function () {
@@ -76,7 +76,7 @@ var LibroEditComponent = (function () {
         this.filesToUpload = fileInput.target.files;
         this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then(function (result) {
             _this.resultUpload = result;
-            _this.libro.imagen = _this.resultUpload.filename;
+            //this.libro.imagen = this.resultUpload.filename;
         }, function (error) {
             console.log(error);
         });
@@ -102,15 +102,17 @@ var LibroEditComponent = (function () {
             xhr.send(formData);
         });
     };
-    LibroEditComponent = __decorate([
-        core_1.Component({
-            selector: "libro-edit",
-            templateUrl: "app/view/libro-add.html",
-            providers: [libro_service_1.LibroService]
-        }), 
-        __metadata('design:paramtypes', [libro_service_1.LibroService, router_1.ActivatedRoute, router_1.Router])
-    ], LibroEditComponent);
     return LibroEditComponent;
 }());
+LibroEditComponent = __decorate([
+    core_1.Component({
+        selector: "libro-edit",
+        templateUrl: "app/view/libro-add.html",
+        providers: [libro_service_1.LibroService]
+    }),
+    __metadata("design:paramtypes", [libro_service_1.LibroService,
+        router_1.ActivatedRoute,
+        router_1.Router])
+], LibroEditComponent);
 exports.LibroEditComponent = LibroEditComponent;
 //# sourceMappingURL=libro-edit.component.js.map

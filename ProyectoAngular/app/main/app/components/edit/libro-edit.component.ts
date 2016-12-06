@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import {LibroService} from "../services/libro.service";
-import {Libro} from "../model/libro";
+import {LibroService} from "../../services/libro.service";
+import {Libro} from "../../model/libro";
 
 @Component({
 	selector: "libro-edit",
@@ -58,7 +58,7 @@ export class LibroEditComponent implements OnInit {
 	}
 
 	ngOnInit(){
-		this.libro = new Libro(0,"","","","null","");
+		this.libro = new Libro(0,"","","",0);
 		this.getLibro();
 	}
 
@@ -98,7 +98,7 @@ export class LibroEditComponent implements OnInit {
 
 		this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then((result) => {
 				this.resultUpload = result;
-				this.libro.imagen = this.resultUpload.filename;
+				//this.libro.imagen = this.resultUpload.filename;
 		}, (error) =>{
 			console.log(error);
 		});

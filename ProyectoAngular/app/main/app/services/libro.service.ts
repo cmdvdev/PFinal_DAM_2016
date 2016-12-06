@@ -86,9 +86,8 @@ export class LibroService {
 
     private construyeJson(libro: Libro){
         console.log('Servicio : AddLibro');
-        let json = JSON.stringify(libro);
-        let params = json;
-        console.log('JSON: \n :' json);
+        let params = JSON.stringify(libro);
+        console.log('JSON: \n :' + params);
         return params;
     }
 }

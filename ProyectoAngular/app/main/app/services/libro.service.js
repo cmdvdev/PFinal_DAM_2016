@@ -67,9 +67,8 @@ var LibroService = (function () {
     };
     LibroService.prototype.construyeJson = function (libro) {
         console.log('Servicio : AddLibro');
-        var json = JSON.stringify(libro);
-        var params = json;
-        console.log('JSON: \n :', json);
+        var params = JSON.stringify(libro);
+        console.log('JSON: \n :' + params);
         return params;
     };
     LibroService = __decorate([

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import {LibroService} from "../services/libro.service";
-import {Libro} from "../model/libro";
+import {LibroService} from "../../services/libro.service";
+import {Libro} from "../../model/libro";
 
 @Component({
 	selector: "libros-detail",

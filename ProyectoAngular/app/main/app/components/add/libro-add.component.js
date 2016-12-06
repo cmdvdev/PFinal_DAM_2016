@@ -10,8 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var libro_service_1 = require("../services/libro.service");
-var libro_1 = require("../model/libro");
+var libro_service_1 = require("../../services/libro.service");
+var libro_1 = require("../../model/libro");
 var LibroAddComponent = (function () {
     function LibroAddComponent(_libroService, _route, _router) {
         this._libroService = _libroService;
@@ -37,7 +37,7 @@ var LibroAddComponent = (function () {
         });
     };
     LibroAddComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", [], "0");
+        this.libro = new libro_1.Libro(0, "", "", "", 0);
     };
     LibroAddComponent.prototype.callPrecio = function (value) {
         //	this.libro.precio = value;
@@ -48,7 +48,7 @@ var LibroAddComponent = (function () {
         this.filesToUpload = fileInput.target.files;
         this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then(function (result) {
             _this.resultUpload = result;
-            _this.libro.imagen = _this.resultUpload.filename;
+            //this.libro.imagen = this.resultUpload.filename;
         }, function (error) {
             console.log(error);
         });

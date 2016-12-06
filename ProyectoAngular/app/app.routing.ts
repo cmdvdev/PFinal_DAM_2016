@@ -1,10 +1,10 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import {LibrosListComponent} from "./components/libros-list.component";
-import {LibrosDetailComponent} from "./components/libros-detail.component";
-import {LibroAddComponent} from "./components/libro-add.component";
-import {LibroEditComponent} from "./components/libro-edit.component";
+import {LibrosListComponent} from "./main/app/components/list/libros-list.component";
+import {LibrosDetailComponent} from "./main/app/components/detail/libros-detail.component";
+import {LibroAddComponent} from "./main/app/components/add/libro-add.component";
+import {LibroEditComponent} from "./main/app/components/edit/libro-edit.component";
 
 const appRoutes: Routes = [
 	{

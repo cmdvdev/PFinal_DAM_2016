@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var libro_service_1 = require("../services/libro.service");
+var libro_service_1 = require("../../services/libro.service");
 var LibrosDetailComponent = (function () {
     function LibrosDetailComponent(_libroService, _route, _router) {
         this._libroService = _libroService;

@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import {LibroService} from "../services/libro.service";
-import {Libro} from "../model/libro";
+import {LibroService} from "../../services/libro.service";
+import {Libro} from "../../model/libro";
 
 @Component({
 	selector: "libro-add",
 	templateUrl: "app/view/libro-add.html",
 	providers: [LibroService]
+
 })
 
 export class LibroAddComponent implements OnInit {
@@ -46,7 +47,7 @@ export class LibroAddComponent implements OnInit {
 	}
 
 	ngOnInit(){
-		this.libro = new Libro(0,"","","",[],"0");
+		this.libro = new Libro(0,"","","",0);
 	}
 
 	callPrecio(value){
@@ -61,7 +62,7 @@ export class LibroAddComponent implements OnInit {
 
 		this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then((result) => {
 				this.resultUpload = result;
-				this.libro.imagen = this.resultUpload.filename;
+				//this.libro.imagen = this.resultUpload.filename;
 		}, (error) =>{
 			console.log(error);
 		});
