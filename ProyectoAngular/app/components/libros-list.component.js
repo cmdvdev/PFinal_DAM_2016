@@ -16,7 +16,7 @@ var LibrosListComponent = (function () {
         this._route = _route;
         this._router = _router;
         this._libroService = _libroService;
-        this.titulo = "Listado de libros:";
+        this.tituloPag = "Mis cuentos favoritos";
     }
     LibrosListComponent.prototype.ngOnInit = function () {
         this.getLibros();
@@ -28,10 +28,8 @@ var LibrosListComponent = (function () {
         box_libros.style.visibility = "visible";
         this._libroService.getLibros()
             .subscribe(function (result) {
-            alert("El resultado es " + result.status);
             _this.libros = result.data;
             _this.status = result.status;
-            aletr(result.status);
             if (_this.status !== "OK") {
                 alert("Error en el servidor");
             }
@@ -40,7 +38,7 @@ var LibrosListComponent = (function () {
             _this.errorMessage = error;
             if (_this.errorMessage !== null) {
                 console.log(_this.errorMessage);
-                alert("Error en la petición (se va por error)");
+                alert("Error en la petición (al obtener la lista de libros)");
             }
         });
     };
@@ -55,7 +53,7 @@ var LibrosListComponent = (function () {
         this._libroService.deleteLibro(id)
             .subscribe(function (result) {
             _this.status = result.status;
-            if (_this.status !== "success") {
+            if (_this.status !== "OK") {
                 alert("Error en el servidor");
             }
             _this.getLibros();

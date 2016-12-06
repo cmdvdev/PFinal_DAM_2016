@@ -11,7 +11,7 @@ import {Libro} from "../model/libro";
 })
 
 export class LibrosListComponent implements OnInit {
-	public titulo:string = "Listado de libros:";
+	public tituloPag:string = "Mis cuentos favoritos";
 	public libros: Libro[];
 	public status: string;
 	public errorMessage;
@@ -33,60 +33,56 @@ export class LibrosListComponent implements OnInit {
 		box_libros.style.visibility = "visible";
 
 		this._libroService.getLibros()
-									.subscribe(
-										result => {
-												alert("El resultado es " + result.status);
-												this.libros = result.data;
-												this.status = result.status;
+				.subscribe(
+					result => {
+							this.libros = result.data;
+							this.status = result.status;
 
-												aletr(result.status);
+							if(this.status !== "OK"){
+								alert("Error en el servidor");
+							}
 
-												if(this.status !== "OK"){
-													alert("Error en el servidor");
-												}
+							box_libros.style.display = "none";
+					},
+					error => {
+						this.errorMessage = <any>error;
 
-												box_libros.style.display = "none";
-										},
-										error => {
-											this.errorMessage = <any>error;
-
-											if(this.errorMessage !== null){
-												console.log(this.errorMessage);
-												alert("Error en la petición (se va por error)");
-											}
-										}
-									);
+						if(this.errorMessage !== null){
+							console.log(this.errorMessage);
+							alert("Error en la petición (al obtener la lista de libros)");
+						}
+					}
+				);
 	}
 
 	onBorrarConfirm(id){
-		this.confirmado = id;
+			this.confirmado = id;
 	}
 
 	onCancelarConfirm(id){
-		this.confirmado = null;
+			this.confirmado = null;
 	}
 
 	onBorrarLibro(id){
 			this._libroService.deleteLibro(id)
-						.subscribe(
-							result => {
-									this.status = result.status;
+				.subscribe(
+					result => {
+							this.status = result.status;
 
-									if(this.status !== "success"){
-										alert("Error en el servidor");
-									}
-									this.getLibros();
-
-							},
-							error => {
-								this.errorMessage = <any>error;
-
-								if(this.errorMessage !== null){
-									console.log(this.errorMessage);
-									alert("Error en la petición");
-								}
+							if(this.status !== "OK"){
+								alert("Error en el servidor");
 							}
-						);
+							this.getLibros();
+					},
+					error => {
+						this.errorMessage = <any>error;
+
+						if(this.errorMessage !== null){
+							console.log(this.errorMessage);
+							alert("Error en la petición");
+						}
+					}
+				);
 	}
 
 }
