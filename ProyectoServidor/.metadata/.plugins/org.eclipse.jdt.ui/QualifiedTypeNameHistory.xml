@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
@@ -31,7 +29,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.ActiveProfiles"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"/>
-<fullyQualifiedTypeName name="org.springframework.test.context.TestPropertySource"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
 <fullyQualifiedTypeName name="es.crimarde.service.Service"/>
 <fullyQualifiedTypeName name="es.crimarde.dao.RegistroRepository"/>
@@ -40,7 +37,6 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
 <fullyQualifiedTypeName name="es.crimarde.service.AspectService"/>
 <fullyQualifiedTypeName name="es.crimarde.model.Registro"/>
-<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest.WebEnvironment"/>
@@ -50,7 +46,6 @@
 <fullyQualifiedTypeName name="org.springframework.boot.SpringBootConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringJUnit4ClassRunner"/>
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
-<fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="es.crimarde.dao.BookRepository"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="es.crimarde.Application"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.IntegrationTest"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.TestPropertySource"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.ContextConfiguration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.PropertySource"/>
+<fullyQualifiedTypeName name="java.lang.Byte"/>
+<fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 </qualifiedTypeNameHistroy>
