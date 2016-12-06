@@ -17,34 +17,36 @@ var LibroAddComponent = (function () {
         this._libroService = _libroService;
         this._route = _route;
         this._router = _router;
-        this.titulo = "Crear nuevo libro";
+        this.tituloPag = "Crear nuevo libro";
     }
     LibroAddComponent.prototype.onSubmit = function () {
         var _this = this;
+        this.libro.precio = 1;
         this._libroService.addLibro(this.libro).subscribe(function (response) {
             _this.status = response.status;
-            if (_this.status !== "success") {
+            if (_this.status !== "Created") {
                 alert("Error en el servidor");
             }
+            _this._router.navigate(["/"]);
         }, function (error) {
             _this.errorMessage = error;
             if (_this.errorMessage !== null) {
                 console.log(_this.errorMessage);
-                alert("Error en la petici�n");
+                alert("Error en la petición");
             }
         });
-        this._router.navigate(["/"]);
     };
     LibroAddComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", "null", "bajo");
+        this.libro = new libro_1.Libro(0, "", "", "", [], "0");
     };
     LibroAddComponent.prototype.callPrecio = function (value) {
-        this.libro.precio = value;
+        //	this.libro.precio = value;
+        this.libro.precio = 10;
     };
     LibroAddComponent.prototype.fileChangeEvent = function (fileInput) {
         var _this = this;
         this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then(function (result) {
+        this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then(function (result) {
             _this.resultUpload = result;
             _this.libro.imagen = _this.resultUpload.filename;
         }, function (error) {

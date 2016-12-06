@@ -11,13 +11,12 @@ import {Libro} from "../model/libro";
 })
 
 export class LibroAddComponent implements OnInit {
-	public titulo = "Crear nuevo libro";
+	public tituloPag = "Crear nuevo libro";
 	public libro: Libro;
 	public errorMessage: string;
 	public status: string;
 
 	public filesToUpload: Array<File>;
-
 
 	constructor(
 		private _libroService: LibroService,
@@ -25,34 +24,34 @@ export class LibroAddComponent implements OnInit {
 		private _router: Router
 	){}
 
-
 	onSubmit(){
+		this.libro.precio = 1;
 		 this._libroService.addLibro(this.libro).subscribe(
 				response => {
 					this.status = response.status;
-					if(this.status !== "success"){
+					if(this.status !== "Created"){
 						alert("Error en el servidor");
 					}
+					this._router.navigate(["/"]);
 				},
 				error => {
 					this.errorMessage = <any>error;
 
 					if(this.errorMessage !== null){
 						console.log(this.errorMessage);
-						alert("Error en la petici�n");
+						alert("Error en la petición");
 					}
 				}
 			);
-
-			this._router.navigate(["/"]);
 	}
 
 	ngOnInit(){
-		this.libro = new Libro(0,"","","","null","bajo");
+		this.libro = new Libro(0,"","","",[],"0");
 	}
 
 	callPrecio(value){
-		this.libro.precio = value;
+	//	this.libro.precio = value;
+		this.libro.precio = 10;
 	}
 
 	public resultUpload;
@@ -60,7 +59,7 @@ export class LibroAddComponent implements OnInit {
 	fileChangeEvent(fileInput: any){
 		this.filesToUpload = <Array<File>>fileInput.target.files;
 
-		this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then((result) => {
+		this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then((result) => {
 				this.resultUpload = result;
 				this.libro.imagen = this.resultUpload.filename;
 		}, (error) =>{
