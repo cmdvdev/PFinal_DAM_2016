@@ -26,7 +26,7 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	 * @see es.crimarde.service.impl.adf#retrieve(java.lang.Integer)
 	 */
 	@Override
-	public BookDTO retrieve(Integer id) {
+	public BookDTO retrieve(Long id) {
 		Book book = repository.findOne(id);
 		return transformer.entityToDto(book);
 	}
@@ -45,7 +45,12 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	@Override
 	public void add(BookDTO bookDTO){
 		if(null != bookDTO){
-			repository.save(transformer.dtoToEntity(bookDTO));
+			try{
+				repository.save(transformer.dtoToEntity(bookDTO));
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
 		}
 	}
 
@@ -73,10 +78,10 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	}
 	
 	/* (non-Javadoc)
-	 * @see es.crimarde.service.impl.adf#delete(java.lang.Integer)
+	 * @see es.crimarde.service.impl.adf#delete(java.lang.Long)
 	 */
 	@Override
-	public void delete(Integer id){
+	public void delete(Long id){
 		if(null != id){
 			repository.delete(id);
 		}
@@ -93,7 +98,8 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	}
 	
 	public boolean existsBook(BookDTO bookDTO) {
-		return (repository.existsByTitulo(bookDTO.getTitulo()) >= 1)? Boolean.TRUE : Boolean.FALSE;
+		return (null != repository.existsByTitulo(bookDTO.getTitulo()) 
+				&& repository.existsByTitulo(bookDTO.getTitulo()) >= 1)? Boolean.TRUE : Boolean.FALSE;
 	}
 	
 	public Long countBooks(){

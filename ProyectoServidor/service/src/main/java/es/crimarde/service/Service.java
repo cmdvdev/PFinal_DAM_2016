@@ -5,7 +5,7 @@ import java.util.List;
 import es.crimarde.negocio.BookDTO;
 
 public interface Service {
-	BookDTO retrieve(Integer id);
+	BookDTO retrieve(Long id);
 
 	List<BookDTO> retrieveAll();
 
@@ -15,7 +15,7 @@ public interface Service {
 
 	void update(BookDTO bookDTO);
 
-	void delete(Integer id);
+	void delete(Long id);
 
 	void delete(BookDTO bookDTO);
 	

@@ -56,7 +56,8 @@ public class Controller {
         return response;
     }
     
-    @RequestMapping(value = "/book/add", method = RequestMethod.POST)
+	@CrossOrigin(origins = "http://localhost:3000")
+    @RequestMapping(value = "/book/add", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public Response add(@RequestBody BookDTO bookDTO) {
     	
     	logger.info("-- Añadir libro --");
@@ -78,7 +79,7 @@ public class Controller {
     }
     
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
-    public Response delete(@PathVariable("id") Integer id) {
+    public Response delete(@PathVariable("id") Long id) {
     	
     	logger.info(String.format("-- Eliminacion del libro con id %d --",id.intValue()));
     	
@@ -94,7 +95,7 @@ public class Controller {
     }
     
     @RequestMapping(value = "/update/{id}", method = RequestMethod.PUT)
-    public String edit(@PathVariable("id") Integer id, @RequestBody BookDTO bookDTO) {
+    public Response edit(@PathVariable("id") Long id, @RequestBody BookDTO bookDTO) {
     	
     	logger.info(String.format("-- Edicion de libro con id %d --",id.intValue()));
     	
@@ -111,14 +112,14 @@ public class Controller {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
     	}
     	
-    	return response.getStatus();
+    	return response;
     }
     
     @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value = "/book/retrieve/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public Response retrieve(@PathVariable("id") String id) {
     	
-    	Integer identificador = Integer.valueOf(id);
+    	Long identificador = Long.valueOf(id);
     	
     	logger.info(String.format("-- Recuperacion de libro con %d --",identificador.intValue()));
     	
@@ -147,7 +148,7 @@ public class Controller {
     	
     	Response response = new Response();
     	
-    	BookDTO book = servicio.retrieve( (int) (Math.random() * servicio.countBooks() + 1));		//TODO hacerlo random de verdad
+    	BookDTO book = servicio.retrieve( (long) (Math.random() * servicio.countBooks() + 1));		//TODO hacerlo random de verdad
     	response.setStatus(HttpStatus.OK.getReasonPhrase());
         response.setData(book);
         

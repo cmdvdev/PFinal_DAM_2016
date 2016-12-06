@@ -1,27 +1,24 @@
 package es.crimarde.negocio;
 
-import com.mysql.jdbc.Blob;
-
-
 public class BookDTO {
 	
-	private Integer id;
+	private Long id;
 	private String titulo;
 	private String autor;
 	private String sinopsis;
-	private Blob imagen;
+//	private Byte[] imagen;
 	private double precio;
 
 	public BookDTO() {
 	}
 		
-	public BookDTO(Integer id, String titulo, String autor, String sinopsis, Blob imagen, double precio) {
+	public BookDTO(Long id, String titulo, String autor, String sinopsis, double precio) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.sinopsis = sinopsis;
-		this.imagen = imagen;
+//		this.imagen = imagen;
 		this.precio = precio;
 	}
 	
@@ -31,15 +28,15 @@ public class BookDTO {
 		this.titulo = builder.getTitulo();
 		this.autor = builder.getAutor();
 		this.sinopsis = builder.getSinopsis();
-		this.imagen = builder.getImagen();
+//		this.imagen = builder.getImagen();
 		this.precio = builder.getPrecio();
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -67,13 +64,13 @@ public class BookDTO {
 		this.sinopsis = sinopsis;
 	}
 
-	public Blob getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(Blob imagen) {
-		this.imagen = imagen;
-	}
+//	public Byte[] getImagen() {
+//		return imagen;
+//	}
+//
+//	public void setImagen(Byte[] imagen) {
+//		this.imagen = imagen;
+//	}
 
 	public double getPrecio() {
 		return precio;
@@ -89,17 +86,16 @@ public class BookDTO {
 	
 	public class Builder {
 		
-		private Integer id;
+		private Long id;
 		private String titulo;
 		private String sinopsis;
 		private String autor;
-		private Blob imagen;
 		private double precio;
 
 		public Builder() {
 		}
 
-		public Builder whithId(Integer id) {
+		public Builder whithId(Long id) {
 			this.id = id;
 			return this;
 		}
@@ -119,11 +115,6 @@ public class BookDTO {
 			return this;
 		}
 
-		public Builder whithImagen(Blob imagen) {
-			this.imagen = imagen;
-			return this;
-		}
-
 		public Builder whithPrecio(double precio) {
 			this.precio = precio;
 			return this;
@@ -133,7 +124,7 @@ public class BookDTO {
 			return new BookDTO(this);
 		}
 
-		public int getId() {
+		public Long getId() {
 			return id;
 		}
 
@@ -149,9 +140,9 @@ public class BookDTO {
 			return autor;
 		}
 
-		public Blob getImagen() {
-			return imagen;
-		}
+//		public Byte[] getImagen() {
+//			return imagen;
+//		}
 
 		public double getPrecio() {
 			return precio;

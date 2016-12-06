@@ -3,6 +3,7 @@ package es.crimarde.model;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -12,24 +13,24 @@ import javax.persistence.Table;
 public class Book {
 
 	
-	@GeneratedValue
-	@Id 						private int id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id 						private Long id;
 	@Column(name="titulo") 		private String titulo;
 	@Column(name="autor")  		private String autor;
 	@Column(name="sinopsis")	private String sinopsis;
-	@Column(name="imagen")		private Byte[] imagen;
+	//@Column(name="imagen")		private Byte[] imagen;
 	@Column(name="precio")		private double precio;
 
 	public Book() {
 	}
 		
-	public Book(int id, String titulo, String autor, String sinopsis, Byte[] imagen, double precio) {
+	public Book(Long id, String titulo, String autor, String sinopsis, double precio) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.sinopsis = sinopsis;
-		this.imagen = imagen;
+		//this.imagen = imagen;
 		this.precio = precio;
 	}
 	
@@ -39,15 +40,15 @@ public class Book {
 		this.titulo = builder.getTitulo();
 		this.autor = builder.getAutor();
 		this.sinopsis = builder.getSinopsis();
-		this.imagen = builder.getImagen();
+		//this.imagen = builder.getImagen();
 		this.precio = builder.getPrecio();
 	}
 
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -75,13 +76,13 @@ public class Book {
 		this.sinopsis = sinopsis;
 	}
 
-	public Byte[] getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(Byte[] imagen) {
-		this.imagen = imagen;
-	}
+//	public Byte[] getImagen() {
+//		return imagen;
+//	}
+//
+//	public void setImagen(Byte[] imagen) {
+//		this.imagen = imagen;
+//	}
 
 	public double getPrecio() {
 		return precio;
@@ -97,17 +98,16 @@ public class Book {
 	
 	public class Builder {
 		
-		private int id;
+		private Long id;
 		private String titulo;
 		private String sinopsis;
 		private String autor;
-		private Byte[] imagen;
 		private double precio;
 
 		public Builder() {
 		}
 
-		public Builder whithId(int id) {
+		public Builder whithId(Long id) {
 			this.id = id;
 			return this;
 		}
@@ -127,11 +127,6 @@ public class Book {
 			return this;
 		}
 
-		public Builder whithImagen(Byte[] imagen) {
-			this.imagen = imagen;
-			return this;
-		}
-
 		public Builder whithPrecio(double precio) {
 			this.precio = precio;
 			return this;
@@ -141,7 +136,7 @@ public class Book {
 			return new Book(this);
 		}
 
-		public int getId() {
+		public Long getId() {
 			return id;
 		}
 
@@ -157,15 +152,9 @@ public class Book {
 			return autor;
 		}
 
-		public Byte[] getImagen() {
-			return imagen;
-		}
-
 		public double getPrecio() {
 			return precio;
 		}
 	}
 
-
-	
 }

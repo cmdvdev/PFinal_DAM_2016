@@ -58,12 +58,11 @@ public class ControllerTest {
 	
 	private BookDTO buildBook(int order){
 		BookDTO book = new BookDTO().builder()
-				.whithId(1)
+				.whithId(1L)
 				.whithAutor("autor".concat(String.valueOf(order)))
 				.whithPrecio(new Long(order))
 				.whithSinopsis("resumen libro ".concat(String.valueOf(order)))
 				.whithTitulo("Titulo".concat(String.valueOf(order)))
-				.whithImagen(null)
 				.build();
 		
 		return book;

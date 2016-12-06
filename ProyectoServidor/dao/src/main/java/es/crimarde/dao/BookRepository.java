@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import es.crimarde.model.Book;
 
 @Repository
-public interface BookRepository extends CrudRepository<Book, Integer> {
+public interface BookRepository extends CrudRepository<Book, Long> {
 	
 	@Modifying
 	@Query("delete from Book where id = ?1")
@@ -22,7 +22,7 @@ public interface BookRepository extends CrudRepository<Book, Integer> {
     @Modifying
     @Query("UPDATE Book b SET b.titulo = ?2, b.autor = ?3, sinopsis = ?4, precio = ?5 WHERE b.id = ?1")
     Integer updateBook(
-    		@Param("id") Integer id, 
+    		@Param("id") Long id, 
     		@Param("titulo") String titulo, 
     		@Param("autor") String autor,
     		@Param("sinopsis") String sinopsis,

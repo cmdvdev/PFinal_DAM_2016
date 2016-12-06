@@ -31,11 +31,11 @@ public class ServiceImplTest {
 	@Test
 	public void retrieveTest(){
 		
-		int idToRetrieve = 1;
+		long idToRetrieve = 1;
 		
 		Book book = buildBook(idToRetrieve);
 		
-		Mockito.when(repositoryMock.findOne(Mockito.anyInt())).thenReturn(bookMock);
+		Mockito.when(repositoryMock.findOne(Mockito.anyLong())).thenReturn(bookMock);
 		Mockito.when(transformerMock.entityToDto(bookMock)).thenReturn(bookDTOMock);
 		
 		BookDTO bookDTO = servicio.retrieve(idToRetrieve);
@@ -47,7 +47,7 @@ public class ServiceImplTest {
 	@Test
 	public void retrieveTestWithOutOfRangeId(){
 		
-		Integer idToRetrieve = 1000;
+		Long idToRetrieve = 1000L;
 		
 		Book book = buildBook(idToRetrieve);
 		
@@ -59,14 +59,13 @@ public class ServiceImplTest {
 		Assert.assertThat(bookDTO, Matchers.nullValue());
 	}
 	
-	private Book buildBook(int order){
+	private Book buildBook(long order){
 		Book book = new Book().builder()
-				.whithId(1)
+				.whithId(1L)
 				.whithAutor("autor".concat(String.valueOf(order)))
 				.whithPrecio(new Long(order))
 				.whithSinopsis("resumen libro ".concat(String.valueOf(order)))
 				.whithTitulo("Titulo".concat(String.valueOf(order)))
-				.whithImagen(null)
 				.build();
 		
 		return book;

@@ -18,7 +18,7 @@ public class OrikaMapper {
 			.field("titulo", "titulo")
 			.field("sinopsis", "sinopsis")
 			.field("autor", "autor")
-			.field("imagen", "imagen")
+			//.field("imagen", "imagen")
 			.field("precio", "precio")
 			.byDefault()
 			.register();
@@ -28,7 +28,7 @@ public class OrikaMapper {
 			.field("titulo", "titulo")
 			.field("sinopsis", "sinopsis")
 			.field("autor", "autor")
-			.field("imagen", "imagen")
+			//.field("imagen", "imagen")
 			.field("precio", "precio")
 			.byDefault()
 			.register();

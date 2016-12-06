@@ -14,7 +14,7 @@ public class BookTransformerHelperTest {
 	public void toDTOTest(){
 		
 		BookTransformerHelper transformer = new BookTransformerHelper();
-		Book book = new Book(1, "titulo", "autor", "sinopsis", null, 19.99);
+		Book book = new Book(1L, "titulo", "autor", "sinopsis", 19.99);
 		
 		BookDTO dto = transformer.entityToDto(book);
 		
@@ -29,7 +29,7 @@ public class BookTransformerHelperTest {
 	public void toEntityTest(){
 		
 		BookTransformerHelper transformer = new BookTransformerHelper();
-		BookDTO bookDTO = new BookDTO(1, "titulo", "autor", "sinopsis", null, 19.99);
+		BookDTO bookDTO = new BookDTO(1L, "titulo", "autor", "sinopsis", 19.99);
 		
 		Book entity = transformer.dtoToEntity(bookDTO);
 		

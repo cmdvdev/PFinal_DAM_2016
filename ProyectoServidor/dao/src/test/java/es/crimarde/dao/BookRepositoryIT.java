@@ -21,7 +21,7 @@ public class BookRepositoryIT {
 	
 	@Test
 	public void testt(){
-	Book b = repo.findOne(1);
+	Book b = repo.findOne(1L);
 	System.out.println("--");
 	}
 	
