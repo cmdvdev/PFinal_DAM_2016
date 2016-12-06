@@ -55,4 +55,19 @@ After Returning Advice: Sometimes we want advice methods to execute only if the 
 After Throwing Advice: This advice gets executed only when join point method throws exception, we can use it to rollback the transaction declaratively. We use @AfterThrowing annotation for this type of advice.
 Around Advice: This is the most important and powerful advice. This advice surrounds the join point method and we can also choose whether to execute the join point method or not. We can write advice code that gets executed before and after the execution of the join point method. It is the responsibility of around advice to invoke the join point method and return values if the method is returning something. We use @Around annotation to create around advice methods.
 
+Ejemplos de pointcut
+@Pointcut("execution(public * *(..))")  
+It will be applied on all the public methods.
+
+@Pointcut("execution(public Operation.*(..))")  
+It will be applied on all the public methods of Operation class.
+
+@Pointcut("execution(* Operation.*(..))")  
+It will be applied on all the methods of Operation class.
+
+@Pointcut("execution(public Employee.set*(..))")  
+It will be applied on all the public setter methods of Employee class.
+
+@Pointcut("execution(int Operation.*(..))")  
+It will be applied on all the methods of Operation class that returns int value.
 */
