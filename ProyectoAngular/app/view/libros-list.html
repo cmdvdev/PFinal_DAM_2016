@@ -1,4 +1,4 @@
-<h1>{{titulo}}</h1>
+<h1>{{tituloPag}}</h1>
 
 <ul id="libros-list">
 	<li class="loading">
@@ -16,7 +16,7 @@
 				<a [routerLink]="['/editar-libro', libro.id ]" href="" class="btn btn-editar">Editar</a>
 				<a (click)="onBorrarConfirm(libro.id)" class="btn btn-eliminar">Eliminar</a>
 			</p>
-			<div class="seguro" *ngIf="confirmado === libro.id">
+			<div class="confirmacion" *ngIf="confirmado === libro.id">
 				<a (click)="onBorrarLibro(libro.id)" class="btn btn-eliminar">Eliminar</a>
 				<a (click)="onCancelarConfirm(libro.id)" class="btn btn-ver">Cancelar</a>
 			</div>
