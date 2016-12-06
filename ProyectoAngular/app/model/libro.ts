@@ -4,7 +4,6 @@ export class Libro{
 		public titulo:string,
 		public autor:string,
 		public sinopsis:string,
-		public imagen:string,
 		public precio:string
 	){}
 }
