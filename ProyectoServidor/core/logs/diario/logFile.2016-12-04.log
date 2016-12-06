@@ -7,3 +7,25 @@
 16:51:10.755 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
 16:51:11.612 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
 {"status":"OK","data":[{"id":1,"titulo":"titulo1","autor":"Autor1","sinopsis":"resumen del libro1","imagen":null,"precio":19.99},{"id":2,"titulo":"titulo2","autor":"Autor2","sinopsis":"resumen del libro2","imagen":null,"precio":19.99},{"id":3,"titulo":"titulo3","autor":"Autor3","sinopsis":"resumen del libro3","imagen":null,"precio":19.99},{"id":4,"titulo":"titulo4","autor":"Autor4","sinopsis":"resumen del libro4","imagen":null,"precio":19.99},{"id":5,"titulo":"titulo5","autor":"Autor5","sinopsis":"resumen del libro5","imagen":null,"precio":19.99}]} 
+17:44:04.890 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - -- Recuperacion de libro con 1 -- 
+17:44:06.208 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - Libro recuperado correctamente 
+18:00:46.407 [http-nio-8090-exec-1] ERROR e.c.core.controller.Controller - NumberFormatException!!! 
+18:05:37.292 [http-nio-8090-exec-1] ERROR e.c.core.controller.Controller - NumberFormatException!!! 
+18:14:24.794 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - -- Recuperacion de libro con 1 -- 
+18:14:25.534 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - Libro recuperado correctamente 
+18:29:16.825 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - -- Recuperacion de libro con 3 -- 
+18:29:17.259 [http-nio-8090-exec-3] INFO  e.c.core.controller.Controller - Libro recuperado correctamente 
+18:33:10.043 [http-nio-8090-exec-1] ERROR e.c.c.c.RestExceptionController - NumberFormatException!!! 
+18:35:54.835 [http-nio-8090-exec-1] ERROR e.c.c.c.RestExceptionController - NumberFormatException!!! 
+22:57:48.049 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+22:57:51.511 [http-nio-8090-exec-2] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+23:04:19.957 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+23:09:05.424 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+23:18:39.973 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+23:18:40.788 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
+{"status":"OK","data":[{"id":1,"titulo":"Los tres cerditos","autor":"Autor1","sinopsis":"Los tres cerditos","imagen":null,"precio":19.99},{"id":2,"titulo":"Caperucita roja","autor":"Autor2","sinopsis":"Caperucita roja","imagen":null,"precio":19.99},{"id":3,"titulo":"San Jordi","autor":"Autor3","sinopsis":"San Jordi","imagen":null,"precio":19.99},{"id":4,"titulo":"Pepa Pig","autor":"Autor4","sinopsis":"Pepa Pig","imagen":null,"precio":19.99},{"id":5,"titulo":"Cayou","autor":"Autor5","sinopsis":"Cayou","imagen":null,"precio":19.99}]} 
+23:18:52.489 [http-nio-8090-exec-4] INFO  e.c.core.controller.Controller - -- Recuperacion de libro con 1 -- 
+23:18:52.859 [http-nio-8090-exec-4] INFO  e.c.core.controller.Controller - Libro recuperado correctamente 
+23:59:42.945 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
+23:59:43.733 [http-nio-8090-exec-1] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
+{"status":"OK","data":[{"id":1,"titulo":"Los tres cerditos","autor":"Autor1","sinopsis":"Los tres cerditos","imagen":null,"precio":19.99},{"id":2,"titulo":"Caperucita roja","autor":"Autor2","sinopsis":"Caperucita roja","imagen":null,"precio":19.99},{"id":3,"titulo":"San Jordi","autor":"Autor3","sinopsis":"San Jordi","imagen":null,"precio":19.99},{"id":4,"titulo":"Pepa Pig","autor":"Autor4","sinopsis":"Pepa Pig","imagen":null,"precio":19.99},{"id":5,"titulo":"Cayou","autor":"Autor5","sinopsis":"Cayou","imagen":null,"precio":19.99}]} 
