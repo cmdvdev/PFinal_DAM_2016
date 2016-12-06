@@ -7,5 +7,5 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 
 export class AppComponent{
-	public titulo:string = "Libros";
+	public titulo:string = "Mi biblioteca de cuentos";
 }
