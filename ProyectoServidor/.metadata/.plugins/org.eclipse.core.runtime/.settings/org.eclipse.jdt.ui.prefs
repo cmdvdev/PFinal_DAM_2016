@@ -1,11 +1,11 @@
 content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.recommenders.calls.rcp.proposalCategory.templates\u0000org.eclipse.mylyn.java.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.recommenders.chain.rcp.proposalCategory.chain\u0000
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="es.crimarde.model.Prueba"><rhs name\="es.crimarde.model.Prueba"/></lhs><lhs name\="es.crimarde.model.Book"><rhs name\="es.crimarde.model.Book"/></lhs><lhs name\="ma.glasnost.orika.MapperFactory"><rhs name\="ma.glasnost.orika.impl.DefaultMapperFactory"/></lhs><lhs name\="es.crimarde.helpers.BookTransformerHelp"><rhs name\="es.crimarde.helpers.impl.BookTransformerHelper"/></lhs><lhs name\="es.crimarde.helpers.impl.BookTransformerHelper"><rhs name\="es.crimarde.helpers.impl.BookTransformerHelper"/></lhs><lhs name\="es.crimarde.negocio.BookDTO"><rhs name\="es.crimarde.negocio.BookDTO"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="es.crimarde.core.model.Response"><rhs name\="es.crimarde.core.model.Response"/></lhs></history>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="es.crimarde.model.Prueba"><rhs name\="es.crimarde.model.Prueba"/></lhs><lhs name\="es.crimarde.model.Book"><rhs name\="es.crimarde.model.Book"/></lhs><lhs name\="ma.glasnost.orika.MapperFactory"><rhs name\="ma.glasnost.orika.impl.DefaultMapperFactory"/></lhs><lhs name\="es.crimarde.helpers.BookTransformerHelp"><rhs name\="es.crimarde.helpers.impl.BookTransformerHelper"/></lhs><lhs name\="es.crimarde.helpers.impl.BookTransformerHelper"><rhs name\="es.crimarde.helpers.impl.BookTransformerHelper"/></lhs><lhs name\="es.crimarde.negocio.BookDTO"><rhs name\="es.crimarde.negocio.BookDTO"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="es.crimarde.core.model.Response"><rhs name\="es.crimarde.core.model.Response"/></lhs><lhs name\="java.lang.Enum"><rhs name\="org.springframework.http.HttpStatus"/><rhs name\="org.springframework.http.HttpMethod"/><rhs name\="javax.persistence.GenerationType"/><rhs name\="org.springframework.boot.test.context.SpringBootTest$WebEnvironment"/></lhs><lhs name\="es.crimarde.core.controller.Controller"><rhs name\="es.crimarde.core.controller.Controller"/></lhs><lhs name\="es.crimarde.model.Book$Builder"><rhs name\="es.crimarde.model.Book$Builder"/></lhs><lhs name\="es.crimarde.service.Service"><rhs name\="es.crimarde.service.impl.ServiceImpl"/></lhs><lhs name\="es.crimarde.service.impl.ServiceImpl"><rhs name\="es.crimarde.service.impl.ServiceImpl"/></lhs><lhs name\="es.crimarde.model.Registro"><rhs name\="es.crimarde.model.Registro"/></lhs></history>
 content_assist_number_of_computers=24
 content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
 fontPropagated=true
-org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.layout=1
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.editor.tab.width=
 org.eclipse.jdt.ui.formatterprofiles.version=12
@@ -16,7 +16,17 @@ org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" 
 org.eclipse.jdt.ui.text.templates_migrated=true
 org.eclipse.jface.textfont=1|Consolas|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
 proposalOrderMigrated=true
+spelling_ignore_ampersand_in_properties=true
+spelling_ignore_digits=true
+spelling_ignore_java_strings=true
+spelling_ignore_mixed=true
+spelling_ignore_non_letters=true
+spelling_ignore_sentence=true
+spelling_ignore_single_letters=true
+spelling_ignore_upper=true
+spelling_ignore_urls=true
 spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
 tabWidthPropagated=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

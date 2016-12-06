@@ -1,0 +1,46 @@
+package es.crimarde.core.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Test;
+import org.mockito.Mock;
+
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.service.Service;
+
+public class ControllerTest {
+
+	@Mock private Service servicio;
+	
+	@Test
+	public void responseList(){
+		
+	}
+	
+	
+	private List<BookDTO> biuldBookList(int elementos){
+		
+		List<BookDTO> lista = new ArrayList<>();
+		
+		for(int i = 0; i<elementos; i++){
+			lista.add(buildBook(i));
+		}
+		
+		return lista;
+		
+	}
+	
+	private BookDTO buildBook(int order){
+		BookDTO book = new BookDTO().builder()
+				.whithId(1)
+				.whithAutor("autor".concat(String.valueOf(order)))
+				.whithPrecio(new Long(order))
+				.whithSinopsis("resumen libro ".concat(String.valueOf(order)))
+				.whithTitulo("Titulo".concat(String.valueOf(order)))
+				.whithImagen(null)
+				.build();
+		
+		return book;
+	}
+}

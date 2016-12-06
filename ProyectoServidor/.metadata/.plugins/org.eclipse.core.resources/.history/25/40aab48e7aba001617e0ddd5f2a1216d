@@ -1,0 +1,9 @@
+package es.crimarde.service;
+
+import es.crimarde.model.Registro;
+import es.crimarde.negocio.BookDTO;
+
+public interface AspectService {
+
+	void add(Registro registro);
+}

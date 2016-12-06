@@ -1,5 +1,0 @@
-package es.crimarde.helpers;
-
-public class BookToBookDTOConverter {
-
-}

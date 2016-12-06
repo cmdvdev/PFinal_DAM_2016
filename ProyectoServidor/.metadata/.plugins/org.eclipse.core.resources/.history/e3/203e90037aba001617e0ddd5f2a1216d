@@ -1,0 +1,5 @@
+package es.crimarde.model;
+
+public class Registro {
+
+}

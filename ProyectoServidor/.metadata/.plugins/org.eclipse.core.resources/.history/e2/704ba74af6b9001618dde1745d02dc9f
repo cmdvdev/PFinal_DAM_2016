@@ -1,0 +1,12 @@
+package es.crimarde.service.impl;
+
+import org.mockito.Mock;
+
+import es.crimarde.dao.BookRepository;
+import es.crimarde.helpers.impl.BookTransformerHelper;
+
+public class ServiceImplTest {
+
+	@Mock private BookRepository repository;
+	@Mock private BookTransformerHelper transformer;
+}

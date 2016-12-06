@@ -1,0 +1,34 @@
+package es.crimarde.dao;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import es.crimarde.dao.BookRepository;
+import es.crimarde.model.Book;
+
+@RunWith(SpringRunner.class)
+@EnableAutoConfiguration
+@SpringBootConfiguration
+@SpringBootTest
+@ComponentScan(basePackages="es.crimarde")
+@EnableJpaRepositories("es.crimarde")
+@EntityScan("es.crimarde")
+public class BookRepositoryTest {
+
+	@Autowired
+	private BookRepository repositorio;
+	
+	@Test
+	public void prueba(){
+		Book book = repositorio.findOne(1);
+		System.out.println(book.getTitulo());
+	}
+}

@@ -1,0 +1,13 @@
+#Nivel de debugp par hibernate
+logging.level.org.hibernate.SQL=debug
+
+
+spring.datasource.url = jdbc:h2:mem:testdb
+spring.datasource.platform = h2
+spring.datasource.driverClassName = org.h2.Driver
+spring.datasource.schema: classpath:/scripts/schema.sql
+
+
+# Keep the connection alive if idle for a long time (needed in production)
+spring.datasource.testWhileIdle = true
+spring.datasource.validationQuery = SELECT 1

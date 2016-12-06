@@ -1,5 +1,0 @@
-package es.crimarde.dao.impl;
-
-public class EmployeeRepositoryImpl {
-
-}

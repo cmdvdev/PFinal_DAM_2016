@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<name>ServicioRest</name>
+
+	<groupId>es.crimarde</groupId>
+	<artifactId>ServicioRest</artifactId>
+	<version>0.2.0.RELEASE</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<!-- Specify Java Compiler Version -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>1.8</java.version>
+		<spring-boot-groupId>org.springframework.boot</spring-boot-groupId>
+		<spring-boot-artifactId>spring-boot-starter</spring-boot-artifactId>
+		<spring-boot.version>1.4.0.RELEASE</spring-boot.version>
+		<project-encoding>UTF-8</project-encoding>
+	</properties>
+
+
+	<!-- Inherit defaults from Spring Boot -->
+	<parent>
+		<groupId>io.spring.platform</groupId>
+		<artifactId>platform-bom</artifactId>
+		<version>2.0.7.RELEASE</version>
+	</parent>
+
+	<!-- Dependencias comunes a más de un proyecto -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<modules>
+		<module>../core</module>
+		<module>../dao</module>
+		<module>../service</module>
+	</modules>
+</project>

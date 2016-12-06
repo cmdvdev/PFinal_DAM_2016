@@ -1,0 +1,65 @@
+package es.crimarde.core.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.mockito.runners.MockitoJUnitRunner;
+
+import es.crimarde.core.model.ResponseList;
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.service.Service;
+
+@RunWith(MockitoJUnitRunner.class)
+public class ControllerTest {
+
+	@Mock private Service servicio;
+	
+	@BeforeClass
+	public void setUp(){
+		MockitoAnnotations.initMocks(this);
+	}
+	
+	@Test
+	public void responseList(){
+		MockitoAnnotations.initMocks(this);
+		Mockito.when(servicio.retrieveAll()).thenReturn(buildBookList(5));
+		
+		Controller controller = new Controller();
+		ResponseList response = controller.retrieveList();
+		
+		//Assert.assertThat(response.getData(), Mockito.notNull());
+		
+	}
+	
+	
+	private List<BookDTO> buildBookList(int elementos){
+		
+		List<BookDTO> lista = new ArrayList<>();
+		
+		for(int i = 0; i<elementos; i++){
+			lista.add(buildBook(i));
+		}
+		
+		return lista;
+		
+	}
+	
+	private BookDTO buildBook(int order){
+		BookDTO book = new BookDTO().builder()
+				.whithId(1)
+				.whithAutor("autor".concat(String.valueOf(order)))
+				.whithPrecio(new Long(order))
+				.whithSinopsis("resumen libro ".concat(String.valueOf(order)))
+				.whithTitulo("Titulo".concat(String.valueOf(order)))
+				.whithImagen(null)
+				.build();
+		
+		return book;
+	}
+}

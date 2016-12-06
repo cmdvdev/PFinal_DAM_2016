@@ -1,0 +1,24 @@
+package es.crimarde.core.controller;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import es.crimarde.model.Book;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
+public class BookRepositoryTest {
+
+	@Autowired
+	private BookRepository repositorio;
+	
+	@Test
+	public void prueba(){
+		Book book = repositorio.findOne(1);
+		System.out.println(book.getTitulo());
+	}
+}

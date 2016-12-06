@@ -3,7 +3,11 @@
 	<section name="AbstractFieldDialog">
 		<item value="false" key="UseGetters"/>
 		<item value="First method" key="InsertPosition"/>
+		<item value="false" key="AppendSuper"/>
 		<item value="false" key="GenerateComment"/>
+	</section>
+	<section name="ToStringDialog">
+		<item value="org.apache.commons.lang3.builder.ToStringStyle.NO_STYLE" key="CommonsLangToStringStyle"/>
 	</section>
 	<section name="HashCodeDialog">
 		<item value="37" key="MultiplierNumber"/>

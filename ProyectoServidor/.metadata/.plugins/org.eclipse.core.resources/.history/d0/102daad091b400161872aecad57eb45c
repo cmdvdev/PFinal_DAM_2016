@@ -1,5 +1,0 @@
-package es.crimarde.dao;
-
-public interface DataDAO {
-
-}

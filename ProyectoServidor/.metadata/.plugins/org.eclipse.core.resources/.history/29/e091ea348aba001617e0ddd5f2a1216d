@@ -1,0 +1,26 @@
+package es.crimarde.dao;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.orm.jpa.EntityScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+import es.crimarde.model.Book;
+
+@Configuration
+@EnableJpaRepositories(basePackages = {"es.crimarde.dao"})
+@EntityScan(basePackages = {"es.crimarde.model"})
+@EnableAutoConfiguration
+public class TestConfiguration
+{
+
+	@Autowired BookRepository repo;
+	
+	@Test
+	public void mytest(){
+		Book b = repo.findOne(1);
+		System.out.println(b.getPrecio());
+	}
+}

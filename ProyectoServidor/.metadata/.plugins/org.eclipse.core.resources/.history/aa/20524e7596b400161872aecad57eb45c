@@ -1,4 +1,0 @@
-spring.h2.console.enabled=true
-logging.level.org.hibernate.SQL=debug
-spring.jpa.database=H2
-spring.jpa.show-sql=true

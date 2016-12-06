@@ -1,0 +1,50 @@
+package es.crimarde.service.impl;
+
+import org.hamcrest.Matchers;
+import org.junit.Assert;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+
+import es.crimarde.dao.BookRepository;
+import es.crimarde.helpers.impl.BookTransformerHelper;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+public class ServiceImplTest {
+
+	@Mock private Book bookMock;
+	@Mock private BookDTO bookDTOMock;
+	@Mock private BookRepository repositoryMock;;
+	@Mock private BookTransformerHelper transformerMock;;
+	@InjectMocks private ServiceImpl servicio;
+	
+	@Test
+	public void retrieveTest(){
+		
+		int idToRetrieve = 1;
+		
+		Book book = buildBook(idToRetrieve);
+		
+		Mockito.when(repositoryMock.findOne(Mockito.anyInt())).thenReturn(bookMock);
+		Mockito.when(transformerMock.entityToDto(bookMock)).thenReturn(bookDTOMock);
+		
+		servicio.retrieve(idToRetrieve);
+		
+		Assert.assertThat(actual, matcher);
+	}
+	
+	private Book buildBook(int order){
+		BookDTO book = new BookDTO().builder()
+				.whithId(1)
+				.whithAutor("autor".concat(String.valueOf(order)))
+				.whithPrecio(new Long(order))
+				.whithSinopsis("resumen libro ".concat(String.valueOf(order)))
+				.whithTitulo("Titulo".concat(String.valueOf(order)))
+				.whithImagen(null)
+				.build();
+		
+		return book;
+	}
+}

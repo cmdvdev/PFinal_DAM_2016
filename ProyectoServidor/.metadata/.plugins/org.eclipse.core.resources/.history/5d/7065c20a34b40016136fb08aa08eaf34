@@ -1,6 +1,0 @@
-package es.crimarde.core.hello;
-
-public enum Status {
-
-	SUCCESS(200,"success")
-}

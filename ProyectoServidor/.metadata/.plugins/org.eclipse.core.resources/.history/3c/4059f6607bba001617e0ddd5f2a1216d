@@ -1,0 +1,18 @@
+package es.crimarde.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import es.crimarde.dao.RegistroRepository;
+import es.crimarde.model.Registro;
+import es.crimarde.service.AspectService;
+
+public class AspectServiceImpl implements AspectService {
+
+	@Autowired private RegistroRepository repositorio;
+	
+	@Override
+	public void add(Registro registro) {
+		repositorio.save(registrp);
+	}
+
+}

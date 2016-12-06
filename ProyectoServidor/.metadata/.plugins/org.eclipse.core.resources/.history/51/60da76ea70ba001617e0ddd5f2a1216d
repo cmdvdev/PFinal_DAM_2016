@@ -1,0 +1,18 @@
+package es.crimarde.dao;
+
+import org.junit.Test;
+import org.springframework.test.context.ActiveProfiles;
+
+import es.crimarde.model.Book;
+
+@ActiveProfiles("test")
+public class BookRepositoryTest {
+
+	private BookRepository repositorio;
+	
+	@Test
+	public void prueba(){
+		Book book = repositorio.findOne(1);
+		System.out.println(book.getTitulo());
+	}
+}

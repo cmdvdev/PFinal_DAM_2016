@@ -1,7 +1,0 @@
-package es.crimarde.dao.impl;
-
-import es.crimarde.dao.EmployeeRepository;
-
-public class Repo implements EmployeeRepository {
-
-}

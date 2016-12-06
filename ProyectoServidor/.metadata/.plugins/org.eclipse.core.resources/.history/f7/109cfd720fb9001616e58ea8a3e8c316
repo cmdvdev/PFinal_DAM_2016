@@ -1,0 +1,69 @@
+package es.crimarde.core.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.http.HttpMethod;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+
+import es.crimarde.core.aplication.CustomBasicAuthenticationEntryPoint;
+
+@PropertySource("classpath:application.properties")
+@Configuration
+@EnableWebSecurity
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+
+	@Value("${crimarde.dam.security.realm.name}")
+    private String REALM;
+	
+    @Autowired
+    public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception {
+        auth.inMemoryAuthentication()
+        	.withUser("user").password("pass").roles("USER")
+        	.and()
+        	.withUser("admin").password("pass").roles("ADMIN");
+    }
+    
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+  
+    	http.authorizeRequests().anyRequest().fullyAuthenticated().and().
+        httpBasic().and().
+        csrf().disable();
+    	
+//      http
+//      	.httpBasic().and()
+//	        .authorizeRequests()
+//		        .antMatchers(HttpMethod.GET,"/lista").permitAll()
+//		        .antMatchers(HttpMethod.GET,"/book/retrieve/**").hasRole("USER")
+//		        .antMatchers(HttpMethod.GET,"/delete").hasRole("ADMIN")
+//		        .anyRequest().authenticated() 
+//        .and().csrf().disable()        
+//        .httpBasic().realmName(REALM).authenticationEntryPoint(getBasicAuthEntryPoint())
+//        .and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);//No hace falta crear una sesion
+      
+    }
+     
+    @Bean
+    public CustomBasicAuthenticationEntryPoint getBasicAuthEntryPoint(){
+        return new CustomBasicAuthenticationEntryPoint();
+    }
+     
+    /* To allow Pre-flight [OPTIONS] request from browser */
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+        	.ignoring()
+        		.antMatchers(HttpMethod.OPTIONS, "/**");
+    }
+}
+
+
+//https://spring.io/blog/2013/07/03/spring-security-java-config-preview-web-security/

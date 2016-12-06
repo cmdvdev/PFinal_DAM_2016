@@ -1,0 +1,24 @@
+package es.crimarde.service.impl;
+
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import es.crimarde.dao.BookRepository;
+import es.crimarde.helpers.impl.BookTransformerHelper;
+import es.crimarde.model.Book;
+import es.crimarde.negocio.BookDTO;
+
+public class ServiceImplTest {
+
+	@Mock private Book bookMock;
+	@Mock private BookDTO bookDTOMock;
+	@Mock private BookRepository repositoryMock;;
+	@Mock private BookTransformerHelper transformerMock;;
+	@InjectMocks private ServiceImpl servicio;
+	
+	@Test
+	public void retrieveTest(){
+		
+	}
+}

@@ -1,1 +1,0 @@
-create table BOOK  (id integer primary key, name varchar(30), pages varchar(30));
