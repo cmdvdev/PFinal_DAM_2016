@@ -5,14 +5,14 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import es.crimarde.helpers.BookTransformerHelp;
+import es.crimarde.helpers.TransformerHelp;
 import es.crimarde.helpers.OrikaMapper;
 import es.crimarde.model.Book;
 import es.crimarde.negocio.BookDTO;
 import ma.glasnost.orika.MapperFacade;
 
 @Component
-public class BookTransformerHelper implements BookTransformerHelp {
+public class BookTransformerHelper implements TransformerHelp<Book, BookDTO> {
 
 	public BookDTO entityToDto(Book book){
 		MapperFacade mapper = OrikaMapper.getMapperFacade();

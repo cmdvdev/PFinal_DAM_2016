@@ -1,5 +1,9 @@
 package es.crimarde.core.config;
 
+import javax.servlet.MultipartConfigElement;
+
+import org.springframework.boot.context.embedded.MultipartConfigFactory;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 // Imports sin Spring Security
@@ -41,4 +45,5 @@ public class WebConfiguration {
 //        httpSecurity.csrf().disable();
 //        httpSecurity.headers().frameOptions().disable();
 //    }
+	
 }
