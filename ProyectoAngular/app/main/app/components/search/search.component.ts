@@ -5,7 +5,7 @@ import {Libro} from "../../model/libro";
 
 @Component({
   selector: 'search-book',
-  template: '<input #sb id="sb" type="text" (blur)="getLibrosByWord()" />',
+  templateUrl: "app/view/libros-search.html",
   providers: [LibroService],
 })
 export class SearchComponent {
@@ -22,30 +22,42 @@ export class SearchComponent {
     getLibrosByWord(){
   		let box_libros = <HTMLElement>document.querySelector("#libros-list .loading");
   		box_libros.style.visibility = "visible";
-  		let word = (<HTMLInputElement>document.querySelector('#sb')).value;
+  		let word = (<HTMLInputElement>document.querySelector('#search')).value;
 
-  		this._libroService.getLibrosByWord(word)
-  				.subscribe(
-  					result => {
-  							this.libros = result.data;
-  							this.status = result.status;
+      if(word !== ''){
+  			this._libroService.getLibrosByWord(word)
+  					.subscribe(
+  						result => {
+  								this.libros = result.data;
+  								this.status = result.status;
 
-                this.PasameLosLibros.emit({libros : this.libros});
+                  this.PasameLosLibros.emit({libros : this.libros});
 
-  							if(this.status !== "OK"){
-  								alert("Error en el servidor");
+  								if(this.status !== "OK"){
+  									alert("Error en el servidor");
+  								}
+
+  								box_libros.style.display = "none";
+  						},
+  						error => {
+  							this.errorMessage = <any>error;
+
+  							if(this.errorMessage !== null){
+  								console.log(this.errorMessage);
+  								alert("Error en la petición (al obtener la lista de libros)");
   							}
-
-  							box_libros.style.display = "none";
-  					},
-  					error => {
-  						this.errorMessage = <any>error;
-
-  						if(this.errorMessage !== null){
-  							console.log(this.errorMessage);
-  							alert("Error en la petición (al obtener la lista de libros)");
   						}
-  					}
-  				);
-        }
+  					);
+  		} else{
+  			this._libroService.getLibros().subscribe(
+          result => {
+              this.libros = result.data;
+              this.status = result.status;
+
+              this.PasameLosLibros.emit({libros : this.libros});
+            });
+  		}
+
+    }
+
 }
