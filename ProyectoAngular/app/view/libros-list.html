@@ -3,11 +3,9 @@
 		<h1>{{tituloPag}}</h1>
 	</div>
 	<div class="drch">
-		Filtrar por titulo <input id="search" type="text" /> <a (click)="getLibrosByWord()" class="btn btn-ver">Busca</a>
+		<search-book (PasameLosLibros)="showLibros($event)" ></search-book>
 	</div>
 </div>
-
-<search-book (PasameLosLibros)="showLibros($event)" ></search-book>
 
 <ul id="libros-list">
 	<li class="loading">

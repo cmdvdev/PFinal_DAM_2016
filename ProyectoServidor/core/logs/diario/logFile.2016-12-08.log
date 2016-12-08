@@ -706,9 +706,12 @@
 19:01:55.374 [http-nio-8090-exec-8] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
 {"status":"OK","data":[{"id":1,"titulo":"Los tres cerditos","autor":"Autor1","sinopsis":"Los tres cerditos","precio":55.0},{"id":2,"titulo":"Caperucita roja 3","autor":"Autor2","sinopsis":"Caperucita roja","precio":19.99},{"id":3,"titulo":"San Jordi","autor":"Autor3","sinopsis":"San Jordi","precio":19.99},{"id":4,"titulo":"Pepa Pig","autor":"Autor4","sinopsis":"Pepa Pig","precio":19.99},{"id":5,"titulo":"Cayou","autor":"Autor5","sinopsis":"Cayou","precio":19.99}]} 
 19:04:03.003 [http-nio-8090-exec-10] INFO  e.c.core.controller.Controller - -- Busqueda de libro por la palabra tres -- 
+<<<<<<< HEAD
 19:06:39.216 [http-nio-8090-exec-2] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
 19:06:39.534 [http-nio-8090-exec-2] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
 {"status":"OK","data":[{"id":1,"titulo":"Los tres cerditos","autor":"Autor1","sinopsis":"Los tres cerditos","precio":55.0},{"id":2,"titulo":"Caperucita roja 3","autor":"Autor2","sinopsis":"Caperucita roja","precio":19.99},{"id":3,"titulo":"San Jordi","autor":"Autor3","sinopsis":"San Jordi","precio":19.99},{"id":4,"titulo":"Pepa Pig","autor":"Autor4","sinopsis":"Pepa Pig","precio":19.99},{"id":5,"titulo":"Cayou","autor":"Autor5","sinopsis":"Cayou","precio":19.99}]} 
 19:06:47.572 [http-nio-8090-exec-4] INFO  e.c.core.controller.Controller - -- Listado de todos los libros -- 
 19:06:47.697 [http-nio-8090-exec-4] INFO  e.c.core.controller.Controller - Se devuelve lista de libros
 {"status":"OK","data":[{"id":1,"titulo":"Los tres cerditos","autor":"Autor1","sinopsis":"Los tres cerditos","precio":55.0},{"id":2,"titulo":"Caperucita roja 3","autor":"Autor2","sinopsis":"Caperucita roja","precio":19.99},{"id":3,"titulo":"San Jordi","autor":"Autor3","sinopsis":"San Jordi","precio":19.99},{"id":4,"titulo":"Pepa Pig","autor":"Autor4","sinopsis":"Pepa Pig","precio":19.99},{"id":5,"titulo":"Cayou","autor":"Autor5","sinopsis":"Cayou","precio":19.99}]} 
+=======
+>>>>>>> pruebaComponentesAnidados

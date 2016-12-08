@@ -19,23 +19,32 @@ var SearchComponent = (function () {
         var _this = this;
         var box_libros = document.querySelector("#libros-list .loading");
         box_libros.style.visibility = "visible";
-        var word = document.querySelector('#sb').value;
-        this._libroService.getLibrosByWord(word)
-            .subscribe(function (result) {
-            _this.libros = result.data;
-            _this.status = result.status;
-            _this.PasameLosLibros.emit({ libros: _this.libros });
-            if (_this.status !== "OK") {
-                alert("Error en el servidor");
-            }
-            box_libros.style.display = "none";
-        }, function (error) {
-            _this.errorMessage = error;
-            if (_this.errorMessage !== null) {
-                console.log(_this.errorMessage);
-                alert("Error en la petición (al obtener la lista de libros)");
-            }
-        });
+        var word = document.querySelector('#search').value;
+        if (word !== '') {
+            this._libroService.getLibrosByWord(word)
+                .subscribe(function (result) {
+                _this.libros = result.data;
+                _this.status = result.status;
+                _this.PasameLosLibros.emit({ libros: _this.libros });
+                if (_this.status !== "OK") {
+                    alert("Error en el servidor");
+                }
+                box_libros.style.display = "none";
+            }, function (error) {
+                _this.errorMessage = error;
+                if (_this.errorMessage !== null) {
+                    console.log(_this.errorMessage);
+                    alert("Error en la petición (al obtener la lista de libros)");
+                }
+            });
+        }
+        else {
+            this._libroService.getLibros().subscribe(function (result) {
+                _this.libros = result.data;
+                _this.status = result.status;
+                _this.PasameLosLibros.emit({ libros: _this.libros });
+            });
+        }
     };
     return SearchComponent;
 }());
@@ -46,7 +55,7 @@ __decorate([
 SearchComponent = __decorate([
     core_1.Component({
         selector: 'search-book',
-        template: '<input #sb id="sb" type="text" (blur)="getLibrosByWord()" />',
+        templateUrl: "app/view/libros-search.html",
         providers: [libro_service_1.LibroService],
     }),
     __metadata("design:paramtypes", [libro_service_1.LibroService])

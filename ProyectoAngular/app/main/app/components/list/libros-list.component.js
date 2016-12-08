@@ -46,32 +46,6 @@ var LibrosListComponent = (function () {
     LibrosListComponent.prototype.showLibros = function (event) {
         this.libros = event.libros;
     };
-    LibrosListComponent.prototype.getLibrosByWord = function () {
-        var _this = this;
-        var box_libros = document.querySelector("#libros-list .loading");
-        box_libros.style.visibility = "visible";
-        var word = document.querySelector('#search').value;
-        if (word !== '') {
-            this._libroService.getLibrosByWord(word)
-                .subscribe(function (result) {
-                _this.libros = result.data;
-                _this.status = result.status;
-                if (_this.status !== "OK") {
-                    alert("Error en el servidor");
-                }
-                box_libros.style.display = "none";
-            }, function (error) {
-                _this.errorMessage = error;
-                if (_this.errorMessage !== null) {
-                    console.log(_this.errorMessage);
-                    alert("Error en la petición (al obtener la lista de libros)");
-                }
-            });
-        }
-        else {
-            this.getLibros();
-        }
-    };
     LibrosListComponent.prototype.onBorrarConfirm = function (id) {
         this.confirmado = id;
     };
