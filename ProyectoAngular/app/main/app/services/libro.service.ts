@@ -32,6 +32,15 @@ export class LibroService {
     }
 
     /**
+    *
+    */
+    getLibrosByWord(word){
+      return this._http.get("http://cmdvdev.com:8090/search/" + word)
+        .map(res => res.json());
+    }
+
+
+    /**
      * Metodo que obtiene un libro por su id
      * o un libro aleatorio si se le pasa el parametro random
      */
