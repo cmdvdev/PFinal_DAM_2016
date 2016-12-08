@@ -50,7 +50,7 @@ export class LibroAddComponent implements OnInit {
 		this.libro = new Libro(0,"","","",0);
 	}
 
-	callPrecio(value){
+	returnGenero(value){
 	//	this.libro.precio = value;
 		this.libro.precio = 10;
 	}
@@ -60,15 +60,15 @@ export class LibroAddComponent implements OnInit {
 	fileChangeEvent(fileInput: any){
 		this.filesToUpload = <Array<File>>fileInput.target.files;
 
-		this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then((result) => {
+		this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then((result) => {
 				this.resultUpload = result;
 				//this.libro.imagen = this.resultUpload.filename;
 		}, (error) =>{
 			console.log(error);
 		});
 
-	}
 
+	}
 
 	makeFileRequest(url: string, params: Array<string>, files: Array<File>){
 		return new Promise((resolve, reject) => {
@@ -76,7 +76,7 @@ export class LibroAddComponent implements OnInit {
 				var xhr = new XMLHttpRequest();
 
 				for(var i = 0; i < files.length; i++){
-					formData.append("uploads[]", files[i], files[i].name);
+					formData.append("file", files[i], files[i].name);
 				}
 
 				xhr.onreadystatechange = function(){

@@ -44,5 +44,15 @@ public class RestExceptionController {
  		
  		return errorMsg.toString();
     }
+    
+//    @ExceptionHandler(StorageFileNotFoundException.class)
+//    public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
+//        return ResponseEntity.notFound().build();
+//    }
+//    
+//    @ExceptionHandler(IncorrectGetMethodException.class)
+//    public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
+//        return ResponseEntity.notFound().build();
+//    }
 	  
 }

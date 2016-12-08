@@ -68,13 +68,13 @@ var LibroEditComponent = (function () {
             });
         });
     };
-    LibroEditComponent.prototype.callPrecio = function (value) {
+    LibroEditComponent.prototype.returnGenero = function (value) {
         this.libro.precio = value;
     };
     LibroEditComponent.prototype.fileChangeEvent = function (fileInput) {
         var _this = this;
         this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then(function (result) {
+        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
             _this.resultUpload = result;
             //this.libro.imagen = this.resultUpload.filename;
         }, function (error) {
@@ -86,7 +86,7 @@ var LibroEditComponent = (function () {
             var formData = new FormData();
             var xhr = new XMLHttpRequest();
             for (var i = 0; i < files.length; i++) {
-                formData.append("uploads[]", files[i], files[i].name);
+                formData.append("file", files[i], files[i].name);
             }
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {

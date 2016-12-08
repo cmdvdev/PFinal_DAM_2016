@@ -87,7 +87,7 @@ export class LibroEditComponent implements OnInit {
 		});
 	}
 
-	callPrecio(value){
+	returnGenero(value){
 		this.libro.precio = value;
 	}
 
@@ -96,14 +96,12 @@ export class LibroEditComponent implements OnInit {
 	fileChangeEvent(fileInput: any){
 		this.filesToUpload = <Array<File>>fileInput.target.files;
 
-		this.makeFileRequest("http://localhost/slim/libros-api.php/upload-file", [], this.filesToUpload).then((result) => {
+		this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then((result) => {
 				this.resultUpload = result;
 				//this.libro.imagen = this.resultUpload.filename;
 		}, (error) =>{
 			console.log(error);
 		});
-
-
 	}
 
 	makeFileRequest(url: string, params: Array<string>, files: Array<File>){
@@ -112,7 +110,7 @@ export class LibroEditComponent implements OnInit {
 				var xhr = new XMLHttpRequest();
 
 				for(var i = 0; i < files.length; i++){
-					formData.append("uploads[]", files[i], files[i].name);
+					formData.append("file", files[i], files[i].name);
 				}
 
 				xhr.onreadystatechange = function(){

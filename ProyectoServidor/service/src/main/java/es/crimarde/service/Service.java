@@ -22,4 +22,6 @@ public interface Service {
 	boolean existsBook(BookDTO bookDTO);
 	
 	Long countBooks();
+	
+	List<BookDTO> searchBooks(String word);
 }

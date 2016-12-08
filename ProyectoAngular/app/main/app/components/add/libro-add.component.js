@@ -8,8 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
 var libro_service_1 = require("../../services/libro.service");
 var libro_1 = require("../../model/libro");
 var LibroAddComponent = (function () {
@@ -39,14 +39,14 @@ var LibroAddComponent = (function () {
     LibroAddComponent.prototype.ngOnInit = function () {
         this.libro = new libro_1.Libro(0, "", "", "", 0);
     };
-    LibroAddComponent.prototype.callPrecio = function (value) {
+    LibroAddComponent.prototype.returnGenero = function (value) {
         //	this.libro.precio = value;
         this.libro.precio = 10;
     };
     LibroAddComponent.prototype.fileChangeEvent = function (fileInput) {
         var _this = this;
         this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://cmdvdev.com:8090/upload-file", [], this.filesToUpload).then(function (result) {
+        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
             _this.resultUpload = result;
             //this.libro.imagen = this.resultUpload.filename;
         }, function (error) {
@@ -58,7 +58,7 @@ var LibroAddComponent = (function () {
             var formData = new FormData();
             var xhr = new XMLHttpRequest();
             for (var i = 0; i < files.length; i++) {
-                formData.append("uploads[]", files[i], files[i].name);
+                formData.append("file", files[i], files[i].name);
             }
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
@@ -74,15 +74,17 @@ var LibroAddComponent = (function () {
             xhr.send(formData);
         });
     };
-    LibroAddComponent = __decorate([
-        core_1.Component({
-            selector: "libro-add",
-            templateUrl: "app/view/libro-add.html",
-            providers: [libro_service_1.LibroService]
-        }), 
-        __metadata('design:paramtypes', [libro_service_1.LibroService, router_1.ActivatedRoute, router_1.Router])
-    ], LibroAddComponent);
     return LibroAddComponent;
 }());
+LibroAddComponent = __decorate([
+    core_1.Component({
+        selector: "libro-add",
+        templateUrl: "app/view/libro-add.html",
+        providers: [libro_service_1.LibroService]
+    }),
+    __metadata("design:paramtypes", [libro_service_1.LibroService,
+        router_1.ActivatedRoute,
+        router_1.Router])
+], LibroAddComponent);
 exports.LibroAddComponent = LibroAddComponent;
 //# sourceMappingURL=libro-add.component.js.map

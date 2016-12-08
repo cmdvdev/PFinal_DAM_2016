@@ -1,5 +1,6 @@
 package es.crimarde.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.BeanUtils;
@@ -104,6 +105,20 @@ public class ServiceImpl implements es.crimarde.service.Service {
 	
 	public Long countBooks(){
 		return repository.count();
+	}
+	
+	public List<BookDTO> searchBooks(String word){
+		List<BookDTO> booksDTOList = new ArrayList<>();
+		
+		//List<Book> booksList = repository.findByTituloLikeIgnoreCase("%"+word+"%");
+		//List<Book> booksList = repository.findByTituloParam(word);
+		List<Book> booksList = repository.findByTituloIgnoreCaseContaining(word);
+		
+		if(null != booksList && !booksList.isEmpty()){
+			booksDTOList = transformer.entityToDtoList(booksList);
+		}
+		
+		return booksDTOList;
 	}
 
 }

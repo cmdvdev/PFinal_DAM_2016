@@ -1,5 +1,7 @@
 package es.crimarde.dao;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -30,6 +32,20 @@ public interface BookRepository extends CrudRepository<Book, Long> {
 
 	@Query("SELECT b FROM Book b where b.titulo = ?1")
     Integer existsByTitulo(String titulo);
+	
+	//Opciones para hacer querys
+	
+	List<Book> findByTituloIgnoreCaseContaining(String word);
+	
+	List<Book> findByTituloLikeIgnoreCase(String word); //"%"+word+"%"
+	
+	@Query("SELECT b FROM Book b where b.titulo like %?1%")
+	List<Book> findByTitulo(String word);
+	
+	@Query("SELECT b FROM Book b where b.titulo like %:word%")
+	List<Book> findByTituloParam(@Param("word")String word);
+	
+	//Opciones para hacer querys
 
 }
 
@@ -42,3 +58,24 @@ public interface BookRepository extends CrudRepository<Book, Long> {
  * As the queries themselves are tied to the Java method that executes them you actually can bind them directly using the Spring Data JPA @Query annotation rather than annotating them to the domain class. 
  * This will free the domain class from persistence specific information and co-locate the query to the repository interface.
 */
+
+/*
+ * http://docs.spring.io/spring-data/data-commons/docs/1.6.1.RELEASE/reference/html/repositories.html
+ * 
+ *   List<Person> findByEmailAddressAndLastname(EmailAddress emailAddress, String lastname);
+
+  // Enables the distinct flag for the query
+  List<Person> findDistinctPeopleByLastnameOrFirstname(String lastname, String firstname);
+  List<Person> findPeopleDistinctByLastnameOrFirstname(String lastname, String firstname);
+
+  // Enabling ignoring case for an individual property
+  List<Person> findByLastnameIgnoreCase(String lastname);
+  // Enabling ignoring case for all suitable properties
+  List<Person> findByLastnameAndFirstnameAllIgnoreCase(String lastname, String firstname);
+
+  // Enabling static ORDER BY for a query
+  List<Person> findByLastnameOrderByFirstnameAsc(String lastname);
+  List<Person> findByLastnameOrderByFirstnameDesc(String lastname);
+  
+  You can combine property expressions with AND and OR. You also get support for operators such as Between, LessThan, GreaterThan, Like for the property expressions
+ */

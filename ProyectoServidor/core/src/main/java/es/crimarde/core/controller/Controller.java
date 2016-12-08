@@ -32,7 +32,6 @@ public class Controller {
 	
 	@Autowired Service servicio;
 
-    
 	//@CrossOrigin(origins = "http://localhost:3000")
 	@ResponseStatus(value=HttpStatus.OK)
     @RequestMapping(value = "/lista", method = RequestMethod.GET)
@@ -155,6 +154,21 @@ public class Controller {
         logger.info("Devuelto libro aleatorio");
         return response;
 
+    }
+    
+    @CrossOrigin(origins = "http://localhost:3000")
+    @RequestMapping(value = "/search/{searchWord}", method = RequestMethod.GET)
+    public ResponseList search(@PathVariable("searchWord") String searchWord) {
+    	
+    	logger.info(String.format("-- Busqueda de libro por la palabra %s --", searchWord));
+    	
+    	List<BookDTO> bookDTOList = servicio.searchBooks(searchWord);
+        
+    	ResponseList response = new ResponseList();
+    	response.setData(bookDTOList);
+    	response.setStatus(HttpStatus.OK.getReasonPhrase());
+    	
+    	return response;
     }
     
     private String objectToJson(Object object){
