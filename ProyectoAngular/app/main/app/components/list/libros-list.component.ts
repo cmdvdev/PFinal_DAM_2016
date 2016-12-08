@@ -3,11 +3,13 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import {LibroService} from "../../services/libro.service";
 import {Libro} from "../../model/libro";
+import {SearchComponent} from "../search/search.component";
 
 @Component({
 	selector: "libros-list",
 	templateUrl: "app/view/libros-list.html",
-	providers: [LibroService]
+	providers: [LibroService],
+	entryComponents: [SearchComponent]
 })
 
 export class LibrosListComponent implements OnInit {
@@ -28,6 +30,7 @@ export class LibrosListComponent implements OnInit {
  		this.getLibros();
 		console.log("libros-list component cargado");
 	}
+
 
 	getLibros(){
 		let box_libros = <HTMLElement>document.querySelector("#libros-list .loading");
@@ -55,6 +58,10 @@ export class LibrosListComponent implements OnInit {
 					}
 				);
 	}
+
+	showLibros(event):void{
+      this.libros = event.libros;
+  }
 
 	getLibrosByWord(){
 		let box_libros = <HTMLElement>document.querySelector("#libros-list .loading");

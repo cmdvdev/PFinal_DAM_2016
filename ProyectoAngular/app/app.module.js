@@ -8,35 +8,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var http_1 = require('@angular/http');
-var forms_1 = require('@angular/forms');
-var app_component_1 = require('./app.component');
-var app_routing_1 = require('./app.routing');
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
+var app_component_1 = require("./app.component");
+var app_routing_1 = require("./app.routing");
 var libros_list_component_1 = require("./main/app/components/list/libros-list.component");
 var libros_detail_component_1 = require("./main/app/components/detail/libros-detail.component");
 var libro_add_component_1 = require("./main/app/components/add/libro-add.component");
 var libro_edit_component_1 = require("./main/app/components/edit/libro-edit.component");
+var fileUpload_component_1 = require("./main/app/components/upload/fileUpload.component");
+var search_component_1 = require("./main/app/components/search/search.component");
 var AppModule = (function () {
     function AppModule() {
     }
-    AppModule = __decorate([
-        core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, app_routing_1.routing],
-            declarations: [
-                app_component_1.AppComponent,
-                libros_list_component_1.LibrosListComponent,
-                libros_detail_component_1.LibrosDetailComponent,
-                libro_edit_component_1.LibroEditComponent,
-                libro_add_component_1.LibroAddComponent
-            ],
-            providers: [app_routing_1.appRoutingProviders],
-            bootstrap: [app_component_1.AppComponent]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppModule);
     return AppModule;
 }());
+AppModule = __decorate([
+    core_1.NgModule({
+        imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, app_routing_1.routing],
+        declarations: [
+            app_component_1.AppComponent,
+            libros_list_component_1.LibrosListComponent,
+            libros_detail_component_1.LibrosDetailComponent,
+            libro_edit_component_1.LibroEditComponent,
+            libro_add_component_1.LibroAddComponent,
+            fileUpload_component_1.FileUploadComponent,
+            search_component_1.SearchComponent
+        ],
+        providers: [app_routing_1.appRoutingProviders],
+        bootstrap: [app_component_1.AppComponent]
+    }),
+    __metadata("design:paramtypes", [])
+], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

@@ -1,0 +1,10 @@
+package es.crimarde.service;
+
+import java.util.List;
+
+import es.crimarde.negocio.BookDTO;
+
+public interface ImageService {
+
+	Long saveImage();
+}

@@ -21,16 +21,17 @@
 
 	<label>Precio:</label>
 	<p>
-		<select (change)="callPrecio(precio.value)" #precio name="precio">
-			<option value="bajo" [attr.selected]="libro.precio === 'bajo' ? 'selected' : null">Bajo</option>
-			<option value="normal" [attr.selected]="libro.precio === 'normal' ? 'selected' : null">Normal</option>
-			<option value="alto" [attr.selected]="libro.precio === 'alto' ? 'selected' : null">Alto</option>
+		<select (change)="returnGenero(genero.value)" #genero name="Genero">
+			<option value="humor" [attr.selected]="libro.precio === 'humor' ? 'selected' : null">Humor</option>
+			<option value="Aventuras" [attr.selected]="libro.precio === 'Aventuras' ? 'selected' : null">Aventuras</option>
+			<option value="Comic" [attr.selected]="libro.Comic === 'alto' ? 'Comic' : null">Comic</option>
 		</select>
 	</p>
 
 	<label>Imagen:</label>
 	<p>
 		<input type="file" placeholder="Subir imagen..." (change)="fileChangeEvent($event)"/>
+		<file-upload #fu (change)="fu.upload()"></file-upload>
 	</p>
 
 	<input type="submit" value="{{tituloPag}}" [disabled]="!formLibro.form.valid" />

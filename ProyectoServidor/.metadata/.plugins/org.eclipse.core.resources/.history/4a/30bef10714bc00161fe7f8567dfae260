@@ -1,0 +1,10 @@
+package es.crimarde.helpers;
+
+import java.util.List;
+
+public interface BookTransformerHelp<S,T> {
+	public T entityToDto(S employee);
+	public S dtoToEntity(T bookDTO);	
+	public List<T> entityToDtoList(List<S> bookList);
+	public List<S> dtoToEntityList(List<T> bookDtoList);
+}

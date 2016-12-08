@@ -1,0 +1,26 @@
+package es.crimarde.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Book")
+public class Imagen {
+
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id 						private Long id;
+	@Column(name="titulo") 		private String titulo;
+	@Column(name="autor")  		private String autor;
+	@Column(name="sinopsis")	private String sinopsis;
+	//@Column(name="imagen")		private Byte[] imagen;
+	@Column(name="precio")		private double precio;
+}
+
+
+
+	
+	

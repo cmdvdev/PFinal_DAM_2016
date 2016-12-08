@@ -1,0 +1,11 @@
+package es.crimarde.service;
+
+import es.crimarde.model.Imagen;
+import es.crimarde.negocio.ImageDTO;
+
+public interface ImageService {
+
+	Long saveImage(ImageDTO imagenDto);
+	
+	byte[] loadImage(Long id);
+}

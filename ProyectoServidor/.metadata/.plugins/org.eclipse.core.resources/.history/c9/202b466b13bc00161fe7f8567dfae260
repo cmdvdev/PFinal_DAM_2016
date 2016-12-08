@@ -1,0 +1,25 @@
+package es.crimarde.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import es.crimarde.dao.ImageRepository;
+import es.crimarde.model.Imagen;
+import es.crimarde.service.ImageService;
+
+public class ImageServiceImpl implements ImageService {
+
+	@Autowired ImageRepository repository;
+	
+	@Override
+	public Long saveImage(Imagen imagen) {
+		repository.save(imagen);
+	}
+
+	@Override
+	public byte[] loadImage(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

@@ -1,0 +1,64 @@
+package es.crimarde.service.impl;
+
+import java.util.List;
+
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.service.ImageService;
+
+public class ImageServiceImpl implements ImageService {
+
+	@Override
+	public BookDTO retrieve(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<BookDTO> retrieveAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void add(BookDTO bookDTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void updateByProperties(BookDTO bookDTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void update(BookDTO bookDTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void delete(BookDTO bookDTO) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean existsBook(BookDTO bookDTO) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Long countBooks() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

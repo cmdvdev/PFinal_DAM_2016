@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var libro_service_1 = require("../../services/libro.service");
+var search_component_1 = require("../search/search.component");
 var LibrosListComponent = (function () {
     function LibrosListComponent(_route, _router, _libroService) {
         this._route = _route;
@@ -41,6 +42,9 @@ var LibrosListComponent = (function () {
                 alert("Error en la petición (al obtener la lista de libros)");
             }
         });
+    };
+    LibrosListComponent.prototype.showLibros = function (event) {
+        this.libros = event.libros;
     };
     LibrosListComponent.prototype.getLibrosByWord = function () {
         var _this = this;
@@ -97,7 +101,8 @@ LibrosListComponent = __decorate([
     core_1.Component({
         selector: "libros-list",
         templateUrl: "app/view/libros-list.html",
-        providers: [libro_service_1.LibroService]
+        providers: [libro_service_1.LibroService],
+        entryComponents: [search_component_1.SearchComponent]
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,
         router_1.Router,

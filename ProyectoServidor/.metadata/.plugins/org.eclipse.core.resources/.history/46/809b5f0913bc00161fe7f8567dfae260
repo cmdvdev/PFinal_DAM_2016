@@ -1,0 +1,9 @@
+package es.crimarde.negocio;
+
+public class ImageDTO {
+
+	private Long idImagen;
+	private String imagen;
+	private String  nombre;
+}
+

@@ -1,0 +1,17 @@
+package es.crimarde.service.impl;
+
+import java.util.List;
+
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.service.ImageService;
+
+public class ImageServiceImpl implements ImageService {
+
+	@Override
+	public Long saveImage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

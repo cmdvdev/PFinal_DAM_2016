@@ -1,0 +1,82 @@
+package es.crimarde.core.controller;
+
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
+
+import es.crimarde.negocio.ImageDTO;
+import es.crimarde.service.ImageService;
+
+@CrossOrigin
+@RestController
+public class UploadController {
+
+	@Autowired ImageService service;
+    
+    @RequestMapping(value="/upload", method=RequestMethod.GET)
+    public @ResponseBody String provideUploadInfo() {
+        return "La subida se debe realizar por POST en la misma URL.";
+    }
+    
+    @CrossOrigin(origins = "http://localhost:3000")
+    @RequestMapping(value="/singleUpload", method=RequestMethod.POST )
+    public @ResponseBody String handleSinglepleFileUpload(@RequestParam("file") MultipartFile file ){
+    	
+    	System.out.println("File Description:");
+    	String fileName = null;
+    	if (!file.isEmpty()) {
+            try {
+                fileName = file.getOriginalFilename();
+                byte[] bytes = file.getBytes();
+                
+                service.saveImage(new ImageDTO(null, bytes, fileName));
+                
+                BufferedOutputStream buffStream = 
+                        new BufferedOutputStream(new FileOutputStream(new File(fileName)));
+                buffStream.write(bytes);
+                buffStream.close();
+                return "You have successfully uploaded " + fileName;
+            } catch (Exception e) {
+                return "You failed to upload " + fileName + ": " + e.getMessage();
+            }
+        } else {
+            return "Unable to upload. File is empty.";
+        }
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @RequestMapping(value="/multiUpload", method=RequestMethod.POST)
+    public @ResponseBody String handleMultipleFileUpload(@RequestParam("file") MultipartFile[] uploadingFiles) throws IOException{
+        
+    	for(MultipartFile uploadedFile : uploadingFiles) {
+            handleSinglepleFileUpload(uploadedFile);
+        }
+    	return "OK";
+    }
+    
+    private void saveToFile(InputStream inStream, String target)
+			throws IOException {
+		OutputStream out = null;
+		int read = 0;
+		byte[] bytes = new byte[1024];
+		out = new FileOutputStream(new File(target));
+		while ((read = inStream.read(bytes)) != -1) {
+			out.write(bytes, 0, read);
+		}
+		out.flush();
+		out.close();
+	}
+
+}

@@ -1,5 +1,5 @@
 "use strict";
-var router_1 = require('@angular/router');
+var router_1 = require("@angular/router");
 var libros_list_component_1 = require("./main/app/components/list/libros-list.component");
 var libros_detail_component_1 = require("./main/app/components/detail/libros-detail.component");
 var libro_add_component_1 = require("./main/app/components/add/libro-add.component");

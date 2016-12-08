@@ -1,0 +1,81 @@
+package cat.gencat.tei.core.service.helper;
+
+import org.apache.log4j.Logger;
+import org.codehaus.jackson.annotate.JsonAutoDetect.Visibility;
+import com.fasterxml.jackson.databind.ObjectWriter;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import org.codehaus.jackson.map.DeserializationConfig.Feature;
+
+
+public class JsonUtils {
+
+	private static final Logger logger = Logger.getLogger(JsonUtils.class);
+	
+	public static byte[] toJson(Object obj) {
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.enableDefaultTyping();
+		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+		mapper.setVisibilityChecker(mapper.getVisibilityChecker().withFieldVisibility(Visibility.ANY));
+		mapper.configure(com.fasterxml.jackson.core.JsonParser.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+		try {
+			com.fasterxml.jackson.databind.ObjectWriter writer = mapper.defaultPrettyPrintingWriter();
+			byte[] sal = writer.writeValueAsBytes(obj);
+			return sal;
+		} catch (Exception e) {
+			logger.error("Error convertint a JSON", e);
+		}
+
+		return null;
+	}
+
+	public static Object fromJson(String json, Class<?> clase) {
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.enableDefaultTyping();
+		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+		mapper.setVisibilityChecker(mapper.getVisibilityChecker().withFieldVisibility(Visibility.ANY));
+		mapper.configure(Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+		try {
+			Object readValue = mapper.readValue(json, clase);
+			return readValue;
+		} catch (Exception e) {
+			logger.error("Error convertint de JSON", e);
+		}
+		return null;
+	}
+	
+	public static String toStringJson(Object obj) {
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.enableDefaultTyping();
+		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+		mapper.setVisibilityChecker(mapper.getVisibilityChecker().withFieldVisibility(Visibility.ANY));
+		mapper.configure(Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+		try {
+			ObjectWriter writer = mapper.defaultPrettyPrintingWriter();
+			String sal = writer.writeValueAsString(obj);
+			return sal;
+		} catch (Exception e) {
+			logger.error("Error convertint a JSON", e);
+		}
+
+		return null;
+	}
+
+	public static Object fromStringJson(String json, Class<?> clase) {
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.enableDefaultTyping();
+		mapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+		mapper.setVisibilityChecker(mapper.getVisibilityChecker().withFieldVisibility(Visibility.ANY));
+		mapper.configure(Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+
+		try {
+			Object readValue = mapper.readValue(json, clase);
+			return readValue;
+		} catch (Exception e) {
+			logger.error("Error convertint de JSON", e);
+		}
+		return null;
+	}
+}

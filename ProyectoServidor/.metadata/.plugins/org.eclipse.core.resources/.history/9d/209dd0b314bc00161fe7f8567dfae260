@@ -1,0 +1,64 @@
+package es.crimarde.helpers.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import es.crimarde.helpers.OrikaMapper;
+import es.crimarde.helpers.TransformerHelp;
+import es.crimarde.model.Book;
+import es.crimarde.model.Imagen;
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.negocio.ImageDTO;
+import ma.glasnost.orika.MapperFacade;
+
+public class ImageTransformerHelper implements TransformerHelp <Imagen, ImageDTO> {
+
+	public BookDTO entityToDto(Book book){
+		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		if(null != book){
+			return mapper.map(book, BookDTO.class);
+		} else {
+			return null;
+		}		
+	}
+	
+	public Book dtoToEntity (BookDTO bookDTO){	//Por hacer
+		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		if(null != bookDTO){
+			return mapper.map(bookDTO, Book.class);
+		} else {
+			return null;
+		}
+	}
+	
+	public List<Book> dtoToEntityList(List<BookDTO> bookDtoList){
+		List<Book> bookList = new ArrayList<>();
+		
+		for (BookDTO bookDTO : bookDtoList) {
+			bookList.add(dtoToEntity(bookDTO));
+		}
+		
+		return bookList;
+	}
+	
+	public List<BookDTO> entityToDtoList(List<Book> bookList){
+		List<BookDTO> bookDTOList = new ArrayList<>();
+		
+		for (Book Book : bookList) {
+			bookDTOList.add(entityToDto(Book));
+		}
+		
+		return bookDTOList;
+	}
+	
+	public List<BookDTO> entityToDtoIterable(Iterable<Book> bookList){
+		List<BookDTO> bookDTOList = new ArrayList<>();
+		
+		for (Book Book : bookList) {
+			bookDTOList.add(entityToDto(Book));
+		}
+		
+		return bookDTOList;
+	}
+
+}

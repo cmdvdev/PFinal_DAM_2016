@@ -1,0 +1,10 @@
+package es.crimarde.service;
+
+import es.crimarde.model.Imagen;
+
+public interface ImageService {
+
+	Long saveImage(Imagen imagen);
+	
+	byte[] loadImage(Long id);
+}

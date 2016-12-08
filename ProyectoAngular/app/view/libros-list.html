@@ -1,8 +1,17 @@
-<h1>{{tituloPag}}</h1>
+<div id="searchBar">
+	<div class="izq">
+		<h1>{{tituloPag}}</h1>
+	</div>
+	<div class="drch">
+		Filtrar por titulo <input id="search" type="text" /> <a (click)="getLibrosByWord()" class="btn btn-ver">Busca</a>
+	</div>
+</div>
+
+<search-book (PasameLosLibros)="showLibros($event)" ></search-book>
 
 <ul id="libros-list">
 	<li class="loading">
-		<img src="../resources/images/loader.gif" />
+		<img src="app/resources/images/loader.gif" />
 	</li>
 	<li *ngFor="let libro of libros" class="libro-item">
 		<div class="image">

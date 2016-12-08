@@ -33,6 +33,13 @@ var LibroService = (function () {
             .map(function (res) { return res.json(); });
     };
     /**
+    *
+    */
+    LibroService.prototype.getLibrosByWord = function (word) {
+        return this._http.get("http://cmdvdev.com:8090/search/" + word)
+            .map(function (res) { return res.json(); });
+    };
+    /**
      * Metodo que obtiene un libro por su id
      * o un libro aleatorio si se le pasa el parametro random
      */
@@ -71,11 +78,11 @@ var LibroService = (function () {
         console.log('JSON: \n :' + params);
         return params;
     };
-    LibroService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], LibroService);
     return LibroService;
 }());
+LibroService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], LibroService);
 exports.LibroService = LibroService;
 //# sourceMappingURL=libro.service.js.map

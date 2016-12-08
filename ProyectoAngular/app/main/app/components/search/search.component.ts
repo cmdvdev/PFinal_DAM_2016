@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 import {LibroService} from "../../services/libro.service";
 import {Libro} from "../../model/libro";
@@ -6,12 +6,14 @@ import {Libro} from "../../model/libro";
 @Component({
   selector: 'search-book',
   template: '<input #sb id="sb" type="text" (blur)="getLibrosByWord()" />',
-  providers: [LibroService]
+  providers: [LibroService],
 })
 export class SearchComponent {
   public libros: Libro[];
   public errorMessage: string;
   public status: string;
+
+  @Output() PasameLosLibros = new EventEmitter();
 
   constructor(
     private _libroService: LibroService
@@ -27,6 +29,8 @@ export class SearchComponent {
   					result => {
   							this.libros = result.data;
   							this.status = result.status;
+
+                this.PasameLosLibros.emit({libros : this.libros});
 
   							if(this.status !== "OK"){
   								alert("Error en el servidor");

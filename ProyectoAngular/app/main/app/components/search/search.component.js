@@ -13,6 +13,7 @@ var libro_service_1 = require("../../services/libro.service");
 var SearchComponent = (function () {
     function SearchComponent(_libroService) {
         this._libroService = _libroService;
+        this.PasameLosLibros = new core_1.EventEmitter();
     }
     SearchComponent.prototype.getLibrosByWord = function () {
         var _this = this;
@@ -23,6 +24,7 @@ var SearchComponent = (function () {
             .subscribe(function (result) {
             _this.libros = result.data;
             _this.status = result.status;
+            _this.PasameLosLibros.emit({ libros: _this.libros });
             if (_this.status !== "OK") {
                 alert("Error en el servidor");
             }
@@ -37,11 +39,15 @@ var SearchComponent = (function () {
     };
     return SearchComponent;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], SearchComponent.prototype, "PasameLosLibros", void 0);
 SearchComponent = __decorate([
     core_1.Component({
         selector: 'search-book',
         template: '<input #sb id="sb" type="text" (blur)="getLibrosByWord()" />',
-        providers: [libro_service_1.LibroService]
+        providers: [libro_service_1.LibroService],
     }),
     __metadata("design:paramtypes", [libro_service_1.LibroService])
 ], SearchComponent);
