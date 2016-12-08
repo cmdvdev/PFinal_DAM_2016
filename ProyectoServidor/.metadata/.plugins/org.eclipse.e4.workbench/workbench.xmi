@@ -80,8 +80,8 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_7Bi4q7zjEeaKVLf2xRA5ZA" containerData="7745" selectedElement="_7Bi4rLzjEeaKVLf2xRA5ZA" horizontal="true">
               <children xsi:type="basic:PartSashContainer" xmi:id="_7Bi4rLzjEeaKVLf2xRA5ZA" containerData="5000" selectedElement="_7Bi4rrzjEeaKVLf2xRA5ZA">
-                <children xsi:type="advanced:Placeholder" xmi:id="_7Bi4rbzjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.editorss" containerData="5692" ref="_7Bq0kLzjEeaKVLf2xRA5ZA"/>
-                <children xsi:type="basic:PartStack" xmi:id="_7Bi4rrzjEeaKVLf2xRA5ZA" elementId="bottomRight" containerData="4308" selectedElement="_7Bi4trzjEeaKVLf2xRA5ZA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_7Bi4rbzjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.editorss" containerData="3383" ref="_7Bq0kLzjEeaKVLf2xRA5ZA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_7Bi4rrzjEeaKVLf2xRA5ZA" elementId="bottomRight" containerData="6617" selectedElement="_7Bi4vLzjEeaKVLf2xRA5ZA">
                   <tags>Terminal</tags>
                   <tags>Team</tags>
                   <tags>Git</tags>
@@ -507,8 +507,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_7BrbuLzjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -525,7 +523,7 @@
         <tags>menuContribution:popup</tags>
         <tags>popup:org.eclipse.debug.ui.ProcessConsoleType.#ContextMenu</tags>
       </menus>
-      <toolbar xmi:id="_7BrbvLzjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.console.ConsoleView"/>
+      <toolbar xmi:id="_7BrbvLzjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.console.ConsoleView" visible="false"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_7Brby7zjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.views.BookmarkView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Bookmarks" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/bkmrk_nav.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.BookmarksView"/>
@@ -605,11 +603,13 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:Git</tags>
+      <tags>active</tags>
+      <tags>activeOnClose</tags>
       <menus xmi:id="_7Brb3bzjEeaKVLf2xRA5ZA" elementId="org.eclipse.egit.ui.StagingView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
       </menus>
-      <toolbar xmi:id="_7Brb3rzjEeaKVLf2xRA5ZA" elementId="org.eclipse.egit.ui.StagingView" visible="false"/>
+      <toolbar xmi:id="_7Brb3rzjEeaKVLf2xRA5ZA" elementId="org.eclipse.egit.ui.StagingView"/>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_7Brb37zjEeaKVLf2xRA5ZA" elementId="org.eclipse.debug.ui.DebugView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Debug" iconURI="platform:/plugin/org.eclipse.debug.ui/icons/full/eview16/debug_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.debug.ui"/>
@@ -740,7 +740,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7BrcD7zjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_ORyOQL1oEeaMM_ne5l8M6w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_7B3CObzjEeaKVLf2xRA5ZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fuMEoL1xEea-Pa3xot4Vng" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_7B3CObzjEeaKVLf2xRA5ZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7BrcHLzjEeaKVLf2xRA5ZA" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -770,7 +770,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7BsCp7zjEeaKVLf2xRA5ZA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_OR0DcL1oEeaMM_ne5l8M6w" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7B3B3rzjEeaKVLf2xRA5ZA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fuOg4L1xEea-Pa3xot4Vng" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_7B3B3rzjEeaKVLf2xRA5ZA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_7BsCsbzjEeaKVLf2xRA5ZA" elementId="org.eclipse.m2e.editor.MavenPomEditor" visible="false">
         <tags>Draggable</tags>
