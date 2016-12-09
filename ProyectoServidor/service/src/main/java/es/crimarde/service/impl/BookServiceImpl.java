@@ -5,6 +5,9 @@ import java.util.List;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -12,11 +15,14 @@ import es.crimarde.dao.BookRepository;
 import es.crimarde.helpers.impl.BookTransformerHelper;
 import es.crimarde.model.Book;
 import es.crimarde.negocio.BookDTO;
+import es.crimarde.service.BookService;
 
 @Service
 @Transactional
-public class BookServiceImpl implements es.crimarde.service.BookService {
+public class BookServiceImpl implements BookService {
 
+	private static final int PAGE_SIZE = 2;
+	
 	@Autowired
 	private BookRepository repository;
 	
@@ -37,7 +43,17 @@ public class BookServiceImpl implements es.crimarde.service.BookService {
 	 */
 	@Override
 	public List<BookDTO> retrieveAll(){
+		
 		return transformer.entityToDtoIterable(repository.findAll());
+	}
+	
+	public List<BookDTO> retrieveAllPaged(Integer pageNumber){
+//		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
+//		Page<Book> pagedResponse = repository.findAll(request);
+//
+//		return transformer.entityToDtoIterable(pagedResponse.getContent());
+		return null;
+
 	}
 	
 	/* (non-Javadoc)

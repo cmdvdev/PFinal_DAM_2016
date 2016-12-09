@@ -6,7 +6,8 @@ import java.util.List;
 import org.springframework.stereotype.Component;
 
 import es.crimarde.helpers.TransformerHelp;
-import es.crimarde.helpers.OrikaMapper;
+import es.crimarde.helpers.OrikaDTOToEntityMapper;
+import es.crimarde.helpers.OrikaEntityToDTOMapper;
 import es.crimarde.model.Book;
 import es.crimarde.negocio.BookDTO;
 import ma.glasnost.orika.MapperFacade;
@@ -15,7 +16,7 @@ import ma.glasnost.orika.MapperFacade;
 public class BookTransformerHelper implements TransformerHelp<Book, BookDTO> {
 
 	public BookDTO entityToDto(Book book){
-		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		MapperFacade mapper = OrikaEntityToDTOMapper.getMapperFacade();
 		if(null != book){
 			return mapper.map(book, BookDTO.class);
 		} else {
@@ -24,7 +25,7 @@ public class BookTransformerHelper implements TransformerHelp<Book, BookDTO> {
 	}
 	
 	public Book dtoToEntity (BookDTO bookDTO){	//Por hacer
-		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		MapperFacade mapper = OrikaDTOToEntityMapper.getMapperFacade();
 		if(null != bookDTO){
 			return mapper.map(bookDTO, Book.class);
 		} else {

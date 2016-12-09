@@ -1,0 +1,5 @@
+package es.crimarde.dao;
+
+public class BookRepositoryImpl implements BookRepository{
+
+}

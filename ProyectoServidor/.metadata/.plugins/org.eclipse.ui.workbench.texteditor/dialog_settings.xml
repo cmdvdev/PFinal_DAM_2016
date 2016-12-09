@@ -2,24 +2,24 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="ImageDTO" key="selection"/>
+		<item value="customize" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="customize"/>
+			<item value="byte[]"/>
 			<item value="BookDTO"/>
 			<item value="Book"/>
 			<item value="1.3.7"/>
 			<item value="ROLLING_APPENDER"/>
 			<item value="MINUTEROLLINGFILEAPPENDER"/>
 			<item value="Using default security password"/>
-			<item value="status"/>
-			<item value="Status"/>
 		</list>
 		<list key="replacehistory">
-			<item value="ImageDTO"/>
 			<item value="Imagen"/>
+			<item value="ImageDTO"/>
 			<item value="Byte[]"/>
 			<item value="Book"/>
 			<item value="book"/>

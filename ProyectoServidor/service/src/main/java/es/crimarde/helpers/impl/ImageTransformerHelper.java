@@ -5,7 +5,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import es.crimarde.helpers.OrikaMapper;
+import es.crimarde.helpers.OrikaDTOToEntityMapper;
+import es.crimarde.helpers.OrikaEntityToDTOMapper;
 import es.crimarde.helpers.TransformerHelp;
 import es.crimarde.model.Imagen;
 import es.crimarde.negocio.ImageDTO;
@@ -15,7 +16,7 @@ import ma.glasnost.orika.MapperFacade;
 public class ImageTransformerHelper implements TransformerHelp <Imagen, ImageDTO> {
 
 	public ImageDTO entityToDto(Imagen imagen){
-		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		MapperFacade mapper = OrikaEntityToDTOMapper.getMapperFacade();
 		if(null != imagen){
 			return mapper.map(imagen, ImageDTO.class);
 		} else {
@@ -24,7 +25,7 @@ public class ImageTransformerHelper implements TransformerHelp <Imagen, ImageDTO
 	}
 	
 	public Imagen dtoToEntity (ImageDTO imageDTO){
-		MapperFacade mapper = OrikaMapper.getMapperFacade();
+		MapperFacade mapper = OrikaDTOToEntityMapper.getMapperFacade();
 		if(null != imageDTO){
 			return mapper.map(imageDTO, Imagen.class);
 		} else {

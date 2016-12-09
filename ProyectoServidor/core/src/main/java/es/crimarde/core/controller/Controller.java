@@ -44,10 +44,10 @@ public class Controller {
         
     	ResponseList response = new ResponseList();
         List<BookDTO> books = bookservice.retrieveAll(); 
+        //int page = 1;
+        //List<BookDTO> books = bookservice.retrieveAllPaged(page);
         //servicio.retrieveAll().forEach(books::add);
-        
-        books.get(0).setBase64(org.springframework.util.Base64Utils.encodeToString(((BookDTO)books.get(0)).getImagen().getImagen()));
-        
+                
         if(books.isEmpty()) {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
         	logger.debug("Se devuelve un mensaje de error. No hay libros en la base de datos");

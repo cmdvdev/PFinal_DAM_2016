@@ -35,6 +35,8 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+		<!-- Monitoriza el estado de la aplicacion -->
 		<dependency>
 			<groupId>${spring-boot-groupId}</groupId>
 			<artifactId>${spring-boot-artifactId}-actuator</artifactId>

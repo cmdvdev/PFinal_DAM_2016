@@ -15,3 +15,7 @@
 1481070777364	Rename local variable 'Imagen'
 1481263155832	Rename type 'Service'
 1481263178633	Rename type 'ServiceImpl'
+1481312265096	Rename type 'OrikaMapper'
+1481312295196	Copy compilation unit
+1481312343511	Rename field 'mapperFactory'
+1481312363241	Rename field 'mapperFactory'

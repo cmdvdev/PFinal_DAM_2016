@@ -24,4 +24,6 @@ public interface BookService {
 	Long countBooks();
 	
 	List<BookDTO> searchBooks(String word);
+	
+	List<BookDTO> retrieveAllPaged(Integer pageNumber);
 }
