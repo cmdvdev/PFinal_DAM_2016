@@ -22,7 +22,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import es.crimarde.core.model.Response;
 import es.crimarde.core.model.ResponseList;
 import es.crimarde.negocio.BookDTO;
-import es.crimarde.service.Service;
+import es.crimarde.negocio.ImageDTO;
+import es.crimarde.service.BookService;
+import es.crimarde.service.ImageService;
 
 @CrossOrigin()
 @RestController
@@ -30,7 +32,8 @@ public class Controller {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
-	@Autowired Service servicio;
+	@Autowired BookService bookservice;
+	@Autowired ImageService imageService;
 
 	//@CrossOrigin(origins = "http://localhost:3000")
 	@ResponseStatus(value=HttpStatus.OK)
@@ -40,8 +43,10 @@ public class Controller {
     	logger.info("-- Listado de todos los libros --");
         
     	ResponseList response = new ResponseList();
-        List<BookDTO> books = servicio.retrieveAll(); 
+        List<BookDTO> books = bookservice.retrieveAll(); 
         //servicio.retrieveAll().forEach(books::add);
+        
+        books.get(0).setBase64(org.springframework.util.Base64Utils.encodeToString(((BookDTO)books.get(0)).getImagen().getImagen()));
         
         if(books.isEmpty()) {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
@@ -64,11 +69,13 @@ public class Controller {
     	
     	Response response = new Response();
     	String status;
-    	if(servicio.existsBook(bookDTO)){
+    	if(bookservice.existsBook(bookDTO)){
     		status = HttpStatus.CONFLICT.getReasonPhrase();
     		logger.info("El libro ya existe");
     	} else {
-    		servicio.add(bookDTO);
+    		ImageDTO imageDTO = imageService.loadImage(bookDTO.getIdImagen());
+    		bookDTO.setImagen(imageDTO);
+    		bookservice.add(bookDTO);
     		status = HttpStatus.CREATED.getReasonPhrase();
     		logger.info("Libro añadido correctamente");
     	}
@@ -82,10 +89,10 @@ public class Controller {
     	
     	logger.info(String.format("-- Eliminacion del libro con id %d --",id.intValue()));
     	
-    	BookDTO bookDTO = servicio.retrieve(id);
+    	BookDTO bookDTO = bookservice.retrieve(id);
         
     	if(null != bookDTO){
-    		servicio.delete(bookDTO.getId());
+    		bookservice.delete(bookDTO.getId());
     		logger.info("Libro eliminado correctamente");
     		return new Response(HttpStatus.OK);
     	}
@@ -99,11 +106,11 @@ public class Controller {
     	logger.info(String.format("-- Edicion de libro con id %d --",id.intValue()));
     	
     	Response response = new Response();
-    	BookDTO bookDtoFromDB = servicio.retrieve(id);
+    	BookDTO bookDtoFromDB = bookservice.retrieve(id);
     	
     	if(null != bookDtoFromDB) {
     		BeanUtils.copyProperties(bookDTO, bookDtoFromDB, "id");
-    		servicio.update(bookDtoFromDB);
+    		bookservice.update(bookDtoFromDB);
     		logger.info("Libro modificado correctamente");
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
         } else {
@@ -123,7 +130,7 @@ public class Controller {
     	logger.info(String.format("-- Recuperacion de libro con %d --",identificador.intValue()));
     	
     	Response response = new Response();
-    	BookDTO book = servicio.retrieve(identificador);
+    	BookDTO book = bookservice.retrieve(identificador);
     	
     	if(null == book){
     		response.setStatus(HttpStatus.NOT_FOUND.getReasonPhrase());
@@ -147,7 +154,7 @@ public class Controller {
     	
     	Response response = new Response();
     	
-    	BookDTO book = servicio.retrieve( (long) (Math.random() * servicio.countBooks() + 1));		//TODO hacerlo random de verdad
+    	BookDTO book = bookservice.retrieve( (long) (Math.random() * bookservice.countBooks() + 1));		//TODO hacerlo random de verdad
     	response.setStatus(HttpStatus.OK.getReasonPhrase());
         response.setData(book);
         
@@ -162,7 +169,7 @@ public class Controller {
     	
     	logger.info(String.format("-- Busqueda de libro por la palabra %s --", searchWord));
     	
-    	List<BookDTO> bookDTOList = servicio.searchBooks(searchWord);
+    	List<BookDTO> bookDTOList = bookservice.searchBooks(searchWord);
         
     	ResponseList response = new ResponseList();
     	response.setData(bookDTOList);

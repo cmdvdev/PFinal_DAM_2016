@@ -27,6 +27,7 @@ export class LibroAddComponent implements OnInit {
 
 	onSubmit(){
 		this.libro.precio = 1;
+		this.libro.idImagen = 1;
 		 this._libroService.addLibro(this.libro).subscribe(
 				response => {
 					this.status = response.status;
@@ -47,7 +48,7 @@ export class LibroAddComponent implements OnInit {
 	}
 
 	ngOnInit(){
-		this.libro = new Libro(0,"","","",0);
+		this.libro = new Libro(0,"","","",0,1,"");
 	}
 
 	returnGenero(value){

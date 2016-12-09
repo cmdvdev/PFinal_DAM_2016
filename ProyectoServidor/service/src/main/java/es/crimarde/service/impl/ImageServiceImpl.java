@@ -26,9 +26,9 @@ public class ImageServiceImpl implements ImageService {
 	}
 
 	@Override
-	public byte[] loadImage(Long id) {
+	public ImageDTO loadImage(Long id) {
 		ImageDTO imagenDTO = transformer.entityToDto(repository.findOne(id));
-		return imagenDTO.getImagen();
+		return imagenDTO;
 	}
 
 

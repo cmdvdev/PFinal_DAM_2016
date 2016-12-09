@@ -23,7 +23,7 @@ public class ImageTransformerHelper implements TransformerHelp <Imagen, ImageDTO
 		}		
 	}
 	
-	public Imagen dtoToEntity (ImageDTO imageDTO){	//Por hacer
+	public Imagen dtoToEntity (ImageDTO imageDTO){
 		MapperFacade mapper = OrikaMapper.getMapperFacade();
 		if(null != imageDTO){
 			return mapper.map(imageDTO, Imagen.class);

@@ -16,14 +16,14 @@ import org.springframework.http.HttpStatus;
 
 import es.crimarde.core.model.ResponseList;
 import es.crimarde.negocio.BookDTO;
-import es.crimarde.service.Service;
+import es.crimarde.service.BookService;
 
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@SpringApplicationConfiguration(classes =Application.class)
 @RunWith(MockitoJUnitRunner.class)
 public class ControllerTest {
 	
-	@Mock private Service servicio;
+	@Mock private BookService servicio;
 	@InjectMocks private Controller controller = new Controller();
 	
 	

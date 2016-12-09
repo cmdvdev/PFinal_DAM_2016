@@ -22,7 +22,7 @@ public class ServiceImplTest {
 	@Mock private BookDTO bookDTOMock;
 	@Mock private BookRepository repositoryMock;;
 	@Mock private BookTransformerHelper transformerMock;;
-	@InjectMocks private ServiceImpl servicio = new ServiceImpl();
+	@InjectMocks private BookServiceImpl servicio = new BookServiceImpl();
 	
 	@Before
 	public void setUp(){

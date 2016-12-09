@@ -22,6 +22,7 @@ var LibroAddComponent = (function () {
     LibroAddComponent.prototype.onSubmit = function () {
         var _this = this;
         this.libro.precio = 1;
+        this.libro.idImagen = 1;
         this._libroService.addLibro(this.libro).subscribe(function (response) {
             _this.status = response.status;
             if (_this.status !== "Created") {
@@ -37,7 +38,7 @@ var LibroAddComponent = (function () {
         });
     };
     LibroAddComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", 0);
+        this.libro = new libro_1.Libro(0, "", "", "", 0, 1, "");
     };
     LibroAddComponent.prototype.returnGenero = function (value) {
         //	this.libro.precio = value;
