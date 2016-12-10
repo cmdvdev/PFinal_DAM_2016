@@ -35,6 +35,8 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+		
+		<!-- Monitoriza el estado de la aplicacion -->
 		<dependency>
 			<groupId>${spring-boot-groupId}</groupId>
 			<artifactId>${spring-boot-artifactId}-actuator</artifactId>
@@ -54,6 +56,14 @@
 			<artifactId>json-path</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- base64 encode -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.9</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>es.crimarde</groupId>
 			<artifactId>service</artifactId>

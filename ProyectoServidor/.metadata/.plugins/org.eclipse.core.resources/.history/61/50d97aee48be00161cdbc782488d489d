@@ -1,0 +1,57 @@
+package es.crimarde.helpers;
+
+import org.springframework.util.Base64Utils;
+
+import es.crimarde.model.Book;
+import es.crimarde.model.Imagen;
+import es.crimarde.negocio.BookDTO;
+import es.crimarde.negocio.ImageDTO;
+import ma.glasnost.orika.CustomMapper;
+import ma.glasnost.orika.MapperFacade;
+import ma.glasnost.orika.MapperFactory;
+import ma.glasnost.orika.MappingContext;
+import ma.glasnost.orika.impl.DefaultMapperFactory;
+
+public class OrikaEntityToDTOMapper {
+
+	private static final MapperFactory DTOToEntitymapperFactory;
+
+	static {
+		DTOToEntitymapperFactory = new DefaultMapperFactory.Builder().build();
+
+		DTOToEntitymapperFactory.classMap(Book.class, BookDTO.class)
+			.exclude("id")
+			.exclude("imagen")
+			.fieldAToB("titulo", "titulo")
+			//.fieldAToB("sinopsis", "sinopsis")
+			.fieldAToB("autor", "autor")
+			//.fieldAToB("imagen", "imagen")
+			.fieldAToB("precio", "precio")
+			.fieldAToB("isbn", "isbn")
+			.fieldAToB("genero", "genero")
+			.fieldAToB("paginas", "paginas")
+			.customize(new CustomMapper<Book, BookDTO>() {
+				@Override
+			    public void mapAtoB(Book a, BookDTO b, MappingContext context) {
+					if(null != a.getImagen()){
+						System.out.println("Entro!!!!!");
+						String con = Base64Utils.encodeToString(a.getImagen().getImagen());
+						b.setBase64(con);
+					}
+				}
+			})
+			//.byDefault()
+			.register();
+
+		//DTOToEntitymapperFactory.classMap(Imagen.class, ImageDTO.class).byDefault().register();
+
+	}
+
+	private OrikaEntityToDTOMapper() {
+	}
+
+	public static MapperFacade getMapperFacade() {
+		return DTOToEntitymapperFactory.getMapperFacade();
+	}
+
+}

@@ -4,6 +4,10 @@ create table IF NOT EXISTS Book (
 	precio DECIMAL(5,2), 
 	sinopsis varchar(30), 
 	titulo varchar(30),
+	isbn varchar(30),
+	genero varchar(30),
+	paginas integer,
+	idImagen integer,
 	
 	key(id)
 )engine=Innodb;;

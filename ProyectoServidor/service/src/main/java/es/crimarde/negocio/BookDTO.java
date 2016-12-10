@@ -1,35 +1,72 @@
 package es.crimarde.negocio;
 
 public class BookDTO {
-	
+
 	private Long id;
 	private String titulo;
 	private String autor;
 	private String sinopsis;
-//	private Byte[] imagen;
+	private Long idImagen;
+	private ImageDTO imagen;
 	private double precio;
+	private String isbn;
+	private String genero;
+	private Integer paginas;
+	private String base64 = "";
+
+	public String getBase64() {
+		return base64;
+	}
+
+	public void setBase64(String base64) {
+		this.base64 = base64;
+	}
 
 	public BookDTO() {
 	}
 		
-	public BookDTO(Long id, String titulo, String autor, String sinopsis, double precio) {
+	public BookDTO(Long id, String titulo, String autor, String sinopsis, ImageDTO imagen, double precio, String isbn,
+			String genero, Integer paginas) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.sinopsis = sinopsis;
-//		this.imagen = imagen;
+		this.imagen = imagen;
 		this.precio = precio;
+		this.isbn = isbn;
+		this.genero = genero;
+		this.paginas = paginas;
+		this.base64 = new String();
 	}
-	
+
+	public BookDTO(Long id, String titulo, String autor, String sinopsis, Long idImagen, ImageDTO imagen, double precio,
+			String isbn, String genero, Integer paginas, String base64) {
+		super();
+		this.id = id;
+		this.titulo = titulo;
+		this.autor = autor;
+		this.sinopsis = sinopsis;
+		this.idImagen = idImagen;
+		this.imagen = imagen;
+		this.precio = precio;
+		this.isbn = isbn;
+		this.genero = genero;
+		this.paginas = paginas;
+		this.base64 = base64;
+	}
+
 	public BookDTO(Builder builder) {
 		super();
 		this.id = builder.getId();
 		this.titulo = builder.getTitulo();
 		this.autor = builder.getAutor();
 		this.sinopsis = builder.getSinopsis();
-//		this.imagen = builder.getImagen();
+		this.imagen = builder.getImagen();
 		this.precio = builder.getPrecio();
+		this.isbn = builder.getIsbn();
+		this.genero = builder.getGenero();
+		this.paginas = builder.getPaginas();
 	}
 
 	public Long getId() {
@@ -64,13 +101,37 @@ public class BookDTO {
 		this.sinopsis = sinopsis;
 	}
 
-//	public Byte[] getImagen() {
-//		return imagen;
-//	}
-//
-//	public void setImagen(Byte[] imagen) {
-//		this.imagen = imagen;
-//	}
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public Integer getPaginas() {
+		return paginas;
+	}
+
+	public void setPaginas(Integer paginas) {
+		this.paginas = paginas;
+	}
+
+	public ImageDTO getImagen() {
+		return imagen;
+	}
+	
+	public void setImagen(ImageDTO imagen) {
+		this.imagen = imagen;
+	}
 
 	public double getPrecio() {
 		return precio;
@@ -80,7 +141,15 @@ public class BookDTO {
 		this.precio = precio;
 	}
 	
-	public Builder builder() {
+	public Long getIdImagen() {
+		return idImagen;
+	}
+
+	public void setIdImagen(Long idImagen) {
+		this.idImagen = idImagen;
+	}
+
+	public Builder builder(){
 		return new Builder();
 	}
 	
@@ -90,7 +159,11 @@ public class BookDTO {
 		private String titulo;
 		private String sinopsis;
 		private String autor;
+		private ImageDTO imagen;
 		private double precio;
+		private String isbn;
+		private String genero;
+		private Integer paginas;
 
 		public Builder() {
 		}
@@ -120,6 +193,26 @@ public class BookDTO {
 			return this;
 		}
 		
+		public Builder whithISNn(String isbn) {
+			this.isbn = isbn;
+			return this;
+		}
+		
+		public Builder whithIGenro(String genero) {
+			this.genero = genero;
+			return this;
+		}
+		
+		public Builder whithPaginas(Integer paginas) {
+			this.paginas = paginas;
+			return this;
+		}
+		
+		public Builder whithImagen(ImageDTO imagen) {
+			this.imagen = imagen;
+			return this;
+		}
+		
 		public BookDTO build(){
 			return new BookDTO(this);
 		}
@@ -140,13 +233,25 @@ public class BookDTO {
 			return autor;
 		}
 
-//		public Byte[] getImagen() {
-//			return imagen;
-//		}
-
 		public double getPrecio() {
 			return precio;
 		}
-	}
-}
 
+		public ImageDTO getImagen() {
+			return imagen;
+		}
+
+		public String getIsbn() {
+			return isbn;
+		}
+
+		public String getGenero() {
+			return genero;
+		}
+
+		public Integer getPaginas() {
+			return paginas;
+		}
+	}
+
+}

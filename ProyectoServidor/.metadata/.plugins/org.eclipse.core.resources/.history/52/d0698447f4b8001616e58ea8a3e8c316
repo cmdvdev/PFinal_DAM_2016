@@ -1,5 +1,0 @@
-package es.crimarde.core.aplication;
-
-public class CustomBasicAuthenticationEntryPoint {
-
-}

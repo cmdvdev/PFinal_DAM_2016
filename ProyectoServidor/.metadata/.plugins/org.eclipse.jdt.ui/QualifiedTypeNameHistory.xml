@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.springframework.test.context.ActiveProfiles"/>
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
-<fullyQualifiedTypeName name="es.crimarde.service.Service"/>
-<fullyQualifiedTypeName name="es.crimarde.dao.RegistroRepository"/>
-<fullyQualifiedTypeName name="java.sql.Timestamp"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.Future"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
-<fullyQualifiedTypeName name="es.crimarde.service.AspectService"/>
-<fullyQualifiedTypeName name="es.crimarde.model.Registro"/>
-<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.junit4.SpringRunner"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest.WebEnvironment"/>
 <fullyQualifiedTypeName name="org.springframework.test.context.web.WebAppConfiguration"/>
@@ -21,7 +10,6 @@
 <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
 <fullyQualifiedTypeName name="es.crimarde.dao.BookRepository"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="es.crimarde.model.Book"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.SpringApplicationConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.boot.test.WebIntegrationTest"/>
 <fullyQualifiedTypeName name="es.crimarde.Application"/>
@@ -53,11 +41,23 @@
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="javax.persistence.Lob"/>
 <fullyQualifiedTypeName name="es.crimarde.dao.ImageRepository"/>
-<fullyQualifiedTypeName name="es.crimarde.model.Imagen"/>
 <fullyQualifiedTypeName name="es.crimarde.helpers.impl.ImageTransformerHelper"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="es.crimarde.service.ImageService"/>
-<fullyQualifiedTypeName name="es.crimarde.negocio.ImageDTO"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
+<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+<fullyQualifiedTypeName name="es.crimarde.model.Book"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="es.crimarde.service.ImageService"/>
+<fullyQualifiedTypeName name="java.awt.Image"/>
+<fullyQualifiedTypeName name="es.crimarde.negocio.ImageDTO"/>
+<fullyQualifiedTypeName name="javax.persistence.PrimaryKeyJoinColumn"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="ma.glasnost.orika.MappingContext"/>
+<fullyQualifiedTypeName name="org.springframework.util.Base64Utils"/>
+<fullyQualifiedTypeName name="ma.glasnost.orika.CustomConverter"/>
+<fullyQualifiedTypeName name="es.crimarde.model.Imagen"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="es.crimarde.negocio.BookDTO"/>
+<fullyQualifiedTypeName name="es.crimarde.helpers.OrikaMapper.ImageToBase64"/>
+<fullyQualifiedTypeName name="ma.glasnost.orika.CustomMapper"/>
 </qualifiedTypeNameHistroy>

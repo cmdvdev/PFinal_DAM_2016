@@ -7,8 +7,8 @@
 	<name>ServicioRest</name>
 
 	<groupId>es.crimarde</groupId>
-	<artifactId>ServicioRest</artifactId>
-	<version>0.2.0.RELEASE</version>
+		<artifactId>ServicioRest</artifactId>
+		<version>0.2.0.RELEASE</version>
 	<packaging>pom</packaging>
 
 	<properties>

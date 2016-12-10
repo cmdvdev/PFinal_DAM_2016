@@ -26,8 +26,11 @@ export class LibroService {
     /**
      * Metodo que obtiene un listado completo de libros
      */
-    getLibros() {
-      return this._http.get("http://cmdvdev.com:8090/lista")
+    getLibros(indice) {
+      if(indice === undefined){
+        indice = 1;
+      }
+      return this._http.get("http://cmdvdev.com:8090/lista/" + indice )
         .map(res => res.json());
     }
 

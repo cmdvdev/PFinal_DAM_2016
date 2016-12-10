@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 @Entity
@@ -18,30 +20,41 @@ public class Book {
 	@Column(name="titulo") 		private String titulo;
 	@Column(name="autor")  		private String autor;
 	@Column(name="sinopsis")	private String sinopsis;
-	//@Column(name="imagen")		private Byte[] imagen;
+	@OneToOne
+	@PrimaryKeyJoinColumn(name="id")		private Imagen imagen;
 	@Column(name="precio")		private double precio;
+	@Column(name="isbn")		private String isbn;
+	@Column(name="genero")		private String genero;
+	@Column(name="paginas")		private Integer paginas;
 
 	public Book() {
 	}
 		
-	public Book(Long id, String titulo, String autor, String sinopsis, double precio) {
+	public Book(Long id, String titulo, String autor, String sinopsis, Imagen imagen, double precio, String isbn,
+			String genero, Integer paginas) {
 		super();
 		this.id = id;
 		this.titulo = titulo;
 		this.autor = autor;
 		this.sinopsis = sinopsis;
-		//this.imagen = imagen;
+		this.imagen = imagen;
 		this.precio = precio;
+		this.isbn = isbn;
+		this.genero = genero;
+		this.paginas = paginas;
 	}
-	
+
 	public Book(Builder builder) {
 		super();
 		this.id = builder.getId();
 		this.titulo = builder.getTitulo();
 		this.autor = builder.getAutor();
 		this.sinopsis = builder.getSinopsis();
-		//this.imagen = builder.getImagen();
+		this.imagen = builder.getImagen();
 		this.precio = builder.getPrecio();
+		this.isbn = builder.getIsbn();
+		this.genero = builder.getGenero();
+		this.paginas = builder.getPaginas();
 	}
 
 	public Long getId() {
@@ -76,13 +89,37 @@ public class Book {
 		this.sinopsis = sinopsis;
 	}
 
-//	public Byte[] getImagen() {
-//		return imagen;
-//	}
-//
-//	public void setImagen(Byte[] imagen) {
-//		this.imagen = imagen;
-//	}
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public Integer getPaginas() {
+		return paginas;
+	}
+
+	public void setPaginas(Integer paginas) {
+		this.paginas = paginas;
+	}
+
+	public void setImagen(Imagen imagen) {
+		this.imagen = imagen;
+	}
+
+	public Imagen getImagen() {
+		return imagen;
+	}
 
 	public double getPrecio() {
 		return precio;
@@ -102,7 +139,11 @@ public class Book {
 		private String titulo;
 		private String sinopsis;
 		private String autor;
+		private Imagen imagen;
 		private double precio;
+		private String isbn;
+		private String genero;
+		private Integer paginas;
 
 		public Builder() {
 		}
@@ -132,6 +173,29 @@ public class Book {
 			return this;
 		}
 		
+		public Builder whithISNn(String isbn) {
+			this.isbn = isbn;
+			return this;
+		}
+		
+
+		public Builder whithIGenro(String genero) {
+			this.genero = genero;
+			return this;
+		}
+		
+
+		public Builder whithPaginas(Integer paginas) {
+			this.paginas = paginas;
+			return this;
+		}
+		
+
+		public Builder whithImagen(Imagen imagen) {
+			this.imagen = imagen;
+			return this;
+		}
+		
 		public Book build(){
 			return new Book(this);
 		}
@@ -154,6 +218,22 @@ public class Book {
 
 		public double getPrecio() {
 			return precio;
+		}
+
+		public Imagen getImagen() {
+			return imagen;
+		}
+
+		public String getIsbn() {
+			return isbn;
+		}
+
+		public String getGenero() {
+			return genero;
+		}
+
+		public Integer getPaginas() {
+			return paginas;
 		}
 	}
 

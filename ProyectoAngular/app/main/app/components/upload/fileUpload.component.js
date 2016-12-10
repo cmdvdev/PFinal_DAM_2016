@@ -21,7 +21,7 @@ var FileUploadComponent = (function () {
         if (inputEl.files.length > 0) {
             var file = inputEl.files[0];
             this._http
-                .post('http://cmdvdev.com:8090/upload2', file)
+                .post('http://cmdvdev.com:8090/singleUpload', file)
                 .subscribe(function (res) {
                 // handle result
             });

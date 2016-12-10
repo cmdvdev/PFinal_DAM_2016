@@ -1,0 +1,5 @@
+
+http://cmdvdev.com:8090/env  --> Variables de entorno
+http://cmdvdev.com:8090/health --> Estado de actuator (activado o desactivado)
+http://cmdvdev.com:8090/beans --> Beans que ha levantado Spring
+http://cmdvdev.com:8090/trace --> Traza de los ultimos accesos

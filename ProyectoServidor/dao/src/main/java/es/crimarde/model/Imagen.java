@@ -14,7 +14,8 @@ public class Imagen {
 
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Id
-	private Long idImagen;
+	@Column(name="id")
+	private Long id;
 	
 	@Lob
 	@Column(name = "imagen")
@@ -28,11 +29,11 @@ public class Imagen {
 	}
 
 	public Long getIdImagen() {
-		return idImagen;
+		return id;
 	}
 
 	public void setIdImagen(Long idImagen) {
-		this.idImagen = idImagen;
+		this.id = idImagen;
 	}
 
 	public byte[] getImagen() {

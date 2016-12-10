@@ -16,14 +16,14 @@ import org.springframework.http.HttpStatus;
 
 import es.crimarde.core.model.ResponseList;
 import es.crimarde.negocio.BookDTO;
-import es.crimarde.service.Service;
+import es.crimarde.service.BookService;
 
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@SpringApplicationConfiguration(classes =Application.class)
 @RunWith(MockitoJUnitRunner.class)
 public class ControllerTest {
 	
-	@Mock private Service servicio;
+	@Mock private BookService servicio;
 	@InjectMocks private Controller controller = new Controller();
 	
 	
@@ -34,7 +34,7 @@ public class ControllerTest {
 		List<BookDTO> lista = buildBookList(5);
 		Mockito.when(servicio.retrieveAll()).thenReturn(lista);
 		
-		ResponseList response = controller.retrieveList();
+		ResponseList response = controller.retrieveList(1);
 		
 		Assert.assertThat(response, Matchers.isA(ResponseList.class));
 		Assert.assertThat(response.getStatus(), Matchers.is(HttpStatus.OK.name()));

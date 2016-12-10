@@ -3,13 +3,11 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 import {LibroService} from "../../services/libro.service";
 import {Libro} from "../../model/libro";
-import {SearchComponent} from "../search/search.component";
 
 @Component({
 	selector: "libros-list",
 	templateUrl: "app/view/libros-list.html",
-	providers: [LibroService],
-	entryComponents: [SearchComponent]
+	providers: [LibroService]
 })
 
 export class LibrosListComponent implements OnInit {
@@ -18,6 +16,7 @@ export class LibrosListComponent implements OnInit {
 	public status: string;
 	public errorMessage;
 	public confirmado;
+	public indice : number;
 
 
 	constructor(
@@ -28,15 +27,15 @@ export class LibrosListComponent implements OnInit {
 
  	ngOnInit() {
  		this.getLibros();
+		this.indice = 1;
 		console.log("libros-list component cargado");
 	}
-
 
 	getLibros(){
 		let box_libros = <HTMLElement>document.querySelector("#libros-list .loading");
 		box_libros.style.visibility = "visible";
 
-		this._libroService.getLibros()
+		this._libroService.getLibros(this.indice)
 				.subscribe(
 					result => {
 							this.libros = result.data;
@@ -62,6 +61,40 @@ export class LibrosListComponent implements OnInit {
 	showLibros(event):void{
       this.libros = event.libros;
   }
+
+	getLibrosByWord(){
+		let box_libros = <HTMLElement>document.querySelector("#libros-list .loading");
+		box_libros.style.visibility = "visible";
+		let word = (<HTMLInputElement>document.querySelector('#search')).value;
+
+		if(word !== ''){
+			this._libroService.getLibrosByWord(word)
+					.subscribe(
+						result => {
+								this.libros = result.data;
+								this.status = result.status;
+
+								if(this.status !== "OK"){
+									alert("Error en el servidor");
+								}
+
+								box_libros.style.display = "none";
+						},
+						error => {
+							this.errorMessage = <any>error;
+
+							if(this.errorMessage !== null){
+								console.log(this.errorMessage);
+								alert("Error en la petición (al obtener la lista de libros)");
+							}
+						}
+					);
+		} else{
+			this.getLibros();
+		}
+
+
+	}
 
 	onBorrarConfirm(id){
 			this.confirmado = id;
@@ -93,4 +126,17 @@ export class LibrosListComponent implements OnInit {
 				);
 	}
 
+	paginadorAvanza(){
+		this.indice += 1;
+		this.getLibros();
+	}
+
+	paginadorRetrocede(){
+		if(this.indice > 1){
+			this.indice -= 1;
+			this.getLibros();
+		} else{
+			let btnRetrocede = <HTMLElement>document.querySelector("#retrocede");
+		}
+	}
 }

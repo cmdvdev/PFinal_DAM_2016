@@ -6,5 +6,5 @@ public interface ImageService {
 
 	Long saveImage(ImageDTO imagenDto);
 	
-	byte[] loadImage(Long id);
+	ImageDTO loadImage(Long id);
 }

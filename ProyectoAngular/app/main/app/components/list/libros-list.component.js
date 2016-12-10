@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var libro_service_1 = require("../../services/libro.service");
-var search_component_1 = require("../search/search.component");
 var LibrosListComponent = (function () {
     function LibrosListComponent(_route, _router, _libroService) {
         this._route = _route;
@@ -21,13 +20,14 @@ var LibrosListComponent = (function () {
     }
     LibrosListComponent.prototype.ngOnInit = function () {
         this.getLibros();
+        this.indice = 1;
         console.log("libros-list component cargado");
     };
     LibrosListComponent.prototype.getLibros = function () {
         var _this = this;
         var box_libros = document.querySelector("#libros-list .loading");
         box_libros.style.visibility = "visible";
-        this._libroService.getLibros()
+        this._libroService.getLibros(this.indice)
             .subscribe(function (result) {
             _this.libros = result.data;
             _this.status = result.status;
@@ -45,6 +45,32 @@ var LibrosListComponent = (function () {
     };
     LibrosListComponent.prototype.showLibros = function (event) {
         this.libros = event.libros;
+    };
+    LibrosListComponent.prototype.getLibrosByWord = function () {
+        var _this = this;
+        var box_libros = document.querySelector("#libros-list .loading");
+        box_libros.style.visibility = "visible";
+        var word = document.querySelector('#search').value;
+        if (word !== '') {
+            this._libroService.getLibrosByWord(word)
+                .subscribe(function (result) {
+                _this.libros = result.data;
+                _this.status = result.status;
+                if (_this.status !== "OK") {
+                    alert("Error en el servidor");
+                }
+                box_libros.style.display = "none";
+            }, function (error) {
+                _this.errorMessage = error;
+                if (_this.errorMessage !== null) {
+                    console.log(_this.errorMessage);
+                    alert("Error en la petición (al obtener la lista de libros)");
+                }
+            });
+        }
+        else {
+            this.getLibros();
+        }
     };
     LibrosListComponent.prototype.onBorrarConfirm = function (id) {
         this.confirmado = id;
@@ -69,14 +95,26 @@ var LibrosListComponent = (function () {
             }
         });
     };
+    LibrosListComponent.prototype.paginadorAvanza = function () {
+        this.indice += 1;
+        this.getLibros();
+    };
+    LibrosListComponent.prototype.paginadorRetrocede = function () {
+        if (this.indice > 1) {
+            this.indice -= 1;
+            this.getLibros();
+        }
+        else {
+            var btnRetrocede = document.querySelector("#retrocede");
+        }
+    };
     return LibrosListComponent;
 }());
 LibrosListComponent = __decorate([
     core_1.Component({
         selector: "libros-list",
         templateUrl: "app/view/libros-list.html",
-        providers: [libro_service_1.LibroService],
-        entryComponents: [search_component_1.SearchComponent]
+        providers: [libro_service_1.LibroService]
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,
         router_1.Router,
