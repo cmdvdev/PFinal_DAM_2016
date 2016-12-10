@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import es.crimarde.model.Book;
 
 @Repository
-public interface BookRepository extends CrudRepository <Book, Long> {  //CrudRepository JpaRepository
+public interface BookRepository extends JpaRepository <Book, Long> {  //CrudRepository 
 	
 	@Modifying
 	@Query("delete from Book where id = ?1")

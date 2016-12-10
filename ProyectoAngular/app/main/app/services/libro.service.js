@@ -28,8 +28,11 @@ var LibroService = (function () {
     /**
      * Metodo que obtiene un listado completo de libros
      */
-    LibroService.prototype.getLibros = function () {
-        return this._http.get("http://cmdvdev.com:8090/lista")
+    LibroService.prototype.getLibros = function (indice) {
+        if (indice === undefined) {
+            indice = 1;
+        }
+        return this._http.get("http://cmdvdev.com:8090/lista/" + indice)
             .map(function (res) { return res.json(); });
     };
     /**

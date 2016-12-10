@@ -45,7 +45,7 @@ var LibroEditComponent = (function () {
         this._router.navigate(["/"]);
     };
     LibroEditComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", 0, 1, "");
+        this.libro = new libro_1.Libro(0, "", "", "", 0);
         this.getLibro();
     };
     LibroEditComponent.prototype.getLibro = function () {

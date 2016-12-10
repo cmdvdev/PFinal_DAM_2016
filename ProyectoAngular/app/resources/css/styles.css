@@ -96,6 +96,7 @@ header h1{
 .libro-item .data{
 	float:left;
 	margin-left: 20px;
+	text-align: center;
 }
 
 .libro-item h4{
@@ -193,6 +194,19 @@ nav ul li a:hover{
 	opacity: 0.8;
 }
 
+navInf{
+	text-align: center;
+}
+
+#retocede{
+	width: 5%;
+	min-width: 80px;
+}
+
+#avanza{
+	width: 5%;
+	min-width: 80px;
+}
 .confirmacion{
 	float: left;
 	position: absolute;

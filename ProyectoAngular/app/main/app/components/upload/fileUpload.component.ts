@@ -17,7 +17,7 @@ export class FileUploadComponent {
         if (inputEl.files.length > 0) { // a file was selected
             let file:FileList = inputEl.files[0];
             this._http
-                .post('http://cmdvdev.com:8090/upload2', file)
+                .post('http://cmdvdev.com:8090/singleUpload', file)
                 .subscribe((res) => { // <-------------
                  // handle result
                });

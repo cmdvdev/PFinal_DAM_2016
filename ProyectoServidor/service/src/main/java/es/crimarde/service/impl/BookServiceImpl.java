@@ -21,7 +21,7 @@ import es.crimarde.service.BookService;
 @Transactional
 public class BookServiceImpl implements BookService {
 
-	private static final int PAGE_SIZE = 2;
+	private static final int PAGE_SIZE = 5;
 	
 	@Autowired
 	private BookRepository repository;
@@ -48,12 +48,10 @@ public class BookServiceImpl implements BookService {
 	}
 	
 	public List<BookDTO> retrieveAllPaged(Integer pageNumber){
-//		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
-//		Page<Book> pagedResponse = repository.findAll(request);
-//
-//		return transformer.entityToDtoIterable(pagedResponse.getContent());
-		return null;
+		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
+		Page<Book> pagedResponse = repository.findAll(request);
 
+		return transformer.entityToDtoIterable(pagedResponse.getContent());
 	}
 	
 	/* (non-Javadoc)

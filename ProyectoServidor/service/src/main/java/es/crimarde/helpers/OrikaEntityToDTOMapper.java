@@ -27,7 +27,7 @@ public class OrikaEntityToDTOMapper {
 		DTOToEntitymapperFactory = new DefaultMapperFactory.Builder().build();
 
 		DTOToEntitymapperFactory.classMap(Book.class, BookDTO.class)
-			.constructorB()			
+			//.constructorB()			
 			.exclude("id")
 			.exclude("imagen")
 			.fieldAToB("titulo", "titulo")

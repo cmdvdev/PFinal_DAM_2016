@@ -37,15 +37,15 @@ public class Controller {
 
 	//@CrossOrigin(origins = "http://localhost:3000")
 	@ResponseStatus(value=HttpStatus.OK)
-    @RequestMapping(value = "/lista", method = RequestMethod.GET)
-    public ResponseList retrieveList() {
+    @RequestMapping(value = "/lista/{indice}", method = RequestMethod.GET)
+    public ResponseList retrieveList(@PathVariable("indice") Integer indice) {
     	
     	logger.info("-- Listado de todos los libros --");
         
     	ResponseList response = new ResponseList();
-        List<BookDTO> books = bookservice.retrieveAll(); 
-        //int page = 1;
-        //List<BookDTO> books = bookservice.retrieveAllPaged(page);
+//        List<BookDTO> books = bookservice.retrieveAll(); 
+
+        List<BookDTO> books = bookservice.retrieveAllPaged(indice);
         //servicio.retrieveAll().forEach(books::add);
                 
         if(books.isEmpty()) {

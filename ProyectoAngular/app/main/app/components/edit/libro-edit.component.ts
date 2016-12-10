@@ -58,7 +58,7 @@ export class LibroEditComponent implements OnInit {
 	}
 
 	ngOnInit(){
-		this.libro = new Libro(0,"","","",0,1,"");
+		this.libro = new Libro(0,"","","",0);
 		this.getLibro();
 	}
 
