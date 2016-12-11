@@ -39,7 +39,7 @@ var SearchComponent = (function () {
             });
         }
         else {
-            this._libroService.getLibros().subscribe(function (result) {
+            this._libroService.getLibros(1).subscribe(function (result) {
                 _this.libros = result.data;
                 _this.status = result.status;
                 _this.PasameLosLibros.emit({ libros: _this.libros });

@@ -49,7 +49,7 @@ export class SearchComponent {
   						}
   					);
   		} else{
-  			this._libroService.getLibros().subscribe(
+  			this._libroService.getLibros(1).subscribe(
           result => {
               this.libros = result.data;
               this.status = result.status;
