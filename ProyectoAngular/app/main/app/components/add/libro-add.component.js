@@ -13,6 +13,7 @@ var router_1 = require("@angular/router");
 var libro_service_1 = require("../../services/libro.service");
 var libro_1 = require("../../model/libro");
 var LibroAddComponent = (function () {
+    //public filesToUpload: Array<File>;
     function LibroAddComponent(_libroService, _route, _router) {
         this._libroService = _libroService;
         this._route = _route;
@@ -42,37 +43,6 @@ var LibroAddComponent = (function () {
     LibroAddComponent.prototype.returnGenero = function (value) {
         //	this.libro.precio = value;
         this.libro.precio = 10;
-    };
-    LibroAddComponent.prototype.fileChangeEvent = function (fileInput) {
-        var _this = this;
-        this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
-            _this.resultUpload = result;
-            //this.libro.imagen = this.resultUpload.filename;
-        }, function (error) {
-            console.log(error);
-        });
-    };
-    LibroAddComponent.prototype.makeFileRequest = function (url, params, files) {
-        return new Promise(function (resolve, reject) {
-            var formData = new FormData();
-            var xhr = new XMLHttpRequest();
-            for (var i = 0; i < files.length; i++) {
-                formData.append("file", files[i], files[i].name);
-            }
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4) {
-                    if (xhr.status == 200) {
-                        resolve(JSON.parse(xhr.response));
-                    }
-                    else {
-                        reject(xhr.response);
-                    }
-                }
-            };
-            xhr.open("POST", url, true);
-            xhr.send(formData);
-        });
     };
     return LibroAddComponent;
 }());

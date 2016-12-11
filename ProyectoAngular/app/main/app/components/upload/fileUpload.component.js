@@ -15,25 +15,43 @@ var FileUploadComponent = (function () {
         this._http = _http;
         this.el = el;
     }
-    FileUploadComponent.prototype.upload = function () {
-        //Observables are lazy so you need to subscribe them to actually execute corresponding processing
-        var inputEl = this.el.nativeElement.firstElementChild;
-        if (inputEl.files.length > 0) {
-            var file = inputEl.files[0];
-            this._http
-                .post('http://cmdvdev.com:8090/singleUpload', file)
-                .subscribe(function (res) {
-                // handle result
-            });
-        }
-        console.log("Despues");
+    FileUploadComponent.prototype.upload = function (fileInput) {
+        var _this = this;
+        this.filesToUpload = fileInput.target.files;
+        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
+            _this.resultUpload = result;
+            //this.libro.imagen = this.resultUpload.filename;
+        }, function (error) {
+            console.log(error);
+        });
+    };
+    FileUploadComponent.prototype.makeFileRequest = function (url, params, files) {
+        return new Promise(function (resolve, reject) {
+            var formData = new FormData();
+            var xhr = new XMLHttpRequest();
+            for (var i = 0; i < files.length; i++) {
+                formData.append("file", files[i], files[i].name);
+            }
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if (xhr.status == 200) {
+                        resolve(JSON.parse(xhr.response));
+                    }
+                    else {
+                        reject(xhr.response);
+                    }
+                }
+            };
+            xhr.open("POST", url, true);
+            xhr.send(formData);
+        });
     };
     return FileUploadComponent;
 }());
 FileUploadComponent = __decorate([
     core_1.Component({
         selector: "file-upload",
-        template: '<input type="file">'
+        template: '<input  type="file" placeholder="Subir imagen..." >'
     }),
     __metadata("design:paramtypes", [http_1.Http,
         core_1.ElementRef])

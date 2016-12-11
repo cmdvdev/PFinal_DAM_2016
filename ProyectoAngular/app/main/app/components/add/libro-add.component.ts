@@ -17,7 +17,7 @@ export class LibroAddComponent implements OnInit {
 	public errorMessage: string;
 	public status: string;
 
-	public filesToUpload: Array<File>;
+	//public filesToUpload: Array<File>;
 
 	constructor(
 		private _libroService: LibroService,
@@ -55,7 +55,7 @@ export class LibroAddComponent implements OnInit {
 		this.libro.precio = 10;
 	}
 
-	public resultUpload;
+	/*public resultUpload;
 
 	fileChangeEvent(fileInput: any){
 		this.filesToUpload = <Array<File>>fileInput.target.files;
@@ -92,4 +92,5 @@ export class LibroAddComponent implements OnInit {
 				xhr.send(formData);
 			});
 	}
+	*/
 }
