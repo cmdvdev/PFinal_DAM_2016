@@ -1,12 +1,15 @@
 package es.crimarde.core.controller;
 
 import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import org.springframework.aop.ThrowsAdvice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import es.crimarde.model.Imagen;
 import es.crimarde.negocio.ImageDTO;
 import es.crimarde.service.ImageService;
 
@@ -32,7 +36,7 @@ public class UploadController {
     
     @CrossOrigin(origins = "http://localhost:3000")
     @RequestMapping(value="/singleUpload", method=RequestMethod.POST )
-    public @ResponseBody String handleSinglepleFileUpload(@RequestParam("file") MultipartFile file ){
+    public @ResponseBody Long handleSinglepleFileUpload(@RequestParam("file") MultipartFile file ) throws IOException{
     	
     	System.out.println("File Description:");
     	String fileName = null;
@@ -41,18 +45,14 @@ public class UploadController {
                 fileName = file.getOriginalFilename();
                 byte[] bytes = file.getBytes();
                 
-                service.saveImage(new ImageDTO(null, bytes, fileName));
+                Long idSaved = service.saveImage(new ImageDTO(null, bytes, fileName));
                 
-                BufferedOutputStream buffStream = 
-                        new BufferedOutputStream(new FileOutputStream(new File(fileName)));
-                buffStream.write(bytes);
-                buffStream.close();
-                return "You have successfully uploaded " + fileName;
+                return idSaved;
             } catch (Exception e) {
-                return "You failed to upload " + fileName + ": " + e.getMessage();
+                throw new IOException("You failed to upload " + fileName + ": " + e.getMessage());
             }
         } else {
-            return "Unable to upload. File is empty.";
+        	throw new IOException( "Unable to upload. File is empty.");
         }
     }
 
@@ -66,8 +66,8 @@ public class UploadController {
     	return "OK";
     }
     
-    private void saveToFile(InputStream inStream, String target)
-			throws IOException {
+    @SuppressWarnings("unused")
+	private void saveToFile(InputStream inStream, String target) throws IOException {
 		OutputStream out = null;
 		int read = 0;
 		byte[] bytes = new byte[1024];
@@ -78,5 +78,22 @@ public class UploadController {
 		out.flush();
 		out.close();
 	}
+    
+    @SuppressWarnings("unused")
+    private OutputStream toOutputStream(){
+    	return null;
+    }
+    
+    @SuppressWarnings("unused")
+    private InputStream fileToInputStream(File file) throws IOException{
+        InputStream targetStream = new FileInputStream(file);
+        return targetStream;
+    }
 
+    @SuppressWarnings("unused")
+    private InputStream multipartFileToInputStream(MultipartFile file) throws IOException{
+		byte [] byteArr = file.getBytes();
+		InputStream inputStream = new ByteArrayInputStream(byteArr);
+		return inputStream;
+    }
 }

@@ -3,7 +3,9 @@ package es.crimarde.helpers;
 import org.springframework.util.Base64Utils;
 
 import es.crimarde.model.Book;
+import es.crimarde.model.Imagen;
 import es.crimarde.negocio.BookDTO;
+import es.crimarde.negocio.ImageDTO;
 import ma.glasnost.orika.CustomMapper;
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
@@ -25,6 +27,16 @@ public class OrikaEntityToDTOMapper {
 
 	static {
 		DTOToEntitymapperFactory = new DefaultMapperFactory.Builder().build();
+		
+		CustomMapper<Book, BookDTO> imagenToBase64StringMapper = new CustomMapper<Book, BookDTO>() {
+			@Override
+		    public void mapAtoB(Book a, BookDTO b, MappingContext context) {
+				if(null != a.getImagen()){
+					String con = Base64Utils.encodeToString(a.getImagen().getImagen());
+					//b.setBase64(con);
+				}
+			}
+		};
 
 		DTOToEntitymapperFactory.classMap(Book.class, BookDTO.class)
 			//.constructorB()			
@@ -33,26 +45,18 @@ public class OrikaEntityToDTOMapper {
 			.fieldAToB("titulo", "titulo")
 			.fieldAToB("sinopsis", "sinopsis")
 			.fieldAToB("autor", "autor")
-			//.fieldAToB("imagen", "imagen")
+			.fieldAToB("imagen", "imagen")
 			.fieldAToB("precio", "precio")
 			.fieldAToB("isbn", "isbn")
 			.fieldAToB("genero", "genero")
 			.fieldAToB("paginas", "paginas")
-			.customize(new CustomMapper<Book, BookDTO>() {
-				@Override
-			    public void mapAtoB(Book a, BookDTO b, MappingContext context) {
-					if(null != a.getImagen()){
-						System.out.println("Entro!!!!!");
-						String con = Base64Utils.encodeToString(a.getImagen().getImagen());
-						b.setBase64(con);
-					}
-				}
-			})
+			//.customize(imagenToBase64StringMapper)
 			.byDefault()
 			.register();
 
-		//DTOToEntitymapperFactory.classMap(Imagen.class, ImageDTO.class).byDefault().register();
-
+		DTOToEntitymapperFactory.classMap(Imagen.class, ImageDTO.class)
+			.byDefault()
+			.register();
 	}
 
 	private OrikaEntityToDTOMapper() {

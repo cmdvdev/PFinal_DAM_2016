@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -42,18 +43,18 @@ public class Controller {
     	
     	logger.info("-- Listado de todos los libros --");
         
-    	ResponseList response = new ResponseList();
-//        List<BookDTO> books = bookservice.retrieveAll(); 
-
-        List<BookDTO> books = bookservice.retrieveAllPaged(indice);
+    	Page<BookDTO> books = bookservice.retrieveAllPaged(indice);
+    	//List<BookDTO> books = bookservice.retrieveAll();
         //servicio.retrieveAll().forEach(books::add);
+    	
+    	ResponseList response = new ResponseList(books);
                 
-        if(books.isEmpty()) {
+        if(books.getContent().isEmpty()) {
         	response.setStatus(HttpStatus.NO_CONTENT.getReasonPhrase());
         	logger.debug("Se devuelve un mensaje de error. No hay libros en la base de datos");
         } else {
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
-    		response.setData(books);
+    		response.setData(books.getContent());
     		logger.info("Se devuelve lista de libros\n".concat(objectToJson(response)));
     	}
         
@@ -169,10 +170,10 @@ public class Controller {
     	
     	logger.info(String.format("-- Busqueda de libro por la palabra %s --", searchWord));
     	
-    	List<BookDTO> bookDTOList = bookservice.searchBooks(searchWord);
+    	//List<BookDTO> bookDTOList = bookservice.searchBooks(searchWord);
+    	Page<BookDTO> pageResponseDTO = bookservice.searchBooksPaged(1, searchWord);
         
-    	ResponseList response = new ResponseList();
-    	response.setData(bookDTOList);
+    	ResponseList response = new ResponseList(pageResponseDTO);
     	response.setStatus(HttpStatus.OK.getReasonPhrase());
     	
     	return response;

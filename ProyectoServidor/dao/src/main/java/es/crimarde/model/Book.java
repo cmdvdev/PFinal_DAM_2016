@@ -16,16 +16,16 @@ public class Book {
 
 	
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Id 						private Long id;
-	@Column(name="titulo") 		private String titulo;
-	@Column(name="autor")  		private String autor;
-	@Column(name="sinopsis")	private String sinopsis;
+	@Id 								private Long id;
+	@Column(name="titulo") 				private String titulo;
+	@Column(name="autor")  				private String autor;
+	@Column(name="sinopsis")			private String sinopsis;
 	@OneToOne
-	@PrimaryKeyJoinColumn(name="id")		private Imagen imagen;
-	@Column(name="precio")		private double precio;
-	@Column(name="isbn")		private String isbn;
-	@Column(name="genero")		private String genero;
-	@Column(name="paginas")		private Integer paginas;
+	@PrimaryKeyJoinColumn(name="id")	private Imagen imagen;
+	@Column(name="precio")				private double precio;
+	@Column(name="isbn")				private String isbn;
+	@Column(name="genero")				private String genero;
+	@Column(name="paginas")				private Integer paginas;
 
 	public Book() {
 	}

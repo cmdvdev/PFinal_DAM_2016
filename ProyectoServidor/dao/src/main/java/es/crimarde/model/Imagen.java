@@ -28,6 +28,13 @@ public class Imagen {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Imagen(Long id, byte[] imagen, String nombre) {
+		super();
+		this.id = id;
+		this.imagen = imagen;
+		this.nombre = nombre;
+	}
+
 	public Long getIdImagen() {
 		return id;
 	}

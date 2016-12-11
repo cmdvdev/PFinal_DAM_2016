@@ -47,11 +47,16 @@ public class BookServiceImpl implements BookService {
 		return transformer.entityToDtoIterable(repository.findAll());
 	}
 	
-	public List<BookDTO> retrieveAllPaged(Integer pageNumber){
+	/**
+	 * 
+	 */
+	public Page<BookDTO> retrieveAllPaged(Integer pageNumber){
 		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
 		Page<Book> pagedResponse = repository.findAll(request);
+		
+		Page<BookDTO> pageResponseDTO = pagedResponse.map(transformer::entityToDto);
 
-		return transformer.entityToDtoIterable(pagedResponse.getContent());
+		return pageResponseDTO;
 	}
 	
 	/* (non-Javadoc)
@@ -133,6 +138,16 @@ public class BookServiceImpl implements BookService {
 		}
 		
 		return booksDTOList;
+	}
+	
+	public Page<BookDTO> searchBooksPaged(Integer pageNumber, String word){
+		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
+		Page<Book> pagedResponse = repository.findByTituloIgnoreCaseContaining(word, request);
+		
+		Page<BookDTO> pageResponseDTO = pagedResponse.map(transformer::entityToDto);
+
+		return pageResponseDTO;
+	
 	}
 
 }

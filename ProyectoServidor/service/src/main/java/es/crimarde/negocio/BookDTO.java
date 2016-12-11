@@ -12,15 +12,7 @@ public class BookDTO {
 	private String isbn;
 	private String genero;
 	private Integer paginas;
-	private String base64 = "";
 
-	public String getBase64() {
-		return base64;
-	}
-
-	public void setBase64(String base64) {
-		this.base64 = base64;
-	}
 
 	public BookDTO() {
 	}
@@ -37,23 +29,6 @@ public class BookDTO {
 		this.isbn = isbn;
 		this.genero = genero;
 		this.paginas = paginas;
-		this.base64 = new String();
-	}
-
-	public BookDTO(Long id, String titulo, String autor, String sinopsis, Long idImagen, ImageDTO imagen, double precio,
-			String isbn, String genero, Integer paginas, String base64) {
-		super();
-		this.id = id;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.sinopsis = sinopsis;
-		this.idImagen = idImagen;
-		this.imagen = imagen;
-		this.precio = precio;
-		this.isbn = isbn;
-		this.genero = genero;
-		this.paginas = paginas;
-		this.base64 = base64;
 	}
 
 	public BookDTO(Builder builder) {

@@ -45,6 +45,18 @@ public class RestExceptionController {
  		return errorMsg.toString();
     }
     
+    @ResponseStatus(value=HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(NumberFormatException.class)
+    @ResponseBody
+    public String ioExceptionHandler(NumberFormatException e){
+        logger.error("IOException!!!");
+        StringBuilder errorMsg = new StringBuilder();
+    	String message = e.getMessage();
+ 		errorMsg.append(e.getClass()).append(" Error al subir el archivo -> ").append(message);
+ 		
+ 		return errorMsg.toString();
+    }
+    
 //    @ExceptionHandler(StorageFileNotFoundException.class)
 //    public ResponseEntity handleStorageFileNotFound(StorageFileNotFoundException exc) {
 //        return ResponseEntity.notFound().build();

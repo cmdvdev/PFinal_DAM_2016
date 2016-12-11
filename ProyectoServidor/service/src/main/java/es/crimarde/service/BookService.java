@@ -2,12 +2,16 @@ package es.crimarde.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+
 import es.crimarde.negocio.BookDTO;
 
 public interface BookService {
 	BookDTO retrieve(Long id);
 
 	List<BookDTO> retrieveAll();
+	
+	Page<BookDTO> retrieveAllPaged(Integer pageNumber);
 
 	void add(BookDTO bookDTO);
 
@@ -25,5 +29,7 @@ public interface BookService {
 	
 	List<BookDTO> searchBooks(String word);
 	
-	List<BookDTO> retrieveAllPaged(Integer pageNumber);
+	Page<BookDTO> searchBooksPaged(Integer pageNumber, String word);
+	
+	
 }
