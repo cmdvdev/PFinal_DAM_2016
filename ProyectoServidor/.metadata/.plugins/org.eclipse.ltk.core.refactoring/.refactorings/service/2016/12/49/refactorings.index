@@ -19,3 +19,5 @@
 1481312295196	Copy compilation unit
 1481312343511	Rename field 'mapperFactory'
 1481312363241	Rename field 'mapperFactory'
+1481461379437	Rename field 'repository'
+1481461771108	Rename field 'transformer'

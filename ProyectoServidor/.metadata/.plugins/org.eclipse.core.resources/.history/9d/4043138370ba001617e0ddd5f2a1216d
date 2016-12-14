@@ -1,8 +1,0 @@
-package es.crimarde.dao;
-
-import org.springframework.test.context.ActiveProfiles;
-
-@ActiveProfiles("test")
-public class BookRepositoryTest {
-
-}

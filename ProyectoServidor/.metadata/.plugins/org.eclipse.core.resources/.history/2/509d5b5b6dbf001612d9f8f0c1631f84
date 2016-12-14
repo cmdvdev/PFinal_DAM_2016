@@ -1,0 +1,83 @@
+package es.crimarde.core.model;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import es.crimarde.negocio.BookDTO;
+
+@SuppressWarnings("serial")
+public class ResponseList implements Serializable {
+	
+	private String status;
+	private List<BookDTO> data;
+	private Integer firsElement;
+	private Integer lastElement;
+	private Integer numOfPages;
+	private Integer actualPage;
+	private Integer pageSize;
+
+	public ResponseList() {
+	}
+	
+	public ResponseList(Page<BookDTO> pagedList) {
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public List<BookDTO> getData() {
+		return data;
+	}
+
+	public void setData(List<BookDTO> data) {
+		this.data = data;
+	}
+	
+	public Integer getFirsElement() {
+		return firsElement;
+	}
+
+	public void setFirsElement(Integer firsElement) {
+		this.firsElement = firsElement;
+	}
+
+	public Integer getLastElement() {
+		return lastElement;
+	}
+
+	public void setLastElement(Integer lastElement) {
+		this.lastElement = lastElement;
+	}
+
+	public Integer getNumOfPages() {
+		return numOfPages;
+	}
+
+	public void setNumOfPages(Integer numOfPages) {
+		this.numOfPages = numOfPages;
+	}
+
+	public Integer getActualPage() {
+		return actualPage;
+	}
+
+	public void setActualPage(Integer actualPage) {
+		this.actualPage = actualPage;
+	}
+
+	public Integer getPageSize() {
+		return pageSize;
+	}
+
+	public void setPageSize(Integer pageSize) {
+		this.pageSize = pageSize;
+	}
+}

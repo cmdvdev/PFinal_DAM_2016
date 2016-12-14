@@ -1,0 +1,54 @@
+package es.crimarde.service.impl;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import es.crimarde.dao.ImageRepository;
+import es.crimarde.helpers.impl.ImageTransformerHelper;
+import es.crimarde.model.Imagen;
+import es.crimarde.negocio.ImageDTO;
+import es.crimarde.service.ImageService;
+
+@Component
+@Transactional
+public class ImageServiceImpl implements ImageService {
+
+	@Autowired ImageRepository repository;
+	@Autowired ImageTransformerHelper transformer;
+	
+	private static final long ID_IMAGEN_VACIA = 0;
+	@Override
+	public Long saveImage(ImageDTO imagenDto) {
+		Imagen imagen = transformer.dtoToEntity(imagenDto);
+		imagen = repository.save(imagen);
+		return imagen.getIdImagen();
+	}
+
+	@Override
+	public ImageDTO loadImage(Long id) {
+		
+		Imagen imagen = null;
+		ImageDTO imagenDTO = null;
+		
+		if(id != null){
+			imagen = repository.findOne(id);
+			imagenDTO = transformer.entityToDto(imagen);
+		} else {
+			imagenDTO = loadErrorImage();
+		}
+		 
+		// Control de errores en caso de no no recuperara una imagen
+		if(imagen == null || imagen.getIdImagen() == null || imagen.getImagen().length == 0){
+			imagenDTO = loadErrorImage();
+		}
+		
+		return imagenDTO;
+	}
+
+	public ImageDTO loadErrorImage() {
+		return transformer.entityToDto(repository.findOne(ID_IMAGEN_VACIA));
+	}
+
+}

@@ -1,7 +1,0 @@
-Para	la	gestión	del	esquema	jugaremos	con	el	valor	de	la	propiedad	
-spring.jpa.hibernate.ddl-auto.
-§ spring.jpa.hibernate.ddl-auto=none:	No	hace	nada	con	el	esquema.	
-§ spring.jpa.hibernate.ddl-auto=validate:	Verifica	que	el	esquema de	la	base	de	datos	es	compatible	con	las	entidades	de	la	aplicación	y	si	no	lo	es	
-genera	un	error.	
-§ spring.jpa.hibernate.ddl-auto=update:	Incluye	en	el	esquema	actual	los	elementos	necesarios	para	hacer	el	esquema	compatible	con	las entidades	(no	borra	ningún	elemento).	
-§ spring.jpa.hibernate.ddl-auto=create-drop:	Crea	el	esquema	al iniciar	la	aplicación	y	lo	borra	al	finalizar	(igual	que	una	BBDD en	memoria).
