@@ -12,9 +12,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import es.crimarde.dao.BookRepository;
+import es.crimarde.dao.ImageRepository;
 import es.crimarde.helpers.impl.BookTransformerHelper;
+import es.crimarde.helpers.impl.ImageTransformerHelper;
 import es.crimarde.model.Book;
 import es.crimarde.negocio.BookDTO;
+import es.crimarde.negocio.ImageDTO;
 import es.crimarde.service.BookService;
 
 @Service
@@ -24,18 +27,22 @@ public class BookServiceImpl implements BookService {
 	private static final int PAGE_SIZE = 5;
 	
 	@Autowired
-	private BookRepository repository;
+	private BookRepository bookRepository;
+	
+	@Autowired ImageRepository imageRepository;
 	
 	@Autowired
-	private BookTransformerHelper transformer;
+	private BookTransformerHelper bookTransformer;
+	
+	@Autowired ImageTransformerHelper imageTransformer;
 
 	/* (non-Javadoc)
 	 * @see es.crimarde.service.impl.adf#retrieve(java.lang.Integer)
 	 */
 	@Override
 	public BookDTO retrieve(Long id) {
-		Book book = repository.findOne(id);
-		return transformer.entityToDto(book);
+		Book book = bookRepository.findOne(id);
+		return bookTransformer.entityToDto(book);
 	}
 	
 	/* (non-Javadoc)
@@ -44,7 +51,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public List<BookDTO> retrieveAll(){
 		
-		return transformer.entityToDtoIterable(repository.findAll());
+		return bookTransformer.entityToDtoIterable(bookRepository.findAll());
 	}
 	
 	/**
@@ -52,9 +59,9 @@ public class BookServiceImpl implements BookService {
 	 */
 	public Page<BookDTO> retrieveAllPaged(Integer pageNumber){
 		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
-		Page<Book> pagedResponse = repository.findAll(request);
+		Page<Book> pagedResponse = bookRepository.findAll(request);
 		
-		Page<BookDTO> pageResponseDTO = pagedResponse.map(transformer::entityToDto);
+		Page<BookDTO> pageResponseDTO = pagedResponse.map(bookTransformer::entityToDto);
 
 		return pageResponseDTO;
 	}
@@ -66,7 +73,10 @@ public class BookServiceImpl implements BookService {
 	public void add(BookDTO bookDTO){
 		if(null != bookDTO){
 			try{
-				repository.save(transformer.dtoToEntity(bookDTO));
+				Book b = bookRepository.save(bookTransformer.dtoToEntity(bookDTO));
+				ImageDTO imageDTO = bookDTO.getImagen();
+				//imageDTO.setIdImagen(b.getId());
+				imageRepository.save(imageTransformer.dtoToEntity(imageDTO));
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -80,7 +90,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public void updateByProperties(BookDTO bookDTO){
 		if(null != null){
-			repository.updateBook(bookDTO.getId(), bookDTO.getTitulo(), bookDTO.getAutor(), bookDTO.getSinopsis(), bookDTO.getPrecio());
+			bookRepository.updateBook(bookDTO.getId(), bookDTO.getTitulo(), bookDTO.getAutor(), bookDTO.getSinopsis(), bookDTO.getPrecio());
 		}
 	}
 	
@@ -93,7 +103,7 @@ public class BookServiceImpl implements BookService {
 			BookDTO book = retrieve(bookDTO.getId());
 			String[] ignoreProperties = {"id"};
 			BeanUtils.copyProperties(bookDTO, book, ignoreProperties);
-			repository.save(transformer.dtoToEntity(bookDTO));
+			bookRepository.save(bookTransformer.dtoToEntity(bookDTO));
 		}
 	}
 	
@@ -103,7 +113,7 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public void delete(Long id){
 		if(null != id){
-			repository.delete(id);
+			bookRepository.delete(id);
 		}
 	}
 	
@@ -113,17 +123,17 @@ public class BookServiceImpl implements BookService {
 	@Override
 	public void delete(BookDTO bookDTO){
 		if(null != bookDTO){
-			repository.delete(transformer.dtoToEntity(bookDTO));
+			bookRepository.delete(bookTransformer.dtoToEntity(bookDTO));
 		}		
 	}
 	
 	public boolean existsBook(BookDTO bookDTO) {
-		return (null != repository.existsByTitulo(bookDTO.getTitulo()) 
-				&& repository.existsByTitulo(bookDTO.getTitulo()) >= 1)? Boolean.TRUE : Boolean.FALSE;
+		return (null != bookRepository.existsByTitulo(bookDTO.getTitulo()) 
+				&& bookRepository.existsByTitulo(bookDTO.getTitulo()) >= 1)? Boolean.TRUE : Boolean.FALSE;
 	}
 	
 	public Long countBooks(){
-		return repository.count();
+		return bookRepository.count();
 	}
 	
 	public List<BookDTO> searchBooks(String word){
@@ -131,10 +141,10 @@ public class BookServiceImpl implements BookService {
 		
 		//List<Book> booksList = repository.findByTituloLikeIgnoreCase("%"+word+"%");
 		//List<Book> booksList = repository.findByTituloParam(word);
-		List<Book> booksList = repository.findByTituloIgnoreCaseContaining(word);
+		List<Book> booksList = bookRepository.findByTituloIgnoreCaseContaining(word);
 		
 		if(null != booksList && !booksList.isEmpty()){
-			booksDTOList = transformer.entityToDtoList(booksList);
+			booksDTOList = bookTransformer.entityToDtoList(booksList);
 		}
 		
 		return booksDTOList;
@@ -142,9 +152,9 @@ public class BookServiceImpl implements BookService {
 	
 	public Page<BookDTO> searchBooksPaged(Integer pageNumber, String word){
 		PageRequest request = new PageRequest(pageNumber - 1, PAGE_SIZE, Sort.Direction.ASC, "id");
-		Page<Book> pagedResponse = repository.findByTituloIgnoreCaseContaining(word, request);
+		Page<Book> pagedResponse = bookRepository.findByTituloIgnoreCaseContaining(word, request);
 		
-		Page<BookDTO> pageResponseDTO = pagedResponse.map(transformer::entityToDto);
+		Page<BookDTO> pageResponseDTO = pagedResponse.map(bookTransformer::entityToDto);
 
 		return pageResponseDTO;
 	

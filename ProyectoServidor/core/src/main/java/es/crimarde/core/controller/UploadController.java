@@ -1,6 +1,5 @@
 package es.crimarde.core.controller;
 
-import java.io.BufferedOutputStream;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,8 +7,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.springframework.aop.ThrowsAdvice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import es.crimarde.model.Imagen;
 import es.crimarde.negocio.ImageDTO;
 import es.crimarde.service.ImageService;
 
@@ -60,8 +59,9 @@ public class UploadController {
     @RequestMapping(value="/multiUpload", method=RequestMethod.POST)
     public @ResponseBody String handleMultipleFileUpload(@RequestParam("file") MultipartFile[] uploadingFiles) throws IOException{
         
+    	List<Long> idsList = new ArrayList<>();
     	for(MultipartFile uploadedFile : uploadingFiles) {
-            handleSinglepleFileUpload(uploadedFile);
+            idsList.add(handleSinglepleFileUpload(uploadedFile));
         }
     	return "OK";
     }

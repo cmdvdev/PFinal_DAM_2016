@@ -1,5 +1,7 @@
 package es.crimarde.core.controller;
 
+import java.io.IOException;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -46,7 +48,7 @@ public class RestExceptionController {
     }
     
     @ResponseStatus(value=HttpStatus.BAD_REQUEST)
-    @ExceptionHandler(NumberFormatException.class)
+    @ExceptionHandler(IOException.class)
     @ResponseBody
     public String ioExceptionHandler(NumberFormatException e){
         logger.error("IOException!!!");

@@ -1,10 +1,14 @@
 package es.crimarde.model;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
@@ -20,13 +24,22 @@ public class Book {
 	@Column(name="titulo") 				private String titulo;
 	@Column(name="autor")  				private String autor;
 	@Column(name="sinopsis")			private String sinopsis;
-	@OneToOne
-	@PrimaryKeyJoinColumn(name="id")	private Imagen imagen;
+	//@OneToOne(cascade = CascadeType.ALL, optional = false, fetch = FetchType.EAGER, orphanRemoval = false)
+	//@JoinColumn(name="IMAGEN_ID", nullable=false)	private Imagen imagen;  //@PrimaryKeyJoinColumn(name="id")
+	@ManyToOne(fetch=FetchType.LAZY,optional=false)
+	@JoinColumn(name="IMAGEN_ID")		private Imagen imagen;
 	@Column(name="precio")				private double precio;
 	@Column(name="isbn")				private String isbn;
 	@Column(name="genero")				private String genero;
 	@Column(name="paginas")				private Integer paginas;
 
+	/*
+	 	“cascade” – set triggers actions to the relationship
+	 	“optional” – allow you to persist a Book without a Image
+	 	“fetch” – the default value is EAGER; this value means that every time you search in the database for a Book, the Book Image is search automatically
+	 	“orphanRemoval” – defines that a dependent entity without relationship must be removed from the database
+	 	@JoinColumn(name=“IMAGEN_ID”, nullable=“false”) – defines the database column that will be mapped into the attribute
+	 */
 	public Book() {
 	}
 		

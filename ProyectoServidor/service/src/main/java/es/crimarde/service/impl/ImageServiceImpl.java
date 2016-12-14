@@ -18,6 +18,7 @@ public class ImageServiceImpl implements ImageService {
 	@Autowired ImageRepository repository;
 	@Autowired ImageTransformerHelper transformer;
 	
+	private static final long ID_IMAGEN_VACIA = 0;
 	@Override
 	public Long saveImage(ImageDTO imagenDto) {
 		Imagen imagen = transformer.dtoToEntity(imagenDto);
@@ -27,9 +28,22 @@ public class ImageServiceImpl implements ImageService {
 
 	@Override
 	public ImageDTO loadImage(Long id) {
-		ImageDTO imagenDTO = transformer.entityToDto(repository.findOne(id));
+		
+		Imagen imagen = null;
+		ImageDTO imagenDTO = null;
+		
+		if(id != null){
+			imagen = repository.findOne(id);
+			imagenDTO = transformer.entityToDto(imagen);
+		} else {
+			imagenDTO = loadErrorImage();
+		}
+		
 		return imagenDTO;
 	}
 
+	public ImageDTO loadErrorImage() {
+		return transformer.entityToDto(repository.findOne(ID_IMAGEN_VACIA));
+	}
 
 }

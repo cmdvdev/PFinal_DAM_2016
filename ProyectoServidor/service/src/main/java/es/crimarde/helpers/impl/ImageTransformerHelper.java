@@ -14,7 +14,8 @@ import ma.glasnost.orika.MapperFacade;
 
 @Component
 public class ImageTransformerHelper implements TransformerHelp <Imagen, ImageDTO> {
-
+	
+	
 	public ImageDTO entityToDto(Imagen imagen){
 		MapperFacade mapper = OrikaEntityToDTOMapper.getMapperFacade();
 		if(null != imagen){

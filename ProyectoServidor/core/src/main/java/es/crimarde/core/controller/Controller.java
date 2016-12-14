@@ -1,7 +1,5 @@
 package es.crimarde.core.controller;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
@@ -110,7 +108,15 @@ public class Controller {
     	BookDTO bookDtoFromDB = bookservice.retrieve(id);
     	
     	if(null != bookDtoFromDB) {
-    		BeanUtils.copyProperties(bookDTO, bookDtoFromDB, "id");
+    		
+    		if(bookDTO.getIdImagen() != null){
+    			ImageDTO imageDTO = imageService.loadImage(bookDTO.getIdImagen());
+    			bookDTO.setImagen(imageDTO);
+    		}
+    		
+    		String[] ignoreProperties = {"id"};
+    		BeanUtils.copyProperties(bookDTO, bookDtoFromDB, ignoreProperties);
+    		
     		bookservice.update(bookDtoFromDB);
     		logger.info("Libro modificado correctamente");
     		response.setStatus(HttpStatus.OK.getReasonPhrase());
@@ -165,13 +171,15 @@ public class Controller {
     }
     
     @CrossOrigin(origins = "http://localhost:3000")
-    @RequestMapping(value = "/search/{searchWord}", method = RequestMethod.GET)
-    public ResponseList search(@PathVariable("searchWord") String searchWord) {
+    @RequestMapping(value = "/search/{searchWord}/page/{page}", method = RequestMethod.GET)
+    public ResponseList search(@PathVariable("searchWord") String searchWord,@PathVariable("page") String page) {
     	
     	logger.info(String.format("-- Busqueda de libro por la palabra %s --", searchWord));
     	
+    	Integer numPag = Integer.valueOf(page);  //Control de errores (RestExceptionController)
+    	
     	//List<BookDTO> bookDTOList = bookservice.searchBooks(searchWord);
-    	Page<BookDTO> pageResponseDTO = bookservice.searchBooksPaged(1, searchWord);
+    	Page<BookDTO> pageResponseDTO = bookservice.searchBooksPaged(numPag, searchWord);
         
     	ResponseList response = new ResponseList(pageResponseDTO);
     	response.setStatus(HttpStatus.OK.getReasonPhrase());
