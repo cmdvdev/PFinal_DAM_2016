@@ -23,7 +23,8 @@ var LibroAddComponent = (function () {
     LibroAddComponent.prototype.onSubmit = function () {
         var _this = this;
         this.libro.precio = 1;
-        this._libroService.addLibro(this.libro).subscribe(function (response) {
+        this._libroService.addLibro(this.libro)
+            .subscribe(function (response) {
             _this.status = response.status;
             if (_this.status !== "Created") {
                 alert("Error en el servidor");
@@ -38,11 +39,15 @@ var LibroAddComponent = (function () {
         });
     };
     LibroAddComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", 0);
+        this.libro = new libro_1.Libro(0, "", "", "", 0, 0, "", "", 0, null);
     };
     LibroAddComponent.prototype.returnGenero = function (value) {
         //	this.libro.precio = value;
         this.libro.precio = 10;
+    };
+    LibroAddComponent.prototype.addImageToBook = function (event) {
+        this.libro.idImagen = event.idImagen;
+        document.getElementById("saveBookBtn").disabled = false;
     };
     return LibroAddComponent;
 }());

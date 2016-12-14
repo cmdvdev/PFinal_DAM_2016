@@ -13,6 +13,7 @@ var router_1 = require("@angular/router");
 var libro_service_1 = require("../../services/libro.service");
 var libro_1 = require("../../model/libro");
 var LibroEditComponent = (function () {
+    //public filesToUpload: Array<File>;
     function LibroEditComponent(_libroService, _route, _router) {
         this._libroService = _libroService;
         this._route = _route;
@@ -45,7 +46,7 @@ var LibroEditComponent = (function () {
         this._router.navigate(["/"]);
     };
     LibroEditComponent.prototype.ngOnInit = function () {
-        this.libro = new libro_1.Libro(0, "", "", "", 0);
+        this.libro = new libro_1.Libro(0, "", "", "", 0, 0, "", "", 0, null);
         this.getLibro();
     };
     LibroEditComponent.prototype.getLibro = function () {
@@ -71,36 +72,9 @@ var LibroEditComponent = (function () {
     LibroEditComponent.prototype.returnGenero = function (value) {
         this.libro.precio = value;
     };
-    LibroEditComponent.prototype.fileChangeEvent = function (fileInput) {
-        var _this = this;
-        this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
-            _this.resultUpload = result;
-            //this.libro.imagen = this.resultUpload.filename;
-        }, function (error) {
-            console.log(error);
-        });
-    };
-    LibroEditComponent.prototype.makeFileRequest = function (url, params, files) {
-        return new Promise(function (resolve, reject) {
-            var formData = new FormData();
-            var xhr = new XMLHttpRequest();
-            for (var i = 0; i < files.length; i++) {
-                formData.append("file", files[i], files[i].name);
-            }
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4) {
-                    if (xhr.status == 200) {
-                        resolve(JSON.parse(xhr.response));
-                    }
-                    else {
-                        reject(xhr.response);
-                    }
-                }
-            };
-            xhr.open("POST", url, true);
-            xhr.send(formData);
-        });
+    LibroEditComponent.prototype.addImageToBook = function (event) {
+        this.libro.idImagen = event.idImagen;
+        document.getElementById("saveBookBtn").disabled = false;
     };
     return LibroEditComponent;
 }());

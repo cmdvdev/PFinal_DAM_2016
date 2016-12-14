@@ -14,16 +14,40 @@ var FileUploadComponent = (function () {
     function FileUploadComponent(_http, el) {
         this._http = _http;
         this.el = el;
+        this.PasameElIdImagen = new core_1.EventEmitter();
     }
+    /**
+     * Solo se permiten archivos de imagen menores de 1mb
+     */
     FileUploadComponent.prototype.upload = function (fileInput) {
         var _this = this;
-        this.filesToUpload = fileInput.target.files;
-        this.makeFileRequest("http://cmdvdev.com:8090/multiUpload", [], this.filesToUpload).then(function (result) {
-            _this.resultUpload = result;
-            //this.libro.imagen = this.resultUpload.filename;
-        }, function (error) {
-            console.log(error);
-        });
+        var allowed = false;
+        var ext = fileInput.target.files[0].name.match(/\.([^\.]+)$/)[1];
+        var filesize = ((fileInput.target.files[0].size / 1024) / 1024); // MB
+        switch (ext) {
+            case 'jpg':
+            case 'bmp':
+            case 'png':
+            case 'tif':
+                allowed = true;
+                break;
+            default:
+                alert('Contenido no permitido, debe ser de tipo imagen');
+                fileInput.target.files[0] = null;
+        }
+        if (allowed && filesize <= 1) {
+            //Bloquear el boton de subida
+            document.getElementById("saveBookBtn").disabled = true;
+            this.filesToUpload = fileInput.target.files;
+            this.makeFileRequest("http://cmdvdev.com:8090/singleUpload", [], this.filesToUpload)
+                .then(function (result) {
+                _this.resultUpload = result;
+                _this.PasameElIdImagen.emit({ idImagen: result });
+                //this.libro.imagen = this.resultUpload.filename;
+            }, function (error) {
+                console.log(error);
+            });
+        }
     };
     FileUploadComponent.prototype.makeFileRequest = function (url, params, files) {
         return new Promise(function (resolve, reject) {
@@ -48,10 +72,14 @@ var FileUploadComponent = (function () {
     };
     return FileUploadComponent;
 }());
+__decorate([
+    core_1.Output(),
+    __metadata("design:type", Object)
+], FileUploadComponent.prototype, "PasameElIdImagen", void 0);
 FileUploadComponent = __decorate([
     core_1.Component({
         selector: "file-upload",
-        template: '<input  type="file" placeholder="Subir imagen..." >'
+        template: '<input id="fileToUpload" type="file" accept="image/*" placeholder="Subir imagen..." >'
     }),
     __metadata("design:paramtypes", [http_1.Http,
         core_1.ElementRef])

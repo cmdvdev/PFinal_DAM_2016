@@ -17,15 +17,16 @@ var SearchComponent = (function () {
     }
     SearchComponent.prototype.getLibrosByWord = function () {
         var _this = this;
-        var box_libros = document.querySelector("#libros-list .loading");
+        var box_libros = document.querySelector(".loading");
         box_libros.style.visibility = "visible";
         var word = document.querySelector('#search').value;
         if (word !== '') {
-            this._libroService.getLibrosByWord(word)
+            this._libroService.getLibrosByWord(word, 1)
                 .subscribe(function (result) {
                 _this.libros = result.data;
                 _this.status = result.status;
-                _this.PasameLosLibros.emit({ libros: _this.libros });
+                _this.infoPagination = result.infoPagination;
+                _this.PasameLosLibros.emit({ infoPagination: _this.infoPagination, libros: _this.libros });
                 if (_this.status !== "OK") {
                     alert("Error en el servidor");
                 }
@@ -34,24 +35,34 @@ var SearchComponent = (function () {
                 _this.errorMessage = error;
                 if (_this.errorMessage !== null) {
                     console.log(_this.errorMessage);
-                    alert("Error en la petición (al obtener la lista de libros)");
+                    alert("Error en la petici�n (al obtener la lista de libros)");
                 }
             });
         }
         else {
-            this._libroService.getLibros(1).subscribe(function (result) {
-                _this.libros = result.data;
-                _this.status = result.status;
-                _this.PasameLosLibros.emit({ libros: _this.libros });
-            });
+            this.clean();
         }
+    };
+    SearchComponent.prototype.clean = function () {
+        var _this = this;
+        document.querySelector('#search').value = '';
+        this._libroService.getLibros(1).subscribe(function (result) {
+            _this.libros = result.data;
+            _this.status = result.status;
+            _this.infoPagination = result.infoPagination;
+            _this.PasameLosLibros.emit({ libros: _this.libros, infoPagination: _this.infoPagination });
+        });
     };
     return SearchComponent;
 }());
 __decorate([
     core_1.Output(),
-    __metadata("design:type", Object)
+    __metadata("design:type", core_1.EventEmitter)
 ], SearchComponent.prototype, "PasameLosLibros", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], SearchComponent.prototype, "set", void 0);
 SearchComponent = __decorate([
     core_1.Component({
         selector: 'search-book',

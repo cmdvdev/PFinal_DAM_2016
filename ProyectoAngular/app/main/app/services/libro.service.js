@@ -38,8 +38,8 @@ var LibroService = (function () {
     /**
     *
     */
-    LibroService.prototype.getLibrosByWord = function (word) {
-        return this._http.get("http://cmdvdev.com:8090/search/" + word)
+    LibroService.prototype.getLibrosByWord = function (word, page) {
+        return this._http.get("http://cmdvdev.com:8090/search/" + word + "/page/" + page)
             .map(function (res) { return res.json(); });
     };
     /**

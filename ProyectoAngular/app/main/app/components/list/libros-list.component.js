@@ -25,37 +25,16 @@ var LibrosListComponent = (function () {
     };
     LibrosListComponent.prototype.getLibros = function () {
         var _this = this;
-        var box_libros = document.querySelector("#libros-list .loading");
-        box_libros.style.visibility = "visible";
-        this._libroService.getLibros(this.indice)
-            .subscribe(function (result) {
-            _this.libros = result.data;
-            _this.status = result.status;
-            if (_this.status !== "OK") {
-                alert("Error en el servidor");
-            }
-            box_libros.style.display = "none";
-        }, function (error) {
-            _this.errorMessage = error;
-            if (_this.errorMessage !== null) {
-                console.log(_this.errorMessage);
-                alert("Error en la petición (al obtener la lista de libros)");
-            }
-        });
-    };
-    LibrosListComponent.prototype.showLibros = function (event) {
-        this.libros = event.libros;
-    };
-    LibrosListComponent.prototype.getLibrosByWord = function () {
-        var _this = this;
-        var box_libros = document.querySelector("#libros-list .loading");
+        var box_libros = document.querySelector(".loading");
         box_libros.style.visibility = "visible";
         var word = document.querySelector('#search').value;
-        if (word !== '') {
-            this._libroService.getLibrosByWord(word)
+        // no estoy en modo busqueda
+        if (word === undefined || word === '') {
+            this._libroService.getLibros(this.indice)
                 .subscribe(function (result) {
                 _this.libros = result.data;
                 _this.status = result.status;
+                _this.infoPagination = result.infoPagination;
                 if (_this.status !== "OK") {
                     alert("Error en el servidor");
                 }
@@ -64,13 +43,32 @@ var LibrosListComponent = (function () {
                 _this.errorMessage = error;
                 if (_this.errorMessage !== null) {
                     console.log(_this.errorMessage);
-                    alert("Error en la petición (al obtener la lista de libros)");
+                    alert("Error en la petici�n (al obtener la lista de libros)");
                 }
             });
         }
         else {
-            this.getLibros();
+            this._libroService.getLibrosByWord(word, this.indice)
+                .subscribe(function (result) {
+                _this.libros = result.data;
+                _this.status = result.status;
+                _this.infoPagination = result.infoPagination;
+                if (_this.status !== "OK") {
+                    alert("Error en el servidor");
+                }
+                box_libros.style.display = "none";
+            }, function (error) {
+                _this.errorMessage = error;
+                if (_this.errorMessage !== null) {
+                    console.log(_this.errorMessage);
+                    alert("Error en la petici�n (al obtener la lista de libros)");
+                }
+            });
         }
+    };
+    LibrosListComponent.prototype.showLibros = function (event) {
+        this.libros = event.libros;
+        this.infoPagination = event.infoPagination;
     };
     LibrosListComponent.prototype.onBorrarConfirm = function (id) {
         this.confirmado = id;
@@ -96,24 +94,36 @@ var LibrosListComponent = (function () {
         });
     };
     LibrosListComponent.prototype.paginadorAvanza = function () {
-        this.indice += 1;
-        this.getLibros();
+        var disabled = false;
+        if (!this.infoPagination.last) {
+            this.indice += 1;
+            this.getLibros();
+        }
+        else {
+            disabled = true;
+        }
+        document.getElementById("avanza").disabled = disabled;
     };
     LibrosListComponent.prototype.paginadorRetrocede = function () {
-        if (this.indice > 1) {
+        var disabled = false;
+        if (!this.infoPagination.first) {
             this.indice -= 1;
             this.getLibros();
         }
         else {
-            var btnRetrocede = document.querySelector("#retrocede");
+            disabled = true;
         }
+        document.getElementById("retrocede").disabled = disabled;
+    };
+    LibrosListComponent.prototype.getIndice = function () {
+        return this.indice;
     };
     return LibrosListComponent;
 }());
 LibrosListComponent = __decorate([
     core_1.Component({
         selector: "libros-list",
-        templateUrl: "app/view/libros-list.html",
+        templateUrl: "./app/view/libros-list.html",
         providers: [libro_service_1.LibroService]
     }),
     __metadata("design:paramtypes", [router_1.ActivatedRoute,

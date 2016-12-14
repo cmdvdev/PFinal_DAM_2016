@@ -1,38 +1,97 @@
 <h1>{{tituloPag}}</h1>
 <form #formLibro="ngForm" (ngSubmit)="onSubmit()">
 
-	<label>Titulo:</label>
-	<p>
-		<input type="text" #titulo="ngModel" name="titulo" [(ngModel)]="libro.titulo" required/>
-		<span *ngIf="!titulo.valid">El nombre es obligatorio</span>
-	</p>
 
-	<label>Autor:</label>
-	<p>
-		<input type="text" #autor="ngModel" name="autor" [(ngModel)]="libro.autor" required/>
+	<div class ="linea">
+		<div class="izq">
+			<label for="titulo">Titulo:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="titulo" #titulo="ngModel" name="titulo" [(ngModel)]="libro.titulo" required class="textbox" />
+			<span *ngIf="!titulo.valid">El nombre es obligatorio</span>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class ="linea">
+		<div class="izq">
+			<label for="autor">Autor:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="autor" #autor="ngModel" name="autor" [(ngModel)]="libro.autor" required class="textbox" /> 
 		<span *ngIf="!autor.valid">El autor es obligatorio</span>
-	</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 
-	<label>Sinopsis:</label>
-	<p>
-		<textarea #sinopsis="ngModel" name="sinopsis" [(ngModel)]="libro.sinopsis" required></textarea>
+	<div class ="linea">
+		<div class="izq">
+			<label for="sinopsis">Sinopsis:</label>
+		</div>
+		<div class="der">
+			<textarea [id]="sinopsis" #sinopsis="ngModel" name="sinopsis" [(ngModel)]="libro.sinopsis" 
+			required class="textbox" cols="50" rows="10"></textarea>
 		<span *ngIf="!sinopsis.valid">La sinopsis es obligatoria</span>
-	</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 
-	<label>Precio:</label>
-	<p>
-		<select (change)="returnGenero(genero.value)" #genero name="Genero">
-			<option value="humor" [attr.selected]="libro.precio === 'humor' ? 'selected' : null">Humor</option>
-			<option value="Aventuras" [attr.selected]="libro.precio === 'Aventuras' ? 'selected' : null">Aventuras</option>
-			<option value="Comic" [attr.selected]="libro.Comic === 'alto' ? 'Comic' : null">Comic</option>
+	<div class ="linea">
+		<div class="izq">
+			<label for="genero">Precio:</label>
+		</div>
+		<div class="der">
+			<select id="genero" (change)="returnGenero(genero.value)" #genero name="Genero" class="textbox">
+			<option value="humor"
+				[attr.selected]="libro.precio === 'humor' ? 'selected' : null">Humor</option>
+			<option value="Aventuras"
+				[attr.selected]="libro.precio === 'Aventuras' ? 'selected' : null">Aventuras</option>
+			<option value="Comic"
+				[attr.selected]="libro.Comic === 'alto' ? 'Comic' : null">Comic</option>
 		</select>
-	</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class ="linea">
+		<div class="izq">
+			<label for="precio">Precio:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="precio" #precio="ngModel" name="precio" [(ngModel)]="libro.precio" class="textbox" />
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class ="linea">
+		<div class="izq">
+			<label for="isbn">ISBN:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="isbn" #isbn="ngModel" name="isbn" [(ngModel)]="libro.isbn" class="textbox" />
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<div class ="linea">
+		<div class="izq">
+			<label for="numPaginas">Paginas:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="numPaginas" #numPaginas="ngModel" name="numPaginas" [(ngModel)]="libro.paginas" class="textbox" />
+		</div>
+		<div class="clearfix"></div>
+	</div>
 
-	<label>Imagen:</label>
-	<p>
-		<input type="file" placeholder="Subir imagen..." (change)="fileChangeEvent($event)"/>
-		<file-upload #fu (change)="fu.upload($event)"></file-upload>
-	</p>
+	<div class ="linea" >
+		<div class="izq">
+			<label>Imagen:</label>
+		</div>
+		<div class="der">
+			<file-upload #fu (change)="fu.upload($event)" (PasameElIdImagen)="addImageToBook($event)"></file-upload>
+		</div>
+		<div class="clearfix"></div>
+	</div>
 
-	<input type="submit" value="{{tituloPag}}" [disabled]="!formLibro.form.valid" />
+	<input type="submit" id="saveBookBtn" value="{{tituloPag}}" [disabled]="!formLibro.form.valid"  class="btn btn-ver-ancho btn-enviar" />
 </form>

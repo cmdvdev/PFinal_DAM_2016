@@ -37,8 +37,8 @@ export class LibroService {
     /**
     *
     */
-    getLibrosByWord(word){
-      return this._http.get("http://cmdvdev.com:8090/search/" + word)
+    getLibrosByWord(word,page){
+      return this._http.get("http://cmdvdev.com:8090/search/" + word +"/page/" + page)
         .map(res => res.json());
     }
 
