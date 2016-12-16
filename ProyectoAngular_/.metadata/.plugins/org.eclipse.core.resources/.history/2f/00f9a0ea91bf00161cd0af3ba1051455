@@ -1,0 +1,50 @@
+<h1>{{tituloPag}}</h1>
+<form #formLibro="ngForm" (ngSubmit)="onSubmit()">
+
+
+	<div class ="linea">
+		<div class="izq">
+			<label for="titulo">Titulo:</label> 
+		</div>
+		<div class="der">
+			<input type="text" id="titulo" #titulo="ngModel" name="titulo" [(ngModel)]="libro.titulo" required class="textbox" />
+			<span *ngIf="!titulo.valid">El nombre es obligatorio</span>
+		</div>
+		<div class="clearfix"/>
+		
+		
+	</div>
+
+	<div class ="linea">
+		<label for="autor">Autor:</label> 
+		<input type="text" id="autor" #autor="ngModel" name="autor" [(ngModel)]="libro.autor" required class="textbox" /> 
+		<span *ngIf="!autor.valid">El autor es obligatorio</span>
+	</div>
+
+	<div class ="linea">
+		<label for="sinopsis">Sinopsis:</label>
+		<textarea [id]="sinopsis" #sinopsis="ngModel" name="sinopsis" [(ngModel)]="libro.sinopsis" 
+			required class="textbox" cols="23" rows="10"></textarea>
+		<span *ngIf="!sinopsis.valid">La sinopsis es obligatoria</span>
+	</div>
+
+	<div class ="linea">
+		<label for="genero">Precio:</label>
+		<select id="genero" (change)="returnGenero(genero.value)" #genero name="Genero" class="textbox">
+			<option value="humor"
+				[attr.selected]="libro.precio === 'humor' ? 'selected' : null">Humor</option>
+			<option value="Aventuras"
+				[attr.selected]="libro.precio === 'Aventuras' ? 'selected' : null">Aventuras</option>
+			<option value="Comic"
+				[attr.selected]="libro.Comic === 'alto' ? 'Comic' : null">Comic</option>
+		</select>
+	</div>
+
+	<div class ="linea" class="textbox">
+		<label>Imagen:</label>
+		<file-upload #fu (change)="fu.upload($event)"></file-upload>
+	</div>
+
+	<input type="submit" value="{{tituloPag}}"
+		[disabled]="!formLibro.form.valid" />
+</form>

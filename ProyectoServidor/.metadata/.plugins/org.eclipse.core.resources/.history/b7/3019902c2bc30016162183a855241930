@@ -1,0 +1,5 @@
+insert into Book values ( 'Autor1', 5,'Los tres cerditos', 'Los tres cerditos','isbn','genero',12, 1);
+insert into Book values ( 'Autor2', 6,'Caperucita roja', 'Caperucita roja','isbn','genero',12, 2);
+insert into Book values ( 'Autor3', 7,'San Jordi', 'San Jordi','isbn','genero',12, 3);
+insert into Book values ( 'Autor4', 8,'Pepa Pig', 'Pepa Pig','isbn','genero',12, 4);
+insert into Book values ( 'Autor5', 9,'Cayou', 'Cayou','isbn','genero',12, 5);

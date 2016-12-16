@@ -1,0 +1,25 @@
+DROP TABLE Book IF exists;
+DROP TABLE Imagenes IF exists;
+
+CREATE TABLE IF NOT EXISTS Book (
+	id integer primary key auto_increment, 
+	autor varchar(30), 
+	precio DECIMAL(5,2), 
+	sinopsis varchar(30), 
+	titulo varchar(30),
+	isbn varchar(30),
+	genero varchar(30),
+	paginas integer,
+	idImagen integer,
+	
+	key(id)
+)engine=Innodb;;
+
+CREATE TABLE IF NOT EXISTS Imagenes (
+	idImagen int not null auto_increment,
+	imagen blob not null, 
+	nombre varchar(30),
+	
+	key(idImagen)
+)engine=Innodb;
+ 

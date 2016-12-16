@@ -1,0 +1,19 @@
+<h1>Hoy vamos a leer: </h1>
+
+<div *ngIf="libro" class="libro-box">
+	<img class="imagen-rest-detail" src="http://localhost/slim/uploads/{{libro.imagen}}" *ngIf="libro.imagen && libro.imagen !== 'null'" />
+	<div class="data-rest">
+		<h1>Libro: {{libro.titulo}}</h1>
+<!--
+		<p class="precio">
+			<span [ngSwitch]="libro.precio">
+				<span *ngSwitchCase="'bajo'">Entre 2.50€ y 6€</span>
+				<span *ngSwitchCase="'normal'">Entre 4.50€ y 9€</span>
+				<span *ngSwitchCase="'alto'">Entre 7.50€ y 20€</span>
+			</span>
+		</p>
+-->
+		<p class="autor">{{libro.autor}}</p>
+		<p class="descripcion">{{libro.sinopsis}}</p>
+	</div>
+</div>

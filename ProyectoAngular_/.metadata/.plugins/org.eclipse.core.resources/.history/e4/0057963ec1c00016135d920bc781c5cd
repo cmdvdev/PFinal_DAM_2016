@@ -1,0 +1,9 @@
+"use strict";
+var Imagen = (function () {
+    function Imagen(id) {
+        this.id = id;
+    }
+    return Imagen;
+}());
+exports.Imagen = Imagen;
+//# sourceMappingURL=imagen.js.map

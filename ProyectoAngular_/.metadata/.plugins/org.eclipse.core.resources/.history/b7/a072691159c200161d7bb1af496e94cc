@@ -1,0 +1,33 @@
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
+@Component({
+  selector: "login",
+  templateUrl: "app/view/login.html"
+})
+
+export class AppComponent {
+  public titulo: string = "Mi biblioteca de cuentos";
+  public isLogged: boolean;
+
+
+  constructor(
+    private _route: ActivatedRoute,
+    private _router: Router
+  ) {
+    this.isLogged = false;
+    
+  }
+
+  
+  login(username, password) {
+    if (username.value == "" && password.value == "") {
+      this.isLogged = true;
+      this._router.navigate(["/"]);
+    }
+  }
+
+  logout() {
+    this.isLogged = false;
+  }
+}

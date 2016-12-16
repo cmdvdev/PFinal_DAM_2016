@@ -1,0 +1,23 @@
+<section class="login-component" *ngIf="!isLogged">
+	<div class="control-group">
+		<div>
+			<label for="title">Username:</label>
+		</div>
+		<div>
+			<input name="username" #username>
+		</div>
+	</div>
+	<div class="control-group">
+		<div>
+			<label for="link">Password:</label>
+		</div>
+		<div>
+			<input type="password" name="password" #password>
+		</div>
+	</div>
+	<button class="" (click)="login(username, password)">Login</button>
+	
+</section>
+<button class="logout" style="float: right;" *ngIf="isLogged" (click)="logout()">Logout</button>
+<home *ngIf="isLogged"></home>
+

@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import { AppComponent } from "./app.component";
+
+//Main Component
+@Component({
+  selector: 'main',
+  templateUrl: 'app/view/main.html',
+  providers:[AppComponent]
+})
+export class Main{
+  isLogged:boolean;
+  constructor(){
+    this.isLogged = false;
+  }
+  login(username, password){
+    if(username.value =="test" && password.value=="test"){
+      this.isLogged = true;
+    }
+  }
+  logout(){
+    this.isLogged = false;
+  }
+}

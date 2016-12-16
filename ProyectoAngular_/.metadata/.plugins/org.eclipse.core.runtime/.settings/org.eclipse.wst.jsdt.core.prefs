@@ -1,0 +1,21 @@
+eclipse.preferences.version=1
+org.eclipse.wst.jsdt.core.PREF_JS_RUNTIME_INSTALLS_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimeSettings>\r\n<runtimeType defaultRuntime\="GlobalNodeJsRuntime" id\="org.eclipse.wst.jsdt.js.node.runtimeType">\r\n<runtime id\="__nodejs_version_7.2.1" name\="Node 7.2.1" path\="C\:\\Users\\crima\\.webclipse\\nodejs\\7.2.1\\node.exe"/>\r\n</runtimeType>\r\n</runtimeSettings>\r\n
+org.eclipse.wst.jsdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.wst.jsdt.core.formatter.alignment_for_compact_if=52
+org.eclipse.wst.jsdt.core.formatter.alignment_for_conditional_expression=48
+org.eclipse.wst.jsdt.core.formatter.alignment_for_superclass_in_type_declaration=64
+org.eclipse.wst.jsdt.core.formatter.alignment_for_superinterfaces_in_enum_declaration=64
+org.eclipse.wst.jsdt.core.formatter.alignment_for_superinterfaces_in_type_declaration=64
+org.eclipse.wst.jsdt.core.formatter.blank_lines_after_imports=0
+org.eclipse.wst.jsdt.core.formatter.blank_lines_after_package=0
+org.eclipse.wst.jsdt.core.formatter.blank_lines_before_imports=0
+org.eclipse.wst.jsdt.core.formatter.blank_lines_before_member_type=0
+org.eclipse.wst.jsdt.core.formatter.blank_lines_before_method=0
+org.eclipse.wst.jsdt.core.formatter.blank_lines_before_new_chunk=0
+org.eclipse.wst.jsdt.core.formatter.indent_switchstatements_compare_to_switch=true
+org.eclipse.wst.jsdt.core.formatter.insert_space_after_opening_brace_in_array_initializer=do not insert
+org.eclipse.wst.jsdt.core.formatter.insert_space_before_closing_brace_in_array_initializer=do not insert
+org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_case=insert
+org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_default=insert
+org.eclipse.wst.jsdt.core.formatter.insert_space_before_colon_in_labeled_statement=insert
+org.eclipse.wst.jsdt.core.formatter.put_empty_statement_on_new_line=false

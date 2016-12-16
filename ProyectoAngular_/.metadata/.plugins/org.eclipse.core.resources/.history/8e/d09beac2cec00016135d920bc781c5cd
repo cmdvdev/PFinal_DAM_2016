@@ -1,0 +1,11 @@
+export class InfoPagination {
+  
+  constructor(
+    public numOfPages:number,
+    public actualPage:string,
+    public pageSize:string,
+    public totalElements:string,
+    public last:number,
+    public first:number
+  ){}
+}

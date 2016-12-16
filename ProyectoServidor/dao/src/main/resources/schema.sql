@@ -1,18 +1,19 @@
-create table IF NOT EXISTS Book (
-	id integer primary key auto_increment, 
-	autor varchar(30), 
-	precio DECIMAL(5,2), 
-	sinopsis varchar(30), 
-	titulo varchar(30),
-	isbn varchar(30),
-	genero varchar(30),
-	paginas integer,
-	idImagen integer,
-	
-	key(id)
-)engine=Innodb;;
+DROP TABLE Book IF exists;
+DROP TABLE Imagenes IF exists;
 
-create table IF NOT EXISTS Imagenes (
+CREATE TABLE `book` (
+  `id` int(11) NOT NULL,
+  `autor` varchar(30) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `precio` decimal(5,2) DEFAULT NULL,
+  `sinopsis` varchar(2000) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `titulo` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `isbn` varchar(30) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `genero` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `paginas` int(11) DEFAULT NULL,
+  `imagen_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+CREATE TABLE IF NOT EXISTS Imagenes (
 	idImagen int not null auto_increment,
 	imagen blob not null, 
 	nombre varchar(30),

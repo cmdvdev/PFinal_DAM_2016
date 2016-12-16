@@ -1,0 +1,14 @@
+<meta charset="UTF-8"> 
+
+<div *ngIf="libro" class="libro-box">
+	<h1>{{libro.titulo}}</h1>
+	<img class="imagen-rest-detail" src="data:image/jpeg;base64,{{libro.imagen.imagen}}" *ngIf="libro.imagen.imagen !== 'null'" />
+	<div class="data-rest">
+		<p class="autor">de {{libro.autor}}</p>
+		<p class="descripcion">El libro cuenta: {{libro.sinopsis}}</p>
+		<p class="descripcion" *ngIf="libro.precio != 0">El precio del libro es de {{libro.precio}} €</p>
+		<p class="descripcion" *ngIf="libro.isbn != ''">El ISBN del libro es {{libro.isbn}}</p>
+		<p class="descripcion" *ngIf="libro.genero != ''" >Genero: {{libro.genero}}</p>
+		<p class="descripcion" *ngIf="libro.paginas != 0" >Tiene {{libro.paginas}} páginas</p>
+	</div>
+</div>

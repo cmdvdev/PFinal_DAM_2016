@@ -1,0 +1,322 @@
+.clearfix {
+	float: none;
+	clear: both;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	font-family: Helvetica, Arial;
+}
+
+#content {
+	width: 80%;
+	min-height: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #ddd;
+}
+
+header {
+	padding: 15px;
+	/*
+	background: #1976D2;
+	background: orange;
+	*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5a82d+0,000000+87,000000+100 */
+	background: #e5a82d; /* Old browsers */
+	background: -moz-linear-gradient(left, #e5a82d 10%, #000000 95%, #000000 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #e5a82d 10%, #000000 95%, #000000 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #e5a82d 10%, #000000 95%, #000000 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5a82d',
+		endColorstr='#000000', GradientType=1); /* IE6-9 */
+}
+
+header #logo {
+	width: 150px;
+	display: block;
+	float: right;
+	margin-right: 10%;
+}
+
+header h1 {
+	margin: 0px;
+	margin-left: 15px;
+	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 60px;
+	font-size: 25px;
+	text-transform: uppercase;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	color: white;
+	float: left;
+}
+
+.main {
+	padding: 15px;
+}
+
+.main h1 {
+	color: #444;
+}
+
+#libros-list {
+	padding: 0px;
+	margin: 0px;
+}
+
+.libro-item {
+	list-style: none;
+	width: 100%;
+	border-top: 1px solid #ddd;
+	height: 100px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: gray;
+}
+
+.libro-item .image {
+	height: 105px;
+	width: 105px;
+	overflow: hidden;
+	background: #ccc;
+	float: left;
+}
+
+.libro-item .image img {
+	height: 105px;
+}
+
+.libro-item .data {
+	float: left;
+	margin-left: 20px;
+	text-align: center;
+}
+
+.libro-item h4 {
+	color: #444;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 5px;
+}
+
+.btn {
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	font-size: 13px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px #ddd;
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-ver {
+	border-color: #126BC3;
+	background: #337AB7;
+}
+
+.btn-ver-ancho {
+	border-color: #126BC3;
+	background: #337AB7;
+	width: 150px
+}
+
+.btn-editar {
+	background: #5CB85C;
+	border-color: #89ce89;
+}
+
+.btn-eliminar {
+	background: #D9534F;
+	border-color: #F21B1B;
+}
+
+.loading {
+	list-style: none;
+	text-decoration: none;
+}
+
+.libro-box .precio {
+	color: white;
+	background: green;
+	font-size: 14px;
+	padding: 5px;
+	box-shadow: 2px 2px #016B01;
+	text-align: center;
+	width: 200px;
+}
+
+.libro-box .autor {
+	color: gray;
+}
+
+nav {
+	width: 100%;
+	background: #F2F2F2;
+	height: 45px;
+	font-size: 14px;
+	border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	margin: 0px;
+	display: block;
+	float: left;
+	border-right: 1px solid white;
+	height: 45px;
+	line-height: 35px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	color: #444;
+	transition: all 100ms;
+}
+
+nav ul li a:hover {
+	background: #1976D2;
+	color: white;
+	opacity: 0.8;
+}
+
+navInf {
+	text-align: center;
+}
+
+#retocede {
+	width: 5%;
+	min-width: 80px;
+}
+
+#avanza {
+	width: 5%;
+	min-width: 80px;
+}
+
+.confirmacion {
+	float: left;
+	position: absolute;
+	background: white;
+	padding: 3px;
+	margin-top: -45px;
+	width: 265px;
+	text-align: center;
+}
+
+.imagen-rest-detail {
+	max-width: 350px;
+	float: left;
+	margin-right: 30px;
+}
+
+.data-rest {
+	float: left;
+}
+
+#searchBar {
+	width: 100%;
+}
+
+#searchBar .drch {
+	float: right;
+	display: inline-block;
+	width: 45%;
+	padding-top: 18px;
+}
+
+#searchBar .izq {
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+
+#searchBar h1 {
+	width: 50%;
+}
+
+#searchBar a {
+	margin-left: 20px;
+}
+
+.linea {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.linea .izq{
+	width: 100px;
+	float: left;
+	display: inline-block;
+}
+
+.linea .der{
+	float: left;
+	display: inline-block;
+	width: 80%:
+}
+
+.textbox {
+	border: 1px solid #DBE1EB;
+	font-size: 18px;
+	font-family: Arial, Verdana;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-o-border-radius: 4px;
+	background: #FFFFFF;
+	background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	color: #2E3133;
+}
+
+.textbox:focus {
+	color: #2E3133;
+	border-color: #FBFFAD;
+}
+
+.custom-input-file {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 160px;
+}
+.custom-input-file .input-file {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 10000px;
+    border: 10000px solid transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
+    cursor: pointer;
+}

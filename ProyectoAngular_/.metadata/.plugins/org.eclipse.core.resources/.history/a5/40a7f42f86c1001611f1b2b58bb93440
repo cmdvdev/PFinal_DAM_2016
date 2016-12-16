@@ -1,0 +1,55 @@
+<meta charset="UTF-8"> 
+
+<div id="searchBar">
+	<div class="izq">
+		<h1>{{tituloPag}}</h1>
+	</div>
+	<div class="drch">
+		<search-book (PasameLosLibros)="showLibros($event)" ></search-book>
+	</div>
+</div>
+
+<ul id="libros-list">
+	<li class="loading">
+		<img src="app/resources/images/loader.gif" />
+	</li>
+	<li *ngFor="let libro of libros" class="libro-item">
+		<div class="image">
+			<img src="data:image/jpeg;base64,{{libro.imagen.imagen}}" *ngIf="libro.imagen != null && libro.imagen.imagen !== 'null'" width="100" height="100" />
+		</div>
+		<div class="data">
+			<h4>{{libro.titulo}}</h4>
+			<p>{{libro.autor}}</p>
+		</div>
+		<div class="data-buttons">	
+			<p>
+				<a [routerLink]="['/libro', libro.id ]" class="btn btn-ver">Ver</a>
+				<a [routerLink]="['/editar-libro', libro.id ]" href="" class="btn btn-editar">Editar</a>
+				<a (click)="onBorrarConfirm(libro.id)" class="btn btn-eliminar">Eliminar</a>
+			</p>
+			<div class="confirmacion" *ngIf="confirmado === libro.id">
+				<a (click)="onBorrarLibro(libro.id)" class="btn btn-eliminar">Eliminar</a>
+				<a (click)="onCancelarConfirm(libro.id)" class="btn btn-ver">Cancelar</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</li>	
+</ul>
+<div class="clearfix"></div>
+
+<div>
+	<nav id="navInf" *ngIf="infoPagination">
+		<div style="margin: auto; text-align: center">
+		  <ul class="pager">
+		    <li class="disabled"><a id="retrocede" href="#" (click)="paginadorRetrocede()"><span aria-hidden="true">&larr;</span> Anterior</a></li>
+		    <li style="margin-top: 6px; width: 200px;">Página {{infoPagination.actualPage + 1}} de {{infoPagination.numOfPages}}</li>
+		    <li class="next"><a id="avanza" href="#" (click)="paginadorAvanza()"> Siguiente <span aria-hidden="true">&rarr;</span></a></li>
+		  </ul>
+		</div>
+		<div class="clearfix"></div>
+		<div >	
+			<p>Elementos por página {{infoPagination.actualPageSize}}, elementos en esta pagina {{infoPagination.actualPageSize}}, de un total de {{infoPagination.totalElements}} registros</p>
+		</div>
+		
+	</nav>
+</div>
